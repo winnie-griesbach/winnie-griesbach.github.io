@@ -1,0 +1,270 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#f4efe7">
+  <title>{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top">WG<span>.</span></a>
+  <nav class="top-nav" aria-label="Primary navigation">
+    <a href="#case-study">Case study</a>
+    <a href="#videos">Videos</a>
+    <a href="#evidence">Evidence</a>
+    <a href="#about">About</a>
+    <a class="nav-cta" href="mailto:winnie.griesbach@gmail.com">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero section-shell">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">E-Commerce · Customer Journey · UX · SEO</p>
+      <h1>I look at the <em>full journey</em> — not just isolated touchpoints.</h1>
+      <p class="hero-lede">I connect customer understanding, data and implementation so digital systems become clearer, more intuitive and more useful for real people.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#case-study">See the flagship case</a>
+        <a class="button button-ghost" href="#evidence">Explore the evidence</a>
+      </div>
+      <div class="process-strip" aria-label="Working principles">
+        <span>Understand people</span><i>→</i>
+        <span>Analyze data</span><i>→</i>
+        <span>Improve processes</span><i>→</i>
+        <span>Create digital experiences</span>
+      </div>
+    </div>
+
+    <aside class="profile-card reveal">
+      <div class="profile-banner">
+        <img src="assets/media/linkedin-banner-crop.png" alt="LinkedIn-style banner with New York skyline and workflow theme">
+      </div>
+      <div class="profile-content">
+        <img class="profile-avatar" src="assets/media/about-winnie-portrait.jpg" alt="Portrait of Winnie Griesbach">
+        <div class="profile-intro">
+          <p class="profile-label">Profile snapshot</p>
+          <h2>Winnie Griesbach</h2>
+          <p class="profile-role">SEO · E-Commerce · Customer Journey · UX</p>
+        </div>
+        <ul class="profile-points">
+          <li><strong>Based in:</strong> Germany</li>
+          <li><strong>Works across:</strong> people, data, process and experience</li>
+          <li><strong>Open to:</strong> remote international roles, with a long-term New York goal</li>
+        </ul>
+        <div class="profile-actions">
+          <a class="button button-primary" href="#about">This is me</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/winnie-griesbach" target="_blank" rel="noopener">View LinkedIn</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="lens-nav section-shell reveal" aria-label="Portfolio perspectives">
+    <a href="#evidence" data-jump-filter="UX / Customer Journey">
+      <span>People</span>
+      <strong>See work that reduces hesitation and supports customer decisions.</strong>
+    </a>
+    <a href="#evidence" data-jump-filter="Analytics">
+      <span>Data</span>
+      <strong>Jump into analytics, signal interpretation and performance thinking.</strong>
+    </a>
+    <a href="#evidence" data-jump-filter="CRO">
+      <span>Process</span>
+      <strong>Open the examples where friction became structure and action.</strong>
+    </a>
+    <a href="#case-study">
+      <span>Experience</span>
+      <strong>Follow one connected journey from research to cart confidence.</strong>
+    </a>
+  </section>
+
+  <section class="principle-banner section-shell section-space-sm reveal">
+    <div class="principle-copy">
+      <p class="eyebrow">Interface principle</p>
+      <h2>The interface should feel intuitive.</h2>
+      <p>Good UX reduces uncertainty. It helps people understand the next step, trust the information in front of them and move forward without decoding the system first.</p>
+    </div>
+    <div class="principle-points" aria-label="UX principles">
+      <div><span>01</span><strong>Clarity</strong><small>Make decisions easier to understand.</small></div>
+      <div><span>02</span><strong>Confidence</strong><small>Reduce doubt before it blocks action.</small></div>
+      <div><span>03</span><strong>Guidance</strong><small>Show the next useful step at the right time.</small></div>
+    </div>
+  </section>
+
+  <section id="case-study" class="case-intro section-shell section-space">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Flagship case · Shopify</p>
+      <h2>From “What will this cost?” to “I know what I need.”</h2>
+      <p>This customer journey case connects price orientation, project planning, installation help, privacy-screen configuration and cart protection into one coherent path.</p>
+    </div>
+    <div class="case-statement reveal">
+      <span>Customer starting point</span>
+      <strong>“I am interested, but I am not ready to buy yet.”</strong>
+      <span>Design goal</span>
+      <strong>Reduce uncertainty one decision at a time.</strong>
+    </div>
+  </section>
+
+  <section class="journey-grid section-shell">
+    {% for step in site.data.journey %}
+    <article class="journey-card reveal">
+      <div class="journey-card-head">
+        <span class="journey-number">{{ step.number }}</span>
+        <p class="journey-kicker">{{ step.kicker }}</p>
+      </div>
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.text }}</p>
+      <span class="journey-signal">{{ step.signal }}</span>
+    </article>
+    {% endfor %}
+  </section>
+
+  <section id="videos" class="video-showcase section-shell section-space">
+    <div class="section-heading compact reveal">
+      <p class="eyebrow">Product / tool demos</p>
+      <h2>See the tools in motion.</h2>
+      <p>These short clips show how the journey works in practice: quick orientation first, then planning support, then optional privacy-screen configuration.</p>
+    </div>
+    <div class="video-grid">
+      <article class="video-card reveal">
+        <div class="video-copy">
+          <p class="journey-kicker">01 · Price orientation</p>
+          <h3>Price Check</h3>
+          <p>Visitors can quickly compare project cost expectations before they commit to a full configuration flow.</p>
+        </div>
+        <video controls playsinline preload="metadata" poster="assets/media/pricecheck-poster.jpg">
+          <source src="assets/media/pricecheck-demo.mp4" type="video/mp4">
+        </video>
+      </article>
+      <article class="video-card reveal">
+        <div class="video-copy">
+          <p class="journey-kicker">02 · Project planning</p>
+          <h3>Fence Configurator</h3>
+          <p>The configurator translates length, height, gates, corners, mounting and accessories into a guided project setup.</p>
+        </div>
+        <video controls playsinline preload="metadata" poster="assets/media/fence-configurator-poster.jpg">
+          <source src="assets/media/fence-configurator-demo.mp4" type="video/mp4">
+        </video>
+      </article>
+      <article class="video-card reveal">
+        <div class="video-copy">
+          <p class="journey-kicker">03 · Personalized extension</p>
+          <h3>Privacy-Screen Configurator</h3>
+          <p>Customers can add privacy screening, test patterns and continue the same fence project instead of starting over.</p>
+        </div>
+        <video controls playsinline preload="metadata" poster="assets/media/privacy-configurator-poster.jpg">
+          <source src="assets/media/privacy-configurator-demo.mp4" type="video/mp4">
+        </video>
+      </article>
+    </div>
+  </section>
+
+  <section class="before-after section-shell section-space reveal">
+    <div class="section-heading compact">
+      <p class="eyebrow">Visual decision support</p>
+      <h2>Clarity before decoration.</h2>
+      <p>These source visuals show how product communication was structured for understanding, consistency and decision support. They stay intentionally smaller so they support the case instead of overpowering it.</p>
+    </div>
+    <div class="visual-grid">
+      <figure>
+        <img src="assets/media/product-visual-corner-connector-de.png" alt="Product visual for a fence corner connector">
+        <figcaption>Example: corner connector visual with clear benefits and specification cues.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/media/product-visual-fence-post-de.png" alt="Product visual for a double wire fence post">
+        <figcaption>Example: fence post visual with variant communication and practical fit information.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="evidence" class="evidence section-space">
+    <div class="section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Recruiter work evidence</p>
+        <h2>Start with what you are hiring for.</h2>
+        <p>Choose a field and the evidence below filters itself to relevant problems, actions and learnings.</p>
+      </div>
+
+      <div class="evidence-toolbar reveal">
+        <div class="filter-group" id="area-filters">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="UX / Customer Journey">UX / Customer Journey</button>
+          <button class="filter" data-filter="SEO">SEO</button>
+          <button class="filter" data-filter="CRO">CRO</button>
+          <button class="filter" data-filter="Analytics">Analytics</button>
+          <button class="filter" data-filter="Paid Search / Google Ads">Paid Search</button>
+          <button class="filter" data-filter="Product / Tools">Product / Tools</button>
+        </div>
+        <div class="filter-group system-filter" id="system-filters">
+          <button class="system-chip active" data-system="All">All systems</button>
+          <button class="system-chip" data-system="Shopify">Shopify</button>
+          <button class="system-chip" data-system="Magento">Magento</button>
+          <button class="system-chip" data-system="TYPO3">TYPO3</button>
+        </div>
+        <label class="search-box"><span>Search</span><input id="evidence-search" type="search" placeholder="e.g. configurator, tracking, redirects"></label>
+      </div>
+
+      <div class="evidence-meta reveal">
+        <span id="evidence-count">Loading evidence…</span>
+        <button id="reset-filters" type="button">Reset filters</button>
+      </div>
+
+      <div class="evidence-table-wrap reveal">
+        <table class="evidence-table">
+          <thead>
+            <tr>
+              <th>Work</th>
+              <th>System</th>
+              <th>Problem</th>
+              <th>What I did</th>
+              <th>What I learned</th>
+            </tr>
+          </thead>
+          <tbody id="evidence-body"></tbody>
+        </table>
+        <div id="evidence-cards" class="evidence-cards"></div>
+        <div id="evidence-empty" class="evidence-empty" hidden>No matching work stories.</div>
+      </div>
+      <div class="load-more-wrap"><button class="button button-ghost" id="load-more" type="button">Show more evidence</button></div>
+    </div>
+  </section>
+
+  <section id="about" class="about section-shell section-space">
+    <div class="about-photo reveal">
+      <img src="assets/media/about-winnie-portrait.jpg" alt="Winnie Griesbach outdoors in a sleeveless cream top">
+    </div>
+    <div class="about-copy-wrap reveal">
+      <div>
+        <p class="eyebrow">About me</p>
+        <h2>I am most useful where people, data and implementation meet.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I am a hands-on e-commerce and SEO specialist from Germany. My strongest work happens when I can understand how a customer thinks, use data to identify friction and then turn the insight into an actual digital change.</p>
+        <p>I started in SEO and moved deeper into e-commerce, customer journeys, analytics and technical implementation. I am not looking for a manager title. I want to contribute inside a strong international team, keep learning from experienced specialists and continue building practical technical depth.</p>
+        <p class="about-location"><strong>Based in Germany</strong> · Open to remote international opportunities · Long-term goal: New York</p>
+        <div class="contact-row">
+          <a class="button button-primary" href="mailto:winnie.griesbach@gmail.com">Email me</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/winnie-griesbach" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer section-shell">
+  <span>Winnie Griesbach · E-Commerce Portfolio</span>
+  <span>Built with HTML · CSS · JavaScript · Jekyll/Liquid · JSON · GitHub Pages</span>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>

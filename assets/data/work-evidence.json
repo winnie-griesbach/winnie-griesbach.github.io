@@ -1,0 +1,532 @@
+[
+  {
+    "id": "shopify-launch",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Launched a new Shopify store and moved directly into iterative optimization",
+    "problem": "Product, checkout, payment and shipping processes had to become production-ready at the same time.",
+    "solution": "Used a staged launch followed by end-to-end test orders, process corrections and continuous QA.",
+    "insight": "A launch is not the finish line; it is the start of operational optimization.",
+    "areas": [
+      "E-Commerce",
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "tracking-architecture",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Defined a centralized GTM tracking architecture",
+    "problem": "Shopify, GA4 and Google Ads could create overlapping tags and duplicate measurement.",
+    "solution": "Defined Google Tag Manager as the central control layer and reduced parallel measurement paths.",
+    "insight": "Reliable performance decisions require conversion governance before optimization.",
+    "areas": [
+      "Analytics",
+      "CRO",
+      "Technical Implementation",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "search-structure",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Built a structured Google Search campaign architecture",
+    "problem": "Search match types and campaign intent were initially too broad to evaluate cleanly.",
+    "solution": "Separated keyword logic by match type and later moved toward tighter, intent-led Search campaigns.",
+    "insight": "For a small budget, control and search-intent clarity can matter more than automated scale.",
+    "areas": [
+      "Paid Search / Google Ads",
+      "SEO",
+      "Analytics",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "product-imagery",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Created a consistent product-image system",
+    "problem": "Products, colors and mounting details were difficult to compare because imagery was inconsistent.",
+    "solution": "Defined a repeatable image standard for spacing, background, shadow and product accuracy.",
+    "insight": "Consistent product imagery improves recognition and variant comprehension without sacrificing technical accuracy.",
+    "areas": [
+      "E-Commerce",
+      "UX / Customer Journey",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "shipping-cart",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Moved shipping clarity into the cart",
+    "problem": "Customers could not confidently estimate delivery costs before reaching checkout.",
+    "solution": "Added a concise shipping explanation directly in the cart and aligned it with the actual shipping rules.",
+    "insight": "Shipping transparency removes uncertainty at a high-friction point in the buying journey.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "e2e-orders",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Validated the complete order lifecycle with real test orders",
+    "problem": "Backend configuration alone could not reveal every customer-facing failure.",
+    "solution": "Ran B2C and B2B test purchases across desktop, mobile and payment methods, including invoice, cancellation and credit-note flows.",
+    "insight": "E-commerce QA has to cover the full order lifecycle, not only the storefront.",
+    "areas": [
+      "UX / Customer Journey",
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "duplicate-purchase",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Removed duplicate purchase measurement",
+    "problem": "Shopify apps, pixels, GA4 and Ads could all send purchase events in parallel.",
+    "solution": "Reduced direct measurement paths and centralized event control through GTM.",
+    "insight": "ROAS and conversion analysis are only useful when the underlying event model is trustworthy.",
+    "areas": [
+      "Analytics",
+      "CRO",
+      "Paid Search / Google Ads",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "pmax-pause",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Paused PMax after high traffic failed to produce purchases",
+    "problem": "Roughly 50k impressions and 1.3k clicks produced no verified purchases while spend continued.",
+    "solution": "Stopped the campaign, reassessed traffic quality and shifted toward more controlled Search testing.",
+    "insight": "Impressions and clicks are not success metrics when the business outcome is missing.",
+    "areas": [
+      "Analytics",
+      "Paid Search / Google Ads",
+      "CRO",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "external-redesign-test",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Used external before/after testing to validate the redesign",
+    "problem": "Internal familiarity with the shop could hide usability and perception issues.",
+    "solution": "Compared old and new designs with external users and asked about clarity, trust and purchase confidence.",
+    "insight": "Qualitative testing reveals both positive patterns and useful dissent that internal teams may miss.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "checkout-usability",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Ran an end-to-end usability test from homepage to checkout",
+    "problem": "Internal shop knowledge could mask navigation and decision friction.",
+    "solution": "Let an external user navigate independently through categories, product pages, guidance content and checkout.",
+    "insight": "A complete external journey test is a stronger validation than isolated component checks.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "SEO"
+    ]
+  },
+  {
+    "id": "clarity",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Added Microsoft Clarity to the analytics stack",
+    "problem": "GA4 could show where users dropped off, but not why they hesitated.",
+    "solution": "Added heatmaps and session recordings to complement quantitative funnel analysis.",
+    "insight": "Behavior data is strongest when quantitative and qualitative evidence are used together.",
+    "areas": [
+      "Analytics",
+      "UX / Customer Journey",
+      "CRO"
+    ]
+  },
+  {
+    "id": "mini-cart",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Expanded the mini-cart with order review and two-step CTA logic",
+    "problem": "Customers needed a clearer moment to review their order before continuing to checkout.",
+    "solution": "Added an order-check step and clearer next actions inside the mini-cart.",
+    "insight": "Small changes close to checkout can improve confidence without adding unnecessary complexity.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "trust-above-fold",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Moved trust information closer to the decision point",
+    "problem": "Important trust signals were available but not prominent enough when customers first evaluated products.",
+    "solution": "Integrated a Händlerbund trust element above the fold and strengthened shipping/payment communication.",
+    "insight": "Trust works best where uncertainty happens, not only in the footer.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "configurator-concept",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Designed a project-based fence configurator around real planning questions",
+    "problem": "Buying a fence requires more than choosing a product: customers have to solve lengths, corners, mounting, cutting and accessories.",
+    "solution": "Structured configuration around the customer's physical project rather than around a traditional product variant form.",
+    "insight": "Complex products become easier to buy when the interface mirrors the customer's real-world task.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Product / Tools",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "geometry-logic",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Built calculation logic for panel grids, cuts and direction changes",
+    "problem": "Real properties do not fit perfectly into standard fence-panel dimensions or 90-degree layouts.",
+    "solution": "Developed rules for panel counts, cutting, corners and direction changes so the material plan could adapt to the project.",
+    "insight": "A useful configurator has to model real-world exceptions, not only ideal cases.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "configurator-landing",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Implemented the configurator as a technically decoupled Shopify landing page",
+    "problem": "The configurator needed freedom from standard product-template limitations while still using Shopify products and cart logic.",
+    "solution": "Built a dedicated landing-page implementation connected to Shopify product data and cart behavior.",
+    "insight": "Decoupling the experience layer can create more UX freedom without abandoning the commerce backend.",
+    "areas": [
+      "Technical Implementation",
+      "Product / Tools",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "pricecheck-shared-logic",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Put Price Check and Fence Configurator on the same Shopify product logic",
+    "problem": "Two planning tools could create inconsistent prices, variants or material assumptions if they evolved separately.",
+    "solution": "Connected both tools to the same product and pricing logic.",
+    "insight": "Connected customer tools need a shared source of truth to stay trustworthy.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "material-calculation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Built rule-based material and mounting calculations",
+    "problem": "Customers needed to know not only how much fence they wanted, but which posts, fixings and mounting options were required.",
+    "solution": "Translated project choices into a material list with context-dependent mounting components.",
+    "insight": "Decision support reduces uncertainty when it converts project intent into an actionable bill of materials.",
+    "areas": [
+      "Product / Tools",
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "price-to-configurator",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Created a seamless handoff from Price Check to full configuration",
+    "problem": "A price-oriented visitor should not have to start over when they become ready to plan the whole project.",
+    "solution": "Designed the Price Check as an entry point that can lead directly into the full fence configuration flow.",
+    "insight": "Good journeys preserve momentum as user intent becomes stronger.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Product / Tools",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "cart-conflict",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Prevented duplicate cart positions between Price Check and Configurator",
+    "problem": "A customer could first add products from the Price Check and later generate a complete fence, accidentally creating duplicate quantities.",
+    "solution": "Added conflict logic that asks whether existing matching items should be replaced or kept.",
+    "insight": "The system should remember earlier customer actions and protect them from avoidable ordering errors.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "privacy-configurator",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Added a privacy-screen configurator to the fence-planning journey",
+    "problem": "Privacy requirements are part of the same project but can require different material and design decisions.",
+    "solution": "Built a dedicated privacy-screen flow with color and pattern options and integrated it with fence planning.",
+    "insight": "Extending an existing project context creates more value than forcing customers into disconnected product journeys.",
+    "areas": [
+      "Product / Tools",
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "homepage-tools",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Restructured the homepage to surface planning tools earlier",
+    "problem": "Price Check, Fence Configurator and complete sets could only help if visitors discovered them before browsing isolated products.",
+    "solution": "Added a prominent planning section with clear entry paths before individual products.",
+    "insight": "New commerce functionality needs deliberate placement inside the information architecture.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "planning-search-campaign",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Launched a Search campaign specifically for the planning tools",
+    "problem": "Customers with clear planning intent needed a direct route to Price Check and configurators from Google.",
+    "solution": "Created separate ad groups for fence planning, Price Check and privacy-screen configuration.",
+    "insight": "Digital advisory tools can become their own search intents and should be measured separately.",
+    "areas": [
+      "Paid Search / Google Ads",
+      "SEO",
+      "Analytics",
+      "Product / Tools",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "diy-video",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Connected installation content back into the buying journey",
+    "problem": "An installation video could educate users but still leave them without a clear next step.",
+    "solution": "Adapted the DIY video for mobile viewing and ended it with the configurator as the next action.",
+    "insight": "Content and commerce become stronger when educational content reconnects to the next customer decision.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Digital Marketing",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "alarm-ia",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Designed a user-centered information structure for an outdoor alarm system",
+    "problem": "A technical solution needed to explain use cases, components and installation without overwhelming users.",
+    "solution": "Structured the page around customer questions and decision points, with technical detail available as deeper guidance.",
+    "insight": "Technical products need progressive disclosure: clarity first, depth when the user asks for it.",
+    "areas": [
+      "UX / Customer Journey",
+      "SEO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "network-guide",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Separated educational network-cable content from the commercial category",
+    "problem": "A long guide inside the shop category pushed products down and blurred purchase intent.",
+    "solution": "Created a dedicated educational guide and kept the category focused on commerce, connecting both through internal links.",
+    "insight": "Editorial and commercial pages should serve different search intents while supporting each other.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "content-commerce-funnel",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Built a conversion path from informational landing page to shop",
+    "problem": "Users could consume technical information without a clear next step toward a relevant product solution.",
+    "solution": "Added clear shop CTAs and internal links that moved from the security problem to the appropriate commerce destination.",
+    "insight": "Every advisory page needs an intentional next step in the customer journey.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "SEO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "alarm-category",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Built an alarm-system category around both SEO and buying guidance",
+    "problem": "The Magento category needed to complement TYPO3 content without creating duplicate content.",
+    "solution": "Created independent commerce content for the category and linked it to the deeper advisory landing page.",
+    "insight": "A content hub and a shop category can target different intents inside one connected architecture.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "canonical",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Analyzed duplicate-content and canonical issues across product paths",
+    "problem": "The same products were reachable through multiple URLs, fragmenting ranking signals.",
+    "solution": "Defined a primary SEO target and clearer canonical hierarchy.",
+    "insight": "Multi-path catalogs need an explicit URL hierarchy to preserve search signals.",
+    "areas": [
+      "SEO",
+      "Technical Implementation",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "404",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Diagnosed a sudden increase in 404 errors and redirect loops",
+    "problem": "Broken and circular redirects created crawl waste and unstable user paths.",
+    "solution": "Traced the redirect chain, cleaned loops and regenerated Magento URL rewrites/category paths where required.",
+    "insight": "Technical SEO fixes need both root-cause analysis and validation after regeneration.",
+    "areas": [
+      "SEO",
+      "Technical Implementation",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "manufacturer-framework",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Created a reusable manufacturer-content framework",
+    "problem": "Manufacturer pages needed consistency without duplicating the same content structure word for word.",
+    "solution": "Standardized page logic, above-the-fold content, jump navigation and FAQs while keeping manufacturer-specific content unique.",
+    "insight": "Reusable frameworks scale quality when structure is standardized but content remains specific.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "magento-box",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Built a reusable content box inside Magento constraints",
+    "problem": "The CMS reacted unpredictably to some CSS patterns and made flexible layouts difficult.",
+    "solution": "Implemented a compatible HTML/CSS structure that stayed stable within the existing CMS limitations.",
+    "insight": "In restrictive CMS environments, robust simplicity beats unnecessary styling complexity.",
+    "areas": [
+      "Technical Implementation",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "category-relaunch",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento + TYPO3",
+    "milestone": "Designed an SEO and UX relaunch roadmap for an underperforming category",
+    "problem": "The category had weak visibility, outdated content and unclear purchase guidance.",
+    "solution": "Reworked URL, metadata, keyword clusters, manufacturer comparison and the decision journey as one connected roadmap.",
+    "insight": "Weak category performance often requires structural change rather than another isolated content edit.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "CRO",
+      "Analytics",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "wago-language",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Aligned a WAGO category with the language customers actually search for",
+    "problem": "Internal product terminology did not fully match real search language.",
+    "solution": "Built a keyword strategy and terminology table around the terms users actually use.",
+    "insight": "Search strategy improves when product taxonomy is translated into customer language.",
+    "areas": [
+      "SEO",
+      "Analytics",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "abb-variants",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Converted 36 ABB circuit-breaker products into a scalable variant model",
+    "problem": "Individual child products needed a valid combination logic across amperage, pole count and characteristic.",
+    "solution": "Created an attribute matrix and validated the shop inventory against a single source of truth.",
+    "insight": "Clean product data and a strong attribute model are prerequisites for scalable configurable products.",
+    "areas": [
+      "E-Commerce",
+      "Product / Tools",
+      "Technical Implementation",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "magento-sidebar",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Solved a Magento widget-rendering issue with a stable production workaround",
+    "problem": "New widget instances rendered in test but not in production despite correct theme, block, container and cache settings.",
+    "solution": "Validated the CMS block directly, then reused a proven global sidebar block and integrated the new content inside it.",
+    "insight": "When a platform layer is unreliable, a tested stable structure can be the safer production path.",
+    "areas": [
+      "Technical Implementation",
+      "E-Commerce",
+      "UX / Customer Journey",
+      "CRO"
+    ]
+  }
+]

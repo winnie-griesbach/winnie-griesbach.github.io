@@ -1,0 +1,8 @@
+title: "Winnie Griesbach — E-Commerce Portfolio"
+description: "Customer journey, SEO, UX, analytics and hands-on digital implementation."
+url: "https://winnie-griesbach.github.io"
+baseurl: ""
+lang: "en"
+markdown: kramdown
+exclude:
+  - README.md

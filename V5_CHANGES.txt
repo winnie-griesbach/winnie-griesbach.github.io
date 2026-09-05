@@ -1,0 +1,14 @@
+Winnie Griesbach Portfolio V5
+
+- Rebuilt visual improvement section using confirmed before/after mappings:
+  Corner connector, Fence post, Special hex key, Homepage
+- Removed category comparison
+- Replaced Fence Configurator demo with the new recording (web-compressed, no audio)
+- Renamed Privacy Configurator to Privacy Strip Configurator
+- Added Winnie at-work photo in the profile card
+- Restored butterfly/metamorphosis About visual
+- Added Selected Credentials section with certificate links
+- Added Social Work / Social Pedagogy diploma as text background only (no public diploma PDF)
+- Improved recruiter evidence readability and reduced initial rows to 7
+- New York slider now keeps full images visible (object-fit: contain)
+- Slider/footer ending now uses a continuous dark-green background

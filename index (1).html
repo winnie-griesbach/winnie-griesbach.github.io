@@ -1,0 +1,379 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="theme-color" content="#f4efe7">
+  <title>{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="hero-banner" id="top">
+  <div class="hero-banner-overlay"></div>
+  <div class="hero-banner-inner section-shell">
+    <a class="brand" href="#top">WG<span>.</span></a>
+    <nav class="top-nav" aria-label="Primary">
+      <a href="#case-study">Case study</a>
+      <a href="#videos">Videos</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="mailto:winnie.griesbach@gmail.com">Contact</a>
+    </nav>
+    <div class="banner-message">
+      <p class="banner-script">Building digital systems</p>
+      <p class="banner-sub">that drive growth.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero section-shell">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">E-Commerce · Customer Journey · UX · SEO</p>
+      <h1>I look at the <em>full journey</em> — not just isolated touchpoints.</h1>
+      <p class="hero-lede">I connect customer understanding, data and implementation so digital systems become clearer, more intuitive and more useful for real people.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#case-study">See the flagship case</a>
+        <a class="button button-ghost" href="#evidence">Explore the evidence</a>
+      </div>
+      <div class="process-strip" aria-label="How I work">
+        <a href="#people">Understand people</a><i>→</i>
+        <a href="#data">Analyze data</a><i>→</i>
+        <a href="#process">Improve processes</a><i>→</i>
+        <a href="#experience">Create digital experiences</a>
+      </div>
+    </div>
+
+    <aside class="profile-card reveal">
+      <div class="profile-photo-wrap">
+        <img src="assets/media/winnie-at-work.png" alt="Winnie Griesbach">
+      </div>
+      <div class="profile-info">
+        <p class="profile-label">Profile snapshot</p>
+        <h2>Winnie Griesbach</h2>
+        <p class="profile-role">SEO · E-Commerce · Customer Journey · UX</p>
+        <div class="profile-facts">
+          <div><strong>Based in</strong><span>Germany</span></div>
+          <div><strong>Works across</strong><span>people, data, process and experience</span></div>
+          <div><strong>Open to</strong><span>remote international roles, with a long-term New York goal</span></div>
+        </div>
+        <div class="profile-actions">
+          <a class="button button-primary" href="#about">This is me</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/winnie-griesbach" target="_blank" rel="noopener">View LinkedIn</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="lens-nav section-shell reveal" aria-label="Explore by perspective">
+    <a id="people" href="#evidence" data-jump-filter="UX / Customer Journey">
+      <span>People</span>
+      <strong>See work that reduces hesitation and supports customer decisions.</strong>
+    </a>
+    <a id="data" href="#evidence" data-jump-filter="Analytics">
+      <span>Data</span>
+      <strong>Jump into analytics, signals and performance interpretation.</strong>
+    </a>
+    <a id="process" href="#evidence" data-jump-filter="CRO">
+      <span>Process</span>
+      <strong>Open examples where friction became structure and action.</strong>
+    </a>
+    <a id="experience" href="#case-study">
+      <span>Experience</span>
+      <strong>Follow one connected journey from research to cart confidence.</strong>
+    </a>
+  </section>
+
+  <section class="principle section-shell section-space-sm reveal">
+    <div>
+      <p class="eyebrow">Interface principle</p>
+      <h2>The interface should feel intuitive.</h2>
+      <p>Design should guide without asking people to stop and decode the system first.</p>
+    </div>
+  </section>
+
+  <section id="case-study" class="case-intro section-shell section-space">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Flagship case · Shopify</p>
+      <h2>From “What will this cost?” to “I know what I need.”</h2>
+      <p>This customer journey connects price orientation, project planning, installation help, privacy-screen configuration and cart protection instead of treating them as isolated pages.</p>
+    </div>
+  </section>
+
+  <section class="journey-grid section-shell">
+    {% for step in site.data.journey %}
+    <article class="journey-card reveal">
+      <div class="journey-card-head">
+        <span class="journey-number">{{ step.number }}</span>
+        <p class="journey-kicker">{{ step.kicker }}</p>
+      </div>
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.text }}</p>
+      <span class="journey-signal">{{ step.signal }}</span>
+    </article>
+    {% endfor %}
+  </section>
+
+  <section id="videos" class="video-section section-shell section-space">
+    <div class="section-heading compact reveal">
+      <p class="eyebrow">Product / tool demos</p>
+      <h2>See the tools in motion.</h2>
+      <p>Short product videos showing how I turned complex fence planning into clearer, more guided user flows. The shop interface is German; the context below explains what each tool is designed to achieve.</p>
+    </div>
+
+    <div class="video-grid">
+      <article class="video-card reveal" data-video-card>
+        <h3>Price Check</h3>
+        <button class="video-open" type="button" aria-label="Open Price Check video"
+          data-video="assets/media/pricecheck-demo.mp4"
+          data-title="Price Check">
+          <img src="assets/media/pricecheck-poster.jpg" alt="Price Check video preview">
+          <span class="play-icon">▶</span>
+          <span class="expand-label">Click to enlarge</span>
+        </button>
+        <p class="video-description">A lightweight pre-configurator that helps users estimate fence length, material choice and starting cost before entering the full buying flow.</p>
+        <p class="video-goal"><strong>Goal:</strong> reduce uncertainty early and give users a clear starting point.</p>
+      </article>
+
+      <article class="video-card reveal" data-video-card>
+        <h3>Fence Configurator</h3>
+        <button class="video-open" type="button" aria-label="Open Fence Configurator video"
+          data-video="assets/media/fence-configurator-demo.mp4"
+          data-title="Fence Configurator">
+          <img src="assets/media/fence-configurator-poster.jpg" alt="Fence Configurator video preview">
+          <span class="play-icon">▶</span>
+          <span class="expand-label">Click to enlarge</span>
+        </button>
+        <p class="video-description">A guided configuration flow that translates project inputs into a structured setup, helping users move from planning to cart with less friction.</p>
+        <p class="video-goal"><strong>Goal:</strong> simplify decision-making and turn planning into action.</p>
+      </article>
+
+      <article class="video-card reveal" data-video-card>
+        <h3>Privacy Strip Configurator</h3>
+        <button class="video-open" type="button" aria-label="Open Privacy Strip Configurator video"
+          data-video="assets/media/privacy-configurator-demo.mp4"
+          data-title="Privacy Strip Configurator">
+          <img src="assets/media/privacy-configurator-poster.jpg" alt="Privacy Strip Configurator video preview">
+          <span class="play-icon">▶</span>
+          <span class="expand-label">Click to enlarge</span>
+        </button>
+        <p class="video-description">A visual tool for configuring privacy strips, helping users choose style, structure and matching components more intuitively.</p>
+        <p class="video-goal"><strong>Goal:</strong> make a visual and customizable product easier to understand.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="comparison-section section-shell section-space">
+    <div class="section-heading compact reveal">
+      <p class="eyebrow">Visual improvement</p>
+      <h2>Clarity before decoration.</h2>
+      <p>I simplified product presentation by removing visual overload and making key product differences easier to understand at a glance. The homepage comparison below shows the same principle applied to the wider customer journey.</p>
+    </div>
+
+    <div class="comparison-grid">
+      <article class="comparison-card reveal">
+        <p class="comparison-title">Corner connector</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="assets/media/corner-connector-before.png" target="_blank" rel="noopener"><span>Before</span><img src="assets/media/corner-connector-before.png" alt="Corner connector product visual before redesign"></a>
+          <a class="comparison-slot image-slot" href="assets/media/corner-connector-after.png" target="_blank" rel="noopener"><span>After</span><img src="assets/media/corner-connector-after.png" alt="Corner connector product visual after redesign"></a>
+        </div>
+        <p class="comparison-copy">From information-heavy artwork to a cleaner product-first presentation that makes the item itself easier to identify.</p>
+      </article>
+
+      <article class="comparison-card reveal">
+        <p class="comparison-title">Fence post</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="assets/media/fence-post-before.png" target="_blank" rel="noopener"><span>Before</span><img src="assets/media/fence-post-before.png" alt="Fence post product visual before redesign"></a>
+          <a class="comparison-slot image-slot" href="assets/media/fence-post-after.png" target="_blank" rel="noopener"><span>After</span><img src="assets/media/fence-post-after.png" alt="Fence post product visual after redesign"></a>
+        </div>
+        <p class="comparison-copy">From visually overloaded product communication to a more focused product image with clearer emphasis on form and use.</p>
+      </article>
+
+      <article class="comparison-card reveal">
+        <p class="comparison-title">Special hex key</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="assets/media/hex-key-before.png" target="_blank" rel="noopener"><span>Before</span><img src="assets/media/hex-key-before.png" alt="Special hex key product visual before redesign"></a>
+          <a class="comparison-slot image-slot" href="assets/media/hex-key-after.png" target="_blank" rel="noopener"><span>After</span><img src="assets/media/hex-key-after.png" alt="Special hex key product visual after redesign"></a>
+        </div>
+        <p class="comparison-copy">From poster-style explanation to a simpler product presentation that improves clarity and visual hierarchy.</p>
+      </article>
+
+      <article class="comparison-card reveal">
+        <p class="comparison-title">Fence panel guide · 6/5/6 vs. 8/6/8</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="assets/media/fence-guide-before.png" target="_blank" rel="noopener"><span>Before</span><img src="assets/media/fence-guide-before.png" alt="Older graphic-heavy guide comparing 6/5/6 and 8/6/8 fence panels"></a>
+          <a class="comparison-slot image-slot" href="assets/media/fence-guide-after.png" target="_blank" rel="noopener"><span>After</span><img src="assets/media/fence-guide-after.png" alt="New clearer visual guide comparing 6/5/6 and 8/6/8 fence panels"></a>
+        </div>
+        <p class="comparison-copy">From a graphic-heavy comparison card to a more direct visual explanation of product differences.</p>
+      </article>
+
+      <article class="comparison-card comparison-card-home reveal">
+        <p class="comparison-title">Homepage redesign</p>
+        <div class="comparison-pair homepage-pair">
+          <a class="comparison-slot image-slot homepage-slot" href="assets/media/homepage-before.png" target="_blank" rel="noopener"><span>Before</span><img src="assets/media/homepage-before.png" alt="Homepage before redesign"></a>
+          <a class="comparison-slot image-slot homepage-slot" href="assets/media/homepage-after.png" target="_blank" rel="noopener"><span>After</span><img src="assets/media/homepage-after.png" alt="Homepage after redesign"></a>
+        </div>
+        <p class="comparison-copy">From a product-first homepage to a guided journey that combines price orientation, complete sets, planning tools, product choice and service content.</p>
+        <p class="comparison-note">Click either image to open the full-page view.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="evidence" class="evidence section-space">
+    <div class="section-shell">
+      <div class="evidence-head reveal">
+        <div>
+          <p class="eyebrow">Recruiter work evidence</p>
+          <h2>Start with what you are hiring for.</h2>
+          <p>Filter by skill or system and go directly to the evidence that matters.</p>
+        </div>
+      </div>
+
+      <div class="evidence-toolbar reveal">
+        <div class="filter-group" id="area-filters">
+          <button class="filter active" data-filter="All">All</button>
+          <button class="filter" data-filter="SEO">SEO</button>
+          <button class="filter" data-filter="UX / Customer Journey">UX</button>
+          <button class="filter" data-filter="CRO">CRO</button>
+          <button class="filter" data-filter="Analytics">Analytics</button>
+          <button class="filter" data-filter="Paid Search / Google Ads">Paid Search</button>
+          <button class="filter" data-filter="Technical Implementation">Technical Implementation</button>
+          <button class="filter" data-filter="E-Commerce">E-Commerce</button>
+        </div>
+        <div class="filter-group system-filter" id="system-filters">
+          <button class="system-chip active" data-system="All">All systems</button>
+          <button class="system-chip" data-system="Shopify">Shopify</button>
+          <button class="system-chip" data-system="Magento">Magento</button>
+          <button class="system-chip" data-system="TYPO3">TYPO3</button>
+        </div>
+        <label class="search-box">
+          <span>Search</span>
+          <input id="evidence-search" type="search" placeholder="e.g. configurator, tracking, redirects">
+        </label>
+      </div>
+
+      <div class="evidence-meta reveal">
+        <span id="evidence-count">Loading evidence…</span>
+        <button id="reset-filters" type="button">Reset filters</button>
+      </div>
+
+      <div class="evidence-table-wrap reveal">
+        <table class="evidence-table">
+          <thead>
+            <tr>
+              <th>Work</th>
+              <th>System</th>
+              <th>Problem</th>
+              <th>What I did</th>
+              <th>What I learned</th>
+            </tr>
+          </thead>
+          <tbody id="evidence-body"></tbody>
+        </table>
+        <div id="evidence-cards" class="evidence-cards"></div>
+        <div id="evidence-empty" class="evidence-empty" hidden>No matching work stories.</div>
+      </div>
+      <div class="load-more-wrap">
+        <button class="button button-ghost" id="load-more" type="button">Show more evidence</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="credentials" class="credentials section-shell section-space">
+    <div class="section-heading compact reveal">
+      <p class="eyebrow">Selected credentials</p>
+      <h2>Learning that supports the work.</h2>
+      <p>I use training as a foundation, then deepen it through hands-on implementation in real systems.</p>
+    </div>
+    <div class="credential-grid">
+      <article class="credential-card reveal"><span>2026</span><h3>Google Digital Marketing & E-Commerce</h3><p class="credential-provider">Professional Certificate · Google / Coursera</p><p class="credential-skills"><strong>Skills:</strong> customer acquisition, digital marketing, e-commerce, email marketing, marketing analytics, customer loyalty and online customer engagement.</p></article>
+      <a class="credential-card reveal" href="assets/credentials/ga4-2026.pdf" target="_blank" rel="noopener"><span>2026</span><h3>Google Analytics 4</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>Skills:</strong> web analysis, GA4 setup, first analyses, reporting and understanding goals.</p><strong class="credential-link">View certificate ↗</strong></a>
+      <a class="credential-card reveal" href="assets/credentials/advanced-seo-2024.pdf" target="_blank" rel="noopener"><span>2024</span><h3>Advanced SEO</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>Skills:</strong> SEO audits, strategy, competitive intelligence, schema.org, off-page optimization, KPIs and SEO processes.</p><strong class="credential-link">View certificate ↗</strong></a>
+      <a class="credential-card reveal" href="assets/credentials/screaming-frog-2024.pdf" target="_blank" rel="noopener"><span>2024</span><h3>Screaming Frog</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>Skills:</strong> site-structure analysis, crawling, monitoring, crawl comparison, relaunch checks and content-audit preparation.</p><strong class="credential-link">View certificate ↗</strong></a>
+      <a class="credential-card reveal" href="assets/credentials/google-search-console-2024.pdf" target="_blank" rel="noopener"><span>2024</span><h3>Google Search Console</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>Skills:</strong> crawling errors, indexing, international SEO, performance reports, page-type evaluation and content ideas.</p><strong class="credential-link">View certificate ↗</strong></a>
+      <a class="credential-card reveal" href="assets/credentials/sistrix-2023.pdf" target="_blank" rel="noopener"><span>2023</span><h3>SISTRIX</h3><p class="credential-provider">SISTRIX</p><p class="credential-skills"><strong>Skills:</strong> SEO analysis, visibility benchmarking, SISTRIX modules and on-page project foundations.</p><strong class="credential-link">View certificate ↗</strong></a>
+    </div>
+    <p class="credential-background reveal"><strong>Background:</strong> Diploma in Social Work / Social Pedagogy (University of Applied Sciences) — a foundation that still shapes how I approach people, behavior and decision-making.</p>
+  </section>
+
+  <section id="about" class="about section-shell section-space">
+    <div class="about-art reveal">
+      <img src="assets/media/about-winnie.png" alt="A big part of who I am is who I'm not anymore — butterfly metamorphosis visual">
+    </div>
+    <div class="about-copy reveal">
+      <p class="eyebrow">About me</p>
+      <h2>I am most useful where people, data and implementation meet.</h2>
+      <p>I care about clarity, customer thinking and practical problem solving. I like turning signals into decisions and decisions into things that actually help people.</p>
+      <p>I am a hands-on e-commerce and SEO specialist from Germany. I want to contribute inside a strong international team, learn from experienced specialists and keep expanding my technical depth.</p>
+      <div class="contact-row">
+        <a class="button button-primary" href="mailto:winnie.griesbach@gmail.com">Let’s connect</a>
+        <a class="button button-ghost" href="https://www.linkedin.com/in/winnie-griesbach" target="_blank" rel="noopener">View LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ny-slider" aria-label="New York image story">
+    <div class="ny-slider-head section-shell">
+      <p class="eyebrow">New York thread</p>
+      <h2>Every image carries a piece of why New York stays with me.</h2>
+    </div>
+
+    <div class="slider-shell">
+      <button class="slider-arrow prev" type="button" aria-label="Previous New York image">‹</button>
+      <div class="slider-viewport" id="ny-slider">
+        <div class="slider-track">
+          <figure class="slide">
+            <img src="assets/media/ny-pinterest.png" alt="Winnie in New York beside a Pinterest campaign">
+            <figcaption>Create the life you want to live.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/media/ny-sun-selfie.png" alt="Winnie outdoors in New York sunlight">
+            <figcaption>The city keeps reminding me to keep moving.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/media/ny-work.jpg" alt="Winnie working from a laptop in a New York backyard">
+            <figcaption>Work, learning and New York in the same frame.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/media/ny-yellow-wall.png" alt="Winnie beside a colorful wall in New York">
+            <figcaption>Color, movement and curiosity.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/media/ny-waterfront.png" alt="Winnie at the New York waterfront">
+            <figcaption>A place that makes the next step feel possible.</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="assets/media/ny-flight.jpg" alt="Flight path between Frankfurt and New York">
+            <figcaption>Germany ↔ New York. The path I keep choosing.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <button class="slider-arrow next" type="button" aria-label="Next New York image">›</button>
+    </div>
+  </section>
+</main>
+
+<div class="video-modal" id="video-modal" aria-hidden="true">
+  <div class="video-modal-backdrop" data-close-video></div>
+  <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <button class="video-modal-close" type="button" aria-label="Close video" data-close-video>×</button>
+    <h2 id="video-modal-title">Video</h2>
+    <video id="video-modal-player" controls playsinline></video>
+  </div>
+</div>
+
+<div class="footer-wrap"><footer class="footer section-shell">
+  <span>Winnie Griesbach · E-Commerce Portfolio</span>
+  <span>HTML · CSS · JavaScript · Jekyll/Liquid · JSON · GitHub Pages</span>
+</footer></div>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>

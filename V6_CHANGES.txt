@@ -1,0 +1,13 @@
+Winnie Griesbach Portfolio — V6
+
+Focused correction pass for application-ready portfolio:
+- Hero banner reframed and literally cropped before the LinkedIn edit/pencil icon; laptop and coffee remain visible.
+- Profile photo framing corrected so the work portrait is intentionally positioned inside the card.
+- Added concise English explanations and goals below all three tool-demo videos; no voiceover/music required.
+- Corrected Before/After direction for corner connector, fence post and special hex key: information-heavy artwork is Before, product-first visual is After.
+- Added a fourth visual comparison: 6/5/6 vs. 8/6/8 fence-panel guide (old graphic-heavy version -> new direct visual version).
+- Updated homepage After screenshot with the current fully loaded homepage.
+- Replaced the NY backyard phone screenshot with the clean original photograph.
+- Expanded credential cards with concise, certificate-grounded skill summaries.
+- Recruiter evidence now renders Magento and TYPO3 as separate system badges when a work story genuinely spans both systems; underlying evidence facts are unchanged.
+- Footer and full-image NY slider behavior retained from V5.

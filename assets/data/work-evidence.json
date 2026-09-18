@@ -539,11 +539,12 @@
   "solution": "Created a 36-measure roadmap covering rendering, H1 and canonical structure, Product / Offer and ProductGroup markup, shipping and return information, Organization and entity signals, internal linking, search-intent architecture, product attributes, Core Web Vitals, accessibility, direct-answer content, author transparency, media context, GA4 / Search Console measurement and AI-search visibility. Each item is classified as already implemented, needs verification or genuinely missing.",
   "insight": "GEO / AEO work is more reliable when technical and content recommendations are prioritized by dependency and verified against what already exists instead of adding duplicate schema or content.",
   "areas": [
-    "SEO",
-    "Technical Implementation",
-    "Analytics",
-    "E-Commerce"
-  ]
+  "SEO",
+  "GEO / AEO / AI Search",
+  "Technical Implementation",
+  "Analytics",
+  "E-Commerce"
+]
 },
 {
   "id": "accessibility-keyboard-qa",
@@ -568,9 +569,10 @@
   "solution": "Used existing assets such as FAQs, the 6/5/6 vs. 8/6/8 explanation, internal links, planning tools, buying guidance and DIY installation content as the foundation for clearer direct-answer sections, structured context and future GEO / AEO expansion.",
   "insight": "AI-search visibility should build on strong existing customer guidance and clear source context instead of treating GEO as a separate layer of keyword content.",
   "areas": [
-    "SEO",
-    "UX / Customer Journey",
-    "E-Commerce"
-  ]
+  "SEO",
+  "GEO / AEO / AI Search",
+  "UX / Customer Journey",
+  "E-Commerce"
+]
 }
 ]

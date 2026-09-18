@@ -227,64 +227,99 @@ layout: null
   </section>
 
   <section id="evidence" class="evidence section-space">
-    <div class="section-shell">
-      <div class="evidence-head reveal">
-        <div>
-          <p class="eyebrow">Recruiter work evidence</p>
-          <h2>Start with what you are hiring for.</h2>
-          <p>Filter by skill or system and go directly to the evidence that matters.</p>
-        </div>
-      </div>
+  <div class="section-shell">
 
-      <div class="evidence-toolbar reveal">
-        <div class="filter-group" id="area-filters">
-          <button class="filter active" data-filter="All">All</button>
-          <button class="filter" data-filter="SEO">SEO</button>
-          <button class="filter" data-filter="UX / Customer Journey">UX</button>
-          <button class="filter" data-filter="CRO">CRO</button>
-          <button class="filter" data-filter="Analytics">Analytics</button>
-          <button class="filter" data-filter="Paid Search / Google Ads">Paid Search</button>
-          <button class="filter" data-filter="Technical Implementation">Technical Implementation</button>
-          <button class="filter" data-filter="E-Commerce">E-Commerce</button>
-        </div>
-        <div class="filter-group system-filter" id="system-filters">
-          <button class="system-chip active" data-system="All">All systems</button>
-          <button class="system-chip" data-system="Shopify">Shopify</button>
-          <button class="system-chip" data-system="Magento">Magento</button>
-          <button class="system-chip" data-system="TYPO3">TYPO3</button>
-        </div>
-        <label class="search-box">
-          <span>Search</span>
-          <input id="evidence-search" type="search" placeholder="e.g. configurator, tracking, redirects">
-        </label>
-      </div>
-
-      <div class="evidence-meta reveal">
-        <span id="evidence-count">Loading evidence…</span>
-        <button id="reset-filters" type="button">Reset filters</button>
-      </div>
-
-      <div class="evidence-table-wrap reveal">
-        <table class="evidence-table">
-          <thead>
-            <tr>
-              <th>Work</th>
-              <th>System</th>
-              <th>Problem</th>
-              <th>What I did</th>
-              <th>What I learned</th>
-            </tr>
-          </thead>
-          <tbody id="evidence-body"></tbody>
-        </table>
-        <div id="evidence-cards" class="evidence-cards"></div>
-        <div id="evidence-empty" class="evidence-empty" hidden>No matching work stories.</div>
-      </div>
-      <div class="load-more-wrap">
-        <button class="button button-ghost" id="load-more" type="button">Show more evidence</button>
+    <div class="evidence-head reveal">
+      <div>
+        <p class="eyebrow">Recruiter work evidence</p>
+        <h2>Start with what you are hiring for.</h2>
+        <p>
+          Filter by skill or system and go directly to the work that matters.
+        </p>
       </div>
     </div>
-  </section>
+
+    <div class="evidence-toolbar reveal">
+
+      <div class="filter-group" id="area-filters">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="SEO">SEO</button>
+        <button class="filter" data-filter="GEO / AEO / AI Search">
+          GEO / AEO / AI Search
+        </button>
+        <button class="filter" data-filter="UX / Customer Journey">UX</button>
+        <button class="filter" data-filter="CRO">CRO</button>
+        <button class="filter" data-filter="Analytics">Analytics</button>
+        <button class="filter" data-filter="Paid Search / Google Ads">
+          Paid Search
+        </button>
+        <button class="filter" data-filter="Technical Implementation">
+          Technical Implementation
+        </button>
+        <button class="filter" data-filter="E-Commerce">E-Commerce</button>
+      </div>
+
+      <div class="filter-group system-filter" id="system-filters">
+        <button class="system-chip active" data-system="All">
+          All systems
+        </button>
+        <button class="system-chip" data-system="Shopify">Shopify</button>
+        <button class="system-chip" data-system="Magento">Magento</button>
+        <button class="system-chip" data-system="TYPO3">TYPO3</button>
+      </div>
+
+      <label class="search-box">
+        <span>Search</span>
+        <input
+          id="evidence-search"
+          type="search"
+          placeholder="e.g. configurator, tracking, redirects, accessibility"
+        >
+      </label>
+
+    </div>
+
+    <div class="evidence-meta reveal">
+      <span id="evidence-count">Loading evidence…</span>
+      <button id="reset-filters" type="button">Reset filters</button>
+    </div>
+
+    <div class="evidence-table-wrap reveal">
+
+      <table class="evidence-table">
+        <thead>
+          <tr>
+            <th>Work</th>
+            <th>System</th>
+            <th>Problem</th>
+            <th>What I did</th>
+            <th>What I learned</th>
+          </tr>
+        </thead>
+
+        <tbody id="evidence-body"></tbody>
+      </table>
+
+      <div id="evidence-cards" class="evidence-cards"></div>
+
+      <div id="evidence-empty" class="evidence-empty" hidden>
+        No matching work stories.
+      </div>
+
+    </div>
+
+    <div class="load-more-wrap">
+      <button
+        class="button button-ghost"
+        id="load-more"
+        type="button"
+      >
+        Show more evidence
+      </button>
+    </div>
+
+  </div>
+</section>
 
   <section id="credentials" class="credentials section-shell section-space">
     <div class="section-heading compact reveal">

@@ -529,4 +529,48 @@
       "CRO"
     ]
   }
+  ,
+{
+  "id": "geo-ai-search-framework",
+  "project": "Dein-Doppelstabmattenzaun.de",
+  "system": "Shopify",
+  "milestone": "Started a prioritized GEO / AI Search Readiness implementation framework",
+  "problem": "SEO recommendations increasingly affect both classic search visibility and how AI-driven discovery systems understand products, entities and expertise, but not every recommendation represents genuinely missing work.",
+  "solution": "Created a 36-measure roadmap covering rendering, H1 and canonical structure, Product / Offer and ProductGroup markup, shipping and return information, Organization and entity signals, internal linking, search-intent architecture, product attributes, Core Web Vitals, accessibility, direct-answer content, author transparency, media context, GA4 / Search Console measurement and AI-search visibility. Each item is classified as already implemented, needs verification or genuinely missing.",
+  "insight": "GEO / AEO work is more reliable when technical and content recommendations are prioritized by dependency and verified against what already exists instead of adding duplicate schema or content.",
+  "areas": [
+    "SEO",
+    "Technical Implementation",
+    "Analytics",
+    "E-Commerce"
+  ]
+},
+{
+  "id": "accessibility-keyboard-qa",
+  "project": "Dein-Doppelstabmattenzaun.de",
+  "system": "Shopify",
+  "milestone": "Added accessibility and keyboard usability to the ongoing QA process",
+  "problem": "Planning tools and shop interactions need to remain understandable and operable beyond mouse-based desktop use.",
+  "solution": "Expanded QA to include keyboard navigation, focus behavior, labels, input usability, error communication, mobile usability and configurator interaction without relying exclusively on a mouse.",
+  "insight": "Accessibility is strongest when it is integrated into technical QA and interaction design rather than treated as a separate compliance checkbox.",
+  "areas": [
+    "UX / Customer Journey",
+    "Technical Implementation",
+    "CRO"
+  ]
+},
+{
+  "id": "ai-search-content-structure",
+  "project": "Dein-Doppelstabmattenzaun.de",
+  "system": "Shopify",
+  "milestone": "Expanded existing guidance content for AI-search and direct-answer readiness",
+  "problem": "The shop already contained useful FAQs, buying guidance, comparison content and planning tools, but AI-search readiness depends on clear, verifiable answer structures and entity context rather than simply adding more content.",
+  "solution": "Used existing assets such as FAQs, the 6/5/6 vs. 8/6/8 explanation, internal links, planning tools, buying guidance and DIY installation content as the foundation for clearer direct-answer sections, structured context and future GEO / AEO expansion.",
+  "insight": "AI-search visibility should build on strong existing customer guidance and clear source context instead of treating GEO as a separate layer of keyword content.",
+  "areas": [
+    "SEO",
+    "UX / Customer Journey",
+    "E-Commerce"
+  ]
+}
 ]

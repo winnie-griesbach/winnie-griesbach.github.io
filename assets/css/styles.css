@@ -443,6 +443,130 @@ section[id]{scroll-margin-top:30px}
     font-size:15px;
   }
 }
+
+/* milestones */
+.milestones{
+  border-top:1px solid var(--line);
+}
+
+.milestone-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+  margin-top:36px;
+}
+
+.milestone-card{
+  background:var(--paper-strong);
+  border:1px solid var(--line);
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 12px 28px rgba(48,40,29,.05);
+}
+
+.milestone-image{
+  display:block;
+  height:310px;
+  background:#f0ece5;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+
+.milestone-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transition:transform .25s ease;
+}
+
+.milestone-image:hover img{
+  transform:scale(1.015);
+}
+
+.milestone-image-portrait img{
+  object-fit:contain;
+  background:#fff;
+}
+
+.milestone-content{
+  padding:26px;
+}
+
+.milestone-label{
+  margin:0 0 15px;
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:10px;
+  font-weight:700;
+}
+
+.milestone-number{
+  margin:0 0 13px;
+  color:var(--forest);
+  font-size:44px;
+  line-height:1;
+  letter-spacing:-.05em;
+  font-weight:700;
+}
+
+.milestone-number span{
+  color:var(--gold);
+  font-size:.55em;
+  letter-spacing:-.02em;
+}
+
+.milestone-card h3{
+  margin:0 0 12px;
+  font-size:24px;
+  line-height:1.15;
+  letter-spacing:-.035em;
+}
+
+.milestone-content>p:not(.milestone-label):not(.milestone-number):not(.milestone-source){
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+.milestone-content strong{
+  color:var(--ink);
+}
+
+.milestone-source{
+  margin:20px 0 0;
+  padding-top:14px;
+  border-top:1px solid var(--line);
+  color:#8a8177;
+  font-size:11px;
+}
+
+@media(max-width:850px){
+  .milestone-grid{
+    grid-template-columns:1fr;
+  }
+
+  .milestone-image{
+    height:280px;
+  }
+}
+
+@media(max-width:680px){
+  .milestone-image{
+    height:240px;
+  }
+
+  .milestone-content{
+    padding:21px;
+  }
+
+  .milestone-number{
+    font-size:38px;
+  }
+}
+
 /* credentials */
 .credentials{border-top:1px solid var(--line)}
 .credential-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:32px}

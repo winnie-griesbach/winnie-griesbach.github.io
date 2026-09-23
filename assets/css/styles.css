@@ -78,7 +78,7 @@ section[id]{scroll-margin-top:30px}
   box-shadow:var(--shadow);
 }
 .profile-photo-wrap{height:470px;min-height:470px;overflow:hidden}
-.profile-photo-wrap img{display:block;width:100%;height:100%;object-fit:cover;object-position:68% center}
+.profile-photo-wrap img{display:block;width:100%;height:100%;object-fit:contain;object-position:center center;background:#f4efe7;}
 .profile-info{padding:34px 30px;display:flex;flex-direction:column;justify-content:center}
 .profile-label{margin:0 0 8px;color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:10px;font-weight:700}
 .profile-info h2{font-size:39px;line-height:1.02;letter-spacing:-.05em;margin:0}

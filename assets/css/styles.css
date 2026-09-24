@@ -660,3 +660,100 @@ section[id]{scroll-margin-top:30px}
   .reveal{opacity:1;transform:none;transition:none}
   .slider-track{transition:none}
 }
+/* =========================================================
+   Independent Product Analysis
+   ========================================================= */
+
+.product-analysis{
+  border-top:1px solid var(--line);
+}
+
+.analysis-visual-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+  margin-top:36px;
+}
+
+.analysis-visual-card{
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  background:var(--paper-strong);
+  border:1px solid var(--line);
+  border-radius:24px;
+  color:var(--ink);
+  text-decoration:none;
+  box-shadow:0 12px 28px rgba(48,40,29,.05);
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    border-color .2s ease;
+}
+
+.analysis-visual-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 38px rgba(48,40,29,.10);
+  border-color:rgba(200,147,47,.45);
+}
+
+.analysis-image-wrap{
+  width:100%;
+  aspect-ratio:16 / 9;
+  overflow:hidden;
+  background:#f4efe7;
+  border-bottom:1px solid var(--line);
+}
+
+.analysis-image-wrap img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+
+.analysis-visual-content{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+  padding:24px;
+}
+
+.analysis-visual-content .eyebrow{
+  margin-bottom:8px;
+}
+
+.analysis-visual-content h3{
+  margin:0 0 12px;
+  font-size:25px;
+  line-height:1.15;
+  letter-spacing:-.035em;
+}
+
+.analysis-visual-content p:not(.eyebrow){
+  margin:0 0 20px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.6;
+}
+
+.analysis-visual-content span{
+  margin-top:auto;
+  color:var(--gold);
+  font-size:12px;
+  font-weight:700;
+}
+
+.analysis-visual-card:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:4px;
+}
+
+@media(max-width:850px){
+
+  .analysis-visual-grid{
+    grid-template-columns:1fr;
+  }
+
+}

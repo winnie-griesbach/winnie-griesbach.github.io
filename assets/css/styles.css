@@ -575,8 +575,10 @@ section[id]{scroll-margin-top:30px}
 .credential-background{margin:22px 0 0;padding:18px 20px;border-left:3px solid var(--gold);background:#eee8df;color:var(--muted);border-radius:0 14px 14px 0}
 
 /* about */
-.about{display:grid;grid-template-columns:minmax(360px,.9fr) minmax(0,1.1fr);gap:48px;align-items:center}
-.about-art img{width:100%;border-radius:26px;box-shadow:0 18px 40px rgba(48,40,29,.08)}
+.about{display:block}
+.about-copy{display:flow-root}
+.about-art{float:right;width:35%;max-width:420px;margin:0 0 28px 40px}
+.about-art img{width:100%;height:auto;aspect-ratio:1;display:block;border-radius:26px;box-shadow:0 18px 40px rgba(48,40,29,.08)}
 .about h2{font-size:clamp(42px,5vw,66px)}
 .about-copy>p:not(.eyebrow){color:var(--muted);font-size:17px}
 
@@ -614,9 +616,9 @@ section[id]{scroll-margin-top:30px}
   .comparison-card-home{grid-column:auto}
   .credential-grid{grid-template-columns:1fr 1fr}
   .profile-card{max-width:820px}
-  .about{grid-template-columns:1fr}
 }
 @media(max-width:850px){
+  .about-art{float:none;width:min(100%,420px);max-width:none;margin:0 auto 32px}
   .top-nav a:not(.nav-cta){display:none}
   .hero-banner{min-height:280px}
   .hero-banner-inner{height:250px}

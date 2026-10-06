@@ -1,0 +1,668 @@
+{% assign copy = site.data.copy[page.lang] %}
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ '/en/' | absolute_url }}">
+  <link rel="alternate" hreflang="de" href="{{ '/de/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
+  <meta name="theme-color" content="#f4efe7">
+  <title>{{ page.title | escape }}</title>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/media/favicon.png">
+<link rel="shortcut icon" href="/assets/media/favicon.png">
+<link rel="apple-touch-icon" href="/assets/media/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">{{ copy.skip_to_content }}</a>
+<header class="hero-banner" id="top">
+  <div class="hero-banner-overlay"></div>
+  <div class="hero-banner-inner section-shell">
+    <a class="brand" href="#top">WG<span>.</span></a>
+    <nav class="top-nav" aria-label="{{ copy.accessible_0 | escape }}">
+      <a href="#case-study">{{ copy.case_study }}</a>
+      <a href="#videos">Videos</a>
+      <a href="#evidence">{{ copy.evidence }}</a>
+      <a href="#about">{{ copy.about }}</a>
+      <a class="nav-cta" href="mailto:winnie.griesbach@gmail.com">{{ copy.contact }}</a>
+      <span class="language-switch" aria-label="{{ copy.accessible_1 | escape }}">
+        <a href="/en/" lang="en" hreflang="en" {% if page.lang == 'en' %}aria-current="page"{% endif %}>EN</a>
+        <span aria-hidden="true">|</span>
+        <a href="/de/" lang="de" hreflang="de" {% if page.lang == 'de' %}aria-current="page"{% endif %}>DE</a>
+      </span>
+    </nav>
+    <div class="banner-message">
+      <p class="banner-script">{{ copy.building_digital_systems }}</p>
+      <p class="banner-sub">{{ copy.that_drive_growth }}</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero section-shell">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">E-Commerce · Customer Journey · UX · SEO</p>
+      <h1>{{ copy.i_look_at_the }} <em>{{ copy.full_journey }}</em> {{ copy.not_just_isolated_touchpoints }}</h1>
+      <p class="hero-lede">{{ copy.i_connect_customer_understanding_data_and_implementatio }}</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#case-study">{{ copy.see_the_flagship_case }}</a>
+        <a class="button button-ghost" href="#evidence">{{ copy.explore_the_evidence }}</a>
+      </div>
+      <div class="process-strip" aria-label="{{ copy.accessible_2 | escape }}">
+        <a href="#people">{{ copy.understand_people }}</a><i>→</i>
+        <a href="#data">{{ copy.analyze_data }}</a><i>→</i>
+        <a href="#process">{{ copy.improve_processes }}</a><i>→</i>
+        <a href="#experience">{{ copy.create_digital_experiences }}</a>
+      </div>
+    </div>
+
+    <aside class="profile-card reveal">
+      <div class="profile-photo-wrap">
+        <img  src="/assets/media/winnie-at-work.webp"  alt="{{ copy.accessible_3 | escape }}"  width="600"  height="900"  loading="eager"  fetchpriority="high">
+      </div>
+      <div class="profile-info">
+        <p class="profile-label">{{ copy.profile_snapshot }}</p>
+        <h2>Winnie Griesbach</h2>
+        <p class="profile-role">SEO · E-Commerce · Customer Journey · UX</p>
+        <div class="profile-facts">
+          <div><strong>{{ copy.based_in }}</strong><span>{{ copy.germany }}</span></div>
+          <div><strong>{{ copy.works_across }}</strong><span>{{ copy.people_data_process_and_experience }}</span></div>
+          <div><strong>{{ copy.open_to }}</strong><span>{{ copy.100_remote_roles_in_germany_and_international_teams }}</span></div>
+        </div>
+        <div class="profile-actions">
+          <a class="button button-primary" href="#about">{{ copy.this_is_me }}</a>
+          <a class="button button-ghost" href="https://www.linkedin.com/in/winnie-griesbach" target="_blank" rel="noopener">{{ copy.view_linkedin }}</a>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="lens-nav section-shell reveal" aria-label="{{ copy.accessible_4 | escape }}">
+    <a id="people" href="#evidence" data-jump-filter="UX / Customer Journey">
+      <span>{{ copy.people }}</span>
+      <strong>{{ copy.see_work_that_reduces_hesitation_and_supports_customer_ }}</strong>
+    </a>
+    <a id="data" href="#evidence" data-jump-filter="Analytics">
+      <span>{{ copy.data }}</span>
+      <strong>{{ copy.jump_into_analytics_signals_and_performance_interpretat }}</strong>
+    </a>
+    <a id="process" href="#evidence" data-jump-filter="CRO">
+      <span>{{ copy.process }}</span>
+      <strong>{{ copy.open_examples_where_friction_became_structure_and_actio }}</strong>
+    </a>
+    <a id="experience" href="#case-study">
+      <span>{{ copy.experience }}</span>
+      <strong>{{ copy.follow_one_connected_journey_from_research_to_cart_conf }}</strong>
+    </a>
+  </section>
+
+  <section class="principle section-shell section-space-sm reveal">
+    <div>
+      <p class="eyebrow">{{ copy.interface_principle }}</p>
+      <h2>{{ copy.the_interface_should_feel_intuitive }}</h2>
+      <p>{{ copy.design_should_guide_without_asking_people_to_stop_and_d }}</p>
+    </div>
+  </section>
+
+  <section id="case-study" class="case-intro section-shell section-space">
+    <div class="section-heading reveal">
+      <p class="eyebrow">{{ copy.flagship_case_shopify }}</p>
+      <h2>{{ copy.from_what_will_this_cost_to_i_know_what_i_need }}</h2>
+      <p>{{ copy.this_customer_journey_connects_price_orientation_projec }}</p>
+    </div>
+
+    <article class="case-scope journey-card reveal">
+      <h3>{{ copy.ddz_built_and_owned_end_to_end }}</h3>
+      <p>{{ copy.project_start_april_2026_shopify_launch_08_june_2026_de }}</p>
+      <p>{{ copy.i_own_the_digital_development_from_the_customer_and_bus }}</p>
+      <p>{{ copy.my_scope_includes_price_check_fence_configurator_privac }}</p>
+      <p>{{ copy.i_build_and_test_this_work_myself_there_are_no_separate }}</p>
+    </article>
+  </section>
+
+  <section class="journey-grid section-shell">
+    {% assign journey = site.data.journey %}
+    {% if page.lang == 'de' %}{% assign journey = site.data.journey_de %}{% endif %}
+    {% for step in journey %}
+    <article class="journey-card reveal">
+      <div class="journey-card-head">
+        <span class="journey-number">{{ step.number }}</span>
+        <p class="journey-kicker">{{ step.kicker }}</p>
+      </div>
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.text }}</p>
+      <span class="journey-signal">{{ step.signal }}</span>
+    </article>
+    {% endfor %}
+  </section>
+
+  <section id="videos" class="video-section section-shell section-space">
+    <div class="section-heading compact reveal">
+      <p class="eyebrow">{{ copy.product_tool_demos }}</p>
+      <h2>{{ copy.see_the_tools_in_motion }}</h2>
+      <p>{{ copy.short_product_videos_showing_how_i_turned_complex_fence }}</p>
+    </div>
+
+    <div class="video-grid">
+      <article class="video-card reveal" data-video-card>
+        <h3>{{ copy.price_check }}</h3>
+        <button class="video-open" type="button" aria-label="{{ copy.accessible_5 | escape }}"
+          data-video="/assets/media/pricecheck-demo.mp4"
+          data-title="{{ copy.accessible_6 | escape }}">
+          <img src="/assets/media/pricecheck-poster.jpg" alt="{{ copy.accessible_7 | escape }}" width="2416" height="1852" loading="lazy">
+          <span class="play-icon">▶</span>
+          <span class="expand-label">{{ copy.click_to_enlarge }}</span>
+        </button>
+        <p class="video-description">{{ copy.a_lightweight_pre_configurator_that_helps_users_estimat }}</p>
+        <p class="video-goal"><strong>{{ copy.goal }}</strong> {{ copy.reduce_uncertainty_early_and_give_users_a_clear_startin }}</p>
+      </article>
+
+      <article class="video-card reveal" data-video-card>
+        <h3>{{ copy.fence_configurator }}</h3>
+        <button class="video-open" type="button" aria-label="{{ copy.accessible_8 | escape }}"
+          data-video="/assets/media/fence-configurator-demo.mp4"
+          data-title="{{ copy.accessible_9 | escape }}">
+          <img src="/assets/media/fence-configurator-poster.jpg" alt="{{ copy.accessible_10 | escape }}" width="960" height="494" loading="lazy">
+          <span class="play-icon">▶</span>
+          <span class="expand-label">{{ copy.click_to_enlarge }}</span>
+        </button>
+        <p class="video-description">{{ copy.a_guided_configuration_flow_that_translates_project_inp }}</p>
+        <p class="video-goal"><strong>{{ copy.goal }}</strong> {{ copy.simplify_decision_making_and_turn_planning_into_action }}</p>
+      </article>
+
+      <article class="video-card reveal" data-video-card>
+        <h3>{{ copy.privacy_strip_configurator }}</h3>
+        <button class="video-open" type="button" aria-label="{{ copy.accessible_11 | escape }}"
+          data-video="/assets/media/privacy-configurator-demo.mp4"
+          data-title="{{ copy.accessible_12 | escape }}">
+          <img src="/assets/media/privacy-configurator-poster.jpg" alt="{{ copy.accessible_13 | escape }}" width="2364" height="1840" loading="lazy">
+          <span class="play-icon">▶</span>
+          <span class="expand-label">{{ copy.click_to_enlarge }}</span>
+        </button>
+        <p class="video-description">{{ copy.a_visual_tool_for_configuring_privacy_strips_helping_us }}</p>
+        <p class="video-goal"><strong>{{ copy.goal }}</strong> {{ copy.make_a_visual_and_customizable_product_easier_to_unders }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="comparison-section section-shell section-space">
+    <div class="section-heading compact reveal">
+      <p class="eyebrow">{{ copy.visual_improvement }}</p>
+      <h2>{{ copy.clarity_before_decoration }}</h2>
+      <p>{{ copy.i_simplified_product_presentation_by_removing_visual_ov }}</p>
+    </div>
+
+    <div class="comparison-grid">
+      <article class="comparison-card reveal">
+        <p class="comparison-title">{{ copy.corner_connector }}</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="/assets/media/corner-connector-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/corner-connector-before.png" alt="{{ copy.accessible_14 | escape }}" width="1122" height="1402" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/corner-connector-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/corner-connector-after.png" alt="{{ copy.accessible_15 | escape }}" width="1086" height="1448" loading="lazy"></a>
+        </div>
+        <p class="comparison-copy">{{ copy.from_information_heavy_artwork_to_a_cleaner_product_fir }}</p>
+      </article>
+
+      <article class="comparison-card reveal">
+        <p class="comparison-title">{{ copy.fence_post }}</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="/assets/media/fence-post-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/fence-post-before.png" alt="{{ copy.accessible_16 | escape }}" width="1023" height="1537" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/fence-post-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/fence-post-after.png" alt="{{ copy.accessible_17 | escape }}" width="1254" height="1254" loading="lazy"></a>
+        </div>
+        <p class="comparison-copy">{{ copy.from_visually_overloaded_product_communication_to_a_mor }}</p>
+      </article>
+
+      <article class="comparison-card reveal">
+        <p class="comparison-title">{{ copy.special_hex_key }}</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="/assets/media/hex-key-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/hex-key-before.png" alt="{{ copy.accessible_18 | escape }}" width="1055" height="1491" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/hex-key-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/hex-key-after.png" alt="{{ copy.accessible_19 | escape }}" width="1254" height="1254" loading="lazy"></a>
+        </div>
+        <p class="comparison-copy">{{ copy.from_poster_style_explanation_to_a_simpler_product_pres }}</p>
+      </article>
+
+      <article class="comparison-card reveal">
+        <p class="comparison-title">{{ copy.fence_panel_guide_6_5_6_vs_8_6_8 }}</p>
+        <div class="comparison-pair">
+          <a class="comparison-slot image-slot" href="/assets/media/fence-guide-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/fence-guide-before.png" alt="{{ copy.accessible_20 | escape }}" width="1024" height="1536" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/fence-guide-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/fence-guide-after.png" alt="{{ copy.accessible_21 | escape }}" width="1513" height="1039" loading="lazy"></a>
+        </div>
+        <p class="comparison-copy">{{ copy.from_a_graphic_heavy_comparison_card_to_a_more_direct_v }}</p>
+      </article>
+
+      <article class="comparison-card comparison-card-home reveal">
+        <p class="comparison-title">{{ copy.homepage_redesign }}</p>
+        <div class="comparison-pair homepage-pair">
+          <a class="comparison-slot image-slot homepage-slot" href="/assets/media/homepage-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/homepage-before.png" alt="{{ copy.accessible_22 | escape }}" width="796" height="2047" loading="lazy"></a>
+          <a class="comparison-slot image-slot homepage-slot" href="/assets/media/homepage-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/homepage-after.png" alt="{{ copy.accessible_23 | escape }}" width="760" height="2047" loading="lazy"></a>
+        </div>
+        <p class="comparison-copy">{{ copy.from_a_product_first_homepage_to_a_guided_journey_that_ }}</p>
+        <p class="comparison-note">{{ copy.click_either_image_to_open_the_full_page_view }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="evidence" class="evidence section-space">
+  <div class="section-shell">
+
+    <div class="evidence-head reveal">
+      <div>
+        <p class="eyebrow">{{ copy.recruiter_work_evidence }}</p>
+        <h2>{{ copy.start_with_what_you_are_hiring_for }}</h2>
+        <p>
+          {{ copy.filter_by_skill_or_system_and_go_directly_to_the_work_t }}
+        </p>
+      </div>
+    </div>
+
+    <div class="evidence-toolbar reveal" hidden>
+
+      <div class="filter-group" id="area-filters">
+        <button class="filter active" aria-pressed="true" data-filter="All">{{ copy.all }}</button>
+        <button class="filter" aria-pressed="false" data-filter="SEO">SEO</button>
+        <button class="filter" aria-pressed="false" data-filter="GEO / AEO / AI Search">
+          GEO / AEO / AI Search
+        </button>
+        <button class="filter" aria-pressed="false" data-filter="UX / Customer Journey">UX</button>
+        <button class="filter" aria-pressed="false" data-filter="CRO">CRO</button>
+        <button class="filter" aria-pressed="false" data-filter="Analytics">{{ copy.analytics }}</button>
+        <button class="filter" aria-pressed="false" data-filter="Paid Search / Google Ads">
+          {{ copy.paid_search }}
+        </button>
+        <button class="filter" aria-pressed="false" data-filter="Product / Tools">{{ copy.product_tools }}</button>
+        <button class="filter" aria-pressed="false" data-filter="Technical Implementation">
+          {{ copy.technical_implementation }}
+        </button>
+        <button class="filter" aria-pressed="false" data-filter="E-Commerce">E-Commerce</button>
+      </div>
+
+      <div class="filter-group system-filter" id="system-filters">
+        <button class="system-chip active" aria-pressed="true" data-system="All">
+          {{ copy.all_systems }}
+        </button>
+        <button class="system-chip" aria-pressed="false" data-system="Shopify">Shopify</button>
+        <button class="system-chip" aria-pressed="false" data-system="Magento">Magento</button>
+        <button class="system-chip" aria-pressed="false" data-system="TYPO3">TYPO3</button>
+      </div>
+
+      <label class="search-box">
+        <span>{{ copy.search }}</span>
+        <input
+          id="evidence-search"
+          type="search"
+          placeholder="{{ copy.accessible_24 | escape }}"
+        >
+      </label>
+
+    </div>
+
+    <div class="evidence-meta reveal">
+      <span id="evidence-count" role="status" aria-live="polite">{{ copy.all_work_evidence_is_shown_below }}</span>
+      <button id="reset-filters" type="button" hidden>{{ copy.reset_filters }}</button>
+    </div>
+
+    <div class="evidence-table-wrap reveal">
+
+      <table class="evidence-table">
+        <thead>
+          <tr>
+            <th>{{ copy.work }}</th>
+            <th>System</th>
+            <th>Problem</th>
+            <th>{{ copy.what_i_did }}</th>
+            <th>{{ copy.what_i_learned }}</th>
+          </tr>
+        </thead>
+
+        <tbody id="evidence-body">
+          {% assign evidence = site.data.work_evidence %}
+          {% if page.lang == 'de' %}{% assign evidence = site.data.work_evidence_de %}{% endif %}
+          {% for record in evidence %}
+          <tr>
+            <td>{{ record.milestone | escape }}<div>{% for area in record.areas %}<span class="area-badge">{{ site.data.area_labels[page.lang][area] | default: area | escape }}</span>{% endfor %}</div></td>
+            <td>{{ record.system | escape }}</td>
+            <td>{{ record.problem | escape }}</td>
+            <td>{{ record.solution | escape }}</td>
+            <td>{{ record.insight | escape }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <div id="evidence-cards" class="evidence-cards"></div>
+
+      <div id="evidence-empty" class="evidence-empty" hidden>
+        {{ copy.no_matching_work_stories }}
+      </div>
+
+    </div>
+
+    <div class="load-more-wrap">
+      <button
+        class="button button-ghost"
+        id="load-more"
+        type="button" hidden
+      >
+        {{ copy.show_more_evidence }}
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section id="milestones" class="milestones section-shell section-space">
+
+  <div class="section-heading compact reveal">
+    <p class="eyebrow">{{ copy.selected_milestones }}</p>
+    <h2>{{ copy.progress_i_can_document }}</h2>
+    <p>
+      {{ copy.selected_performance_signals_from_real_systems_of_recor }}
+    </p>
+  </div>
+
+  <div class="milestone-grid">
+
+    <article class="milestone-card reveal">
+      <div class="milestone-content">
+        <p class="milestone-label">{{ copy.ddz_google_search_console_comparison }}</p>
+        <p class="milestone-number">74 <span>→</span> 351 <span>{{ copy.clicks }}</span></p>
+        <h3>{{ copy.organic_growth_across_the_relaunch }}</h3>
+        <div class="metrics-scroll" tabindex="0" role="region" aria-labelledby="gsc-comparison-caption"><table class="metrics-table">
+          <caption id="gsc-comparison-caption">Google Search Console · 2026</caption>
+          <thead><tr><th>{{ copy.period }}</th><th>{{ copy.clicks_123 }}</th><th>{{ copy.impressions }}</th><th>CTR</th><th>{{ copy.average_position }}</th></tr></thead>
+          <tbody><tr><th>{{ copy.08_jun_30_jul }}</th><td>74</td><td>{{ copy.2_729 }}</td><td>{{ copy.2_7 }}</td><td>{{ copy.39_4 }}</td></tr><tr><th>{{ copy.31_jul_24_sep }}</th><td>351</td><td>{{ copy.19_694 }}</td><td>{{ copy.1_8 }}</td><td>{{ copy.18_1 }}</td></tr></tbody>
+        </table></div>
+        <p>{{ copy.after_the_july_31_relaunch_organic_visibility_and_click }}</p>
+        <p class="milestone-source">{{ copy.source_google_search_console_primary_record_for_google_ }}</p>
+      </div>
+    </article>
+
+
+    <article class="milestone-card reveal">
+
+      <a
+        class="milestone-image"
+        href="/assets/media/milestone-sistrix-zs24.png"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src="/assets/media/milestone-sistrix-zs24.png"
+          alt="{{ copy.accessible_25 | escape }}"
+         width="1584" height="1164" loading="lazy">
+      </a>
+
+      <div class="milestone-content">
+        <p class="milestone-label">SEO · SISTRIX</p>
+
+        <p class="milestone-number">
+          {{ copy.1_7 }} <span>→</span> {{ copy.3_5 }}
+        </p>
+
+        <h3>{{ copy.organic_visibility_growth }}</h3>
+
+        <p>
+          {{ copy.the_sistrix_visibility_index_increased_from }}
+          <strong>{{ copy.1_743 }}</strong> {{ copy.at_the_start_of_my_seo_optimization_work_to_a_documente }} <strong>{{ copy.3_491 }}</strong> {{ copy.on_august_31_2026 }}
+        </p>
+
+        <p class="milestone-source">
+          {{ copy.source_sistrix_zaehlerschrank24_de }}
+        </p>
+      </div>
+
+    </article>
+
+
+    <article class="milestone-card reveal">
+
+      <a
+        class="milestone-image milestone-image-portrait"
+        href="/assets/media/milestone-gsc-200-clicks.jpeg"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src="/assets/media/milestone-gsc-200-clicks.jpeg"
+          alt="{{ copy.accessible_26 | escape }}"
+         width="1033" height="1600" loading="lazy">
+      </a>
+
+      <div class="milestone-content">
+        <p class="milestone-label">{{ copy.organic_search_google_search_console }}</p>
+
+        <p class="milestone-number">
+          200 <span>{{ copy.clicks }}</span>
+        </p>
+
+        <h3>{{ copy.google_search_milestone }}</h3>
+
+        <p>
+          {{ copy.dein_doppelstabmattenzaun_de_reached }}
+          <strong>{{ copy.200_organic_google_clicks_within_28_days }}</strong>
+          {{ copy.while_seo_content_and_technical_development_of_the_new_ }}
+        </p>
+
+        <p class="milestone-source">
+          {{ copy.source_google_search_console_september_15_2026 }}
+        </p>
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="performance" class="section-shell section-space">
+  <div class="section-heading compact reveal">
+    <p class="eyebrow">{{ copy.ddz_29_september_05_october_2026 }}</p>
+    <h2>{{ copy.use_the_right_source_for_the_decision }}</h2>
+    <p>{{ copy.shopify_records_actual_orders_and_revenue_ga4_and_googl }}</p>
+  </div>
+  <div class="milestone-grid">
+    <article class="milestone-card reveal"><div class="milestone-content">
+      <h3>{{ copy.commerce_and_tracking }}</h3>
+      <dl class="metric-list"><div><dt>{{ copy.shopify_operational_source_of_truth }}</dt><dd>{{ copy.7_orders_7_079_21_revenue }}</dd></div><div><dt>{{ copy.ga4_captured_purchases }}</dt><dd>{{ copy.3_purchases_3_841_81_purchase_revenue }}</dd></div><div><dt>{{ copy.ai_assistant_chatgpt_com_tracked_referral }}</dt><dd>{{ copy.17_sessions_13_tool_interactions_1_purchase_876_08_reve }}</dd></div></dl>
+      <p>{{ copy.ga4_captured_only_part_of_shopify_s_order_and_revenue_v }}</p>
+    </div></article>
+    <article class="milestone-card reveal"><div class="milestone-content">
+      <h3>{{ copy.campaign_comparison }}</h3>
+      <dl class="metric-list"><div><dt>Planning Tools Search · Google Ads</dt><dd>{{ copy.336_clicks_146_30_cost_1_ads_conversion_962_49_conversi }}</dd></div><div><dt>Shopping Bestseller · Google Ads</dt><dd>{{ copy.90_clicks_140_16_cost_0_conversions }}</dd></div></dl>
+      <p>{{ copy.planning_tools_search_showed_stronger_attributed_perfor }}</p>
+    </div></article>
+  </div>
+</section>
+
+<section id="product-analysis" class="product-analysis section-shell section-space">
+
+  <div class="section-heading compact reveal">
+    <p class="eyebrow">{{ copy.independent_product_analysis }}</p>
+
+    <h2>{{ copy.i_tend_to_notice_friction_even_when_i_m_not_working }}</h2>
+
+    <p>
+      {{ copy.selected_ux_and_product_observations_based_on_real_user }}
+    </p>
+  </div>
+
+  <div class="analysis-visual-grid">
+
+    <!-- ChatGPT -->
+    <a
+      class="analysis-preview-card reveal"
+      href="/assets/media/chatgpt-ux-product-observation-log.pdf"
+      target="_blank"
+      rel="noopener"
+      aria-label="{{ copy.accessible_27 | escape }}"
+    >
+      <div class="analysis-preview-image">
+        <img
+          src="/assets/media/chatgpt-ux-preview.webp"
+          alt="{{ copy.accessible_28 | escape }}"
+          loading="lazy"
+         width="1636" height="1242">
+        <span class="analysis-open-badge">{{ copy.open_pdf }}</span>
+      </div>
+
+      <div class="analysis-preview-meta">
+        <p class="eyebrow">{{ copy.product_observation }}</p>
+
+        <h3>ChatGPT UX &amp; Product Observation Log</h3>
+
+        <p>{{ copy.ongoing_product_amp_ux_observations_2026 }}</p>
+      </div>
+    </a>
+
+
+    <!-- GFV Training -->
+    <a
+      class="analysis-preview-card reveal"
+      href="/assets/media/gfv-training-ux-review.pdf"
+      target="_blank"
+      rel="noopener"
+      aria-label="{{ copy.accessible_29 | escape }}"
+    >
+      <div class="analysis-preview-image">
+        <img
+          src="/assets/media/gafave-app-preview.webp"
+          alt="{{ copy.accessible_30 | escape }}"
+          loading="lazy"
+         width="1608" height="992">
+        <span class="analysis-open-badge">{{ copy.open_pdf }}</span>
+      </div>
+
+      <div class="analysis-preview-meta">
+        <p class="eyebrow">{{ copy.independent_ux_review }}</p>
+
+        <h3>GFV Training — UX Review</h3>
+
+        <p>{{ copy.initial_review_august_2026_ongoing }}</p>
+      </div>
+    </a>
+
+  </div>
+
+</section>
+
+  <section id="credentials" class="credentials section-shell section-space">
+    <div class="section-heading compact reveal">
+      <p class="eyebrow">{{ copy.selected_credentials }}</p>
+      <h2>{{ copy.learning_that_supports_the_work }}</h2>
+      <p>{{ copy.i_use_training_as_a_foundation_then_deepen_it_through_h }}</p>
+    </div>
+    <div class="credential-grid">
+      <article class="credential-card reveal"><span>{{ copy.27_september_2026 }}</span><h3>Data Preparation &amp; Infrastructure</h3><p class="credential-provider">{{ copy.course_certificate_coursera }}</p><p>{{ copy.completed_course_supporting_my_developing_data_preparat }}</p></article>
+
+      <a class="credential-card reveal"
+   href="/assets/credentials/google-digital-marketing-ecommerce-certificate.pdf"
+   target="_blank"
+   rel="noopener">
+  <span>2026</span>
+  <h3>Google Digital Marketing & E-Commerce</h3>
+  <p class="credential-provider">Professional Certificate · Google / Coursera</p>
+  <p class="credential-skills">
+    <strong>{{ copy.skills }}</strong> {{ copy.customer_acquisition_digital_marketing_e_commerce_email }}
+  </p>
+  <strong class="credential-link">{{ copy.view_certificate }}</strong></a>
+      <a class="credential-card reveal" href="/assets/credentials/ga4-2026.pdf" target="_blank" rel="noopener"><span>2026</span><h3>Google Analytics 4</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>{{ copy.skills }}</strong> {{ copy.web_analysis_ga4_setup_first_analyses_reporting_and_und }}</p><strong class="credential-link">{{ copy.view_certificate }}</strong></a>
+      <a class="credential-card reveal" href="/assets/credentials/advanced-seo-2024.pdf" target="_blank" rel="noopener"><span>2024</span><h3>Advanced SEO</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>{{ copy.skills }}</strong> {{ copy.seo_audits_strategy_competitive_intelligence_schema_org }}</p><strong class="credential-link">{{ copy.view_certificate }}</strong></a>
+      <a class="credential-card reveal" href="/assets/credentials/screaming-frog-2024.pdf" target="_blank" rel="noopener"><span>2024</span><h3>Screaming Frog</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>{{ copy.skills }}</strong> {{ copy.site_structure_analysis_crawling_monitoring_crawl_compa }}</p><strong class="credential-link">{{ copy.view_certificate }}</strong></a>
+      <a class="credential-card reveal" href="/assets/credentials/google-search-console-2024.pdf" target="_blank" rel="noopener"><span>2024</span><h3>Google Search Console</h3><p class="credential-provider">121WATT</p><p class="credential-skills"><strong>{{ copy.skills }}</strong> {{ copy.crawling_errors_indexing_international_seo_performance_ }}</p><strong class="credential-link">{{ copy.view_certificate }}</strong></a>
+      <a class="credential-card reveal" href="/assets/credentials/sistrix-2023.pdf" target="_blank" rel="noopener"><span>2023</span><h3>SISTRIX</h3><p class="credential-provider">SISTRIX</p><p class="credential-skills"><strong>{{ copy.skills }}</strong> {{ copy.seo_analysis_visibility_benchmarking_sistrix_modules_an }}</p><strong class="credential-link">{{ copy.view_certificate }}</strong></a>
+    </div>
+    <p class="credential-background reveal"><strong>{{ copy.background }}</strong> {{ copy.diploma_in_social_work_social_pedagogy_university_of_ap }}</p>
+  </section>
+
+  <section id="about" class="about section-shell section-space">
+    <div class="about-art reveal">
+      <img src="/assets/media/about-winnie.png" alt="{{ copy.accessible_31 | escape }}" width="1254" height="1254" loading="lazy">
+    </div>
+    <div class="about-copy reveal">
+      <p class="eyebrow">{{ copy.about_me }}</p>
+      <h2>{{ copy.i_am_most_useful_where_people_data_and_implementation_m }}</h2>
+      <p>{{ copy.i_care_about_clarity_customer_thinking_and_practical_pr }}</p>
+      <p>{{ copy.i_am_a_hands_on_e_commerce_and_seo_specialist_from_germ }}</p>
+
+      <h3>{{ copy.my_tools_changed_but_the_way_i_solve_problems_did_not }}</h3>
+      <p>{{ copy.social_work_taught_me_to_understand_needs_and_context_a }}</p>
+      <p>{{ copy.warehouse_and_logistics_work_sharpened_my_process_think }}</p>
+      <p>{{ copy.at_ddz_these_skills_come_together_in_one_digital_system }}</p>
+      <p>{{ copy.ai_is_part_of_my_daily_toolset_it_helps_me_execute_fast }}</p>
+      <div class="contact-row">
+        <a class="button button-primary" href="mailto:winnie.griesbach@gmail.com">{{ copy.let_s_connect }}</a>
+        <a class="button button-ghost" href="https://www.linkedin.com/in/winnie-griesbach" target="_blank" rel="noopener">{{ copy.view_linkedin }}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="ny-slider" aria-label="{{ copy.accessible_32 | escape }}">
+    <div class="ny-slider-head section-shell">
+      <p class="eyebrow">{{ copy.new_york_thread }}</p>
+      <h2>{{ copy.every_image_carries_a_piece_of_why_new_york_stays_with_ }}</h2>
+      <p>{{ copy.new_york_is_a_personal_long_term_motivation_my_next_rol }}</p>
+    </div>
+
+    <div class="slider-shell">
+      <button class="slider-arrow prev" type="button" aria-label="{{ copy.accessible_33 | escape }}">‹</button>
+      <div class="slider-viewport" id="ny-slider">
+        <div class="slider-track">
+          <figure class="slide">
+            <img src="/assets/media/ny-pinterest.png" alt="{{ copy.accessible_34 | escape }}" width="1600" height="1365" loading="lazy">
+            <figcaption>{{ copy.create_the_life_you_want_to_live }}</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="/assets/media/ny-sun-selfie.png" alt="{{ copy.accessible_35 | escape }}" width="899" height="1600" loading="lazy">
+            <figcaption>{{ copy.the_city_keeps_reminding_me_to_keep_moving }}</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="/assets/media/ny-work.jpg" alt="{{ copy.accessible_36 | escape }}" width="899" height="1599" loading="lazy">
+            <figcaption>{{ copy.work_learning_and_new_york_in_the_same_frame }}</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="/assets/media/ny-yellow-wall.png" alt="{{ copy.accessible_37 | escape }}" width="1200" height="1599" loading="lazy">
+            <figcaption>{{ copy.color_movement_and_curiosity }}</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="/assets/media/ny-waterfront.png" alt="{{ copy.accessible_38 | escape }}" width="1463" height="1600" loading="lazy">
+            <figcaption>{{ copy.a_place_that_makes_the_next_step_feel_possible }}</figcaption>
+          </figure>
+          <figure class="slide">
+            <img src="/assets/media/ny-flight.jpg" alt="{{ copy.accessible_39 | escape }}" width="1600" height="1275" loading="lazy">
+            <figcaption>{{ copy.germany_new_york_the_path_i_keep_choosing }}</figcaption>
+          </figure>
+        </div>
+      </div>
+      <button class="slider-pause" type="button" aria-pressed="false">{{ copy.pause_slideshow }}</button>
+      <button class="slider-arrow next" type="button" aria-label="{{ copy.accessible_40 | escape }}">›</button>
+    </div>
+  </section>
+</main>
+
+<div class="video-modal" id="video-modal" aria-hidden="true">
+  <div class="video-modal-backdrop" data-close-video></div>
+  <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+    <button class="video-modal-close" type="button" aria-label="{{ copy.accessible_41 | escape }}" data-close-video>×</button>
+    <h2 id="video-modal-title">Video</h2>
+    <video id="video-modal-player" controls playsinline tabindex="0"></video>
+  </div>
+</div>
+
+<div class="footer-wrap"><footer class="footer section-shell">
+  <span>{{ copy.winnie_griesbach_e_commerce_portfolio }}</span>
+  <span>HTML · CSS · JavaScript · Jekyll/Liquid · JSON · GitHub Pages</span>
+</footer></div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Winnie Griesbach","url":{{ page.url | absolute_url | jsonify }},"sameAs":["https://www.linkedin.com/in/winnie-griesbach"],"jobTitle":"E-Commerce and SEO Specialist","knowsAbout":["E-Commerce","Customer Journey","UX","SEO","GEO / AEO","Analytics","Google Ads","Shopify Basic","Liquid","HTML","CSS","JSON"],"description":{{ page.description | jsonify }}}
+</script>
+<script src="/assets/js/script.js" defer></script>
+</body>
+</html>

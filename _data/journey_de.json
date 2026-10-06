@@ -1,0 +1,44 @@
+[
+  {
+    "number": "01",
+    "title": "Preisorientierung",
+    "kicker": "Mit der tatsächlichen Kundenfrage beginnen",
+    "text": "Der Preischeck hilft schnell einzuschätzen, ob das Projekt finanziell realistisch ist, bevor jedes Detail konfiguriert werden muss.",
+    "signal": "Recherche → Preissicherheit"
+  },
+  {
+    "number": "02",
+    "title": "Projektkonfiguration",
+    "kicker": "Aus einer Produktliste wird eine geführte Planung",
+    "text": "Der Zaunkonfigurator übersetzt Länge, Höhe, Ecken, Tore, Montage und Zubehör in einen projektspezifischen Materialplan.",
+    "signal": "Preissicherheit → Projektklarheit"
+  },
+  {
+    "number": "03",
+    "title": "Montagehilfe",
+    "kicker": "Unsicherheit dort beantworten, wo sie entsteht",
+    "text": "Zuschnitt, Wandanschlüsse, andere Eckwinkel und Montageoptionen werden innerhalb der Planung erklärt. Kunden müssen diese Informationen nicht anderswo recherchieren.",
+    "signal": "Projektklarheit → Montagesicherheit"
+  },
+  {
+    "number": "04",
+    "title": "Sichtschutzgestaltung",
+    "kicker": "Dasselbe Projekt erweitern",
+    "text": "Kunden können Sichtschutz ergänzen, Farben wählen und ein-, zwei- oder dreifarbige Muster innerhalb ihrer Zaunplanung erkunden.",
+    "signal": "Kernprojekt → individuelle Erweiterung"
+  },
+  {
+    "number": "05",
+    "title": "Warenkorbschutz",
+    "kicker": "Bisherige Kundenschritte berücksichtigen",
+    "text": "Wurden bereits Artikel über den Preischeck hinzugefügt, warnt der Konfigurator vor Überschneidungen und ermöglicht, vorhandene Positionen zu ersetzen oder zu behalten.",
+    "signal": "Konfiguration → Fehlervermeidung"
+  },
+  {
+    "number": "06",
+    "title": "Vollständiger Warenkorb",
+    "kicker": "Mit Sicherheit in den Checkout",
+    "text": "Der Warenkorb führt das geplante Projekt zur abschließenden Prüfung zusammen, ergänzt durch Informationen zu Lieferung, Zahlung und Bestellprüfung.",
+    "signal": "Vorbereiteter Warenkorb → Kaufbereitschaft"
+  }
+]

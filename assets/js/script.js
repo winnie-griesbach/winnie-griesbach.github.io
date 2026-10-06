@@ -2,20 +2,32 @@
 const state = { area:'All', system:'All', query:'', limit:7, data:[] };
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => [...document.querySelectorAll(s)];
+const isGerman = document.documentElement.lang === 'de';
+const labels = isGerman ? {
+  problem:'Problem', solution:'Was ich umgesetzt habe', insight:'Was ich gelernt habe',
+  loadError:'Interaktive Filter konnten nicht geladen werden. Alle Nachweise stehen weiterhin unten.',
+  pause:'Diashow pausieren', resume:'Diashow fortsetzen',
+  areas:{'UX / Customer Journey':'UX / Customer Journey','Technical Implementation':'Technische Umsetzung','Product / Tools':'Produkt / Tools','Digital Marketing':'Digitales Marketing'}
+} : {
+  problem:'Problem', solution:'What I did', insight:'What I learned',
+  loadError:'Interactive filters could not be loaded. All evidence remains available below.',
+  pause:'Pause slideshow', resume:'Resume slideshow', areas:{}
+};
+const areaLabel = (area) => labels.areas[area] || area;
 const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({
   '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
 }[c]));
 
 function systemMatches(record, system){
   if(system === 'All') return true;
-  return String(record.system || '').toLowerCase().includes(system.toLowerCase());
+  return String(record.system || '').split(/\s*[+·]\s*/).some((name) => name.trim().toLowerCase() === system.toLowerCase());
 }
 
 function filtered(){
   return state.data.filter((r) => {
     const area = state.area === 'All' || (r.areas || []).includes(state.area);
     const sys = systemMatches(r, state.system);
-    const hay = [r.milestone,r.project,r.system,r.problem,r.solution,r.insight,...(r.areas || [])].join(' ').toLowerCase();
+    const hay = [r.milestone,r.project,r.system,r.problem,r.solution,r.insight,...(r.areas || []).map(areaLabel)].join(' ').toLowerCase();
     const query = !state.query || hay.includes(state.query);
     return area && sys && query;
   });
@@ -42,13 +54,13 @@ function systemText(record){
 }
 
 function badges(record){
-  return (record.areas || []).slice(0,4).map((a) => `<span class="area-badge">${escapeHtml(a)}</span>`).join('');
+  return (record.areas || []).slice(0,4).map((a) => `<span class="area-badge">${escapeHtml(areaLabel(a))}</span>`).join('');
 }
 
 function render(){
   const items = filtered();
   const visible = items.slice(0,state.limit);
-  $('#evidence-count').textContent = `${items.length} matching work ${items.length === 1 ? 'story' : 'stories'}`;
+  $('#evidence-count').textContent = isGerman ? `${items.length} passende Arbeitsnachweise` : `${items.length} matching work ${items.length === 1 ? 'story' : 'stories'}`;
   $('#evidence-body').innerHTML = visible.map((r) => `
     <tr>
       <td>${escapeHtml(r.milestone)}<div>${badges(r)}</div></td>
@@ -65,9 +77,9 @@ function render(){
       <h3>${escapeHtml(r.milestone)}</h3>
       <div>${badges(r)}</div>
       <dl>
-        <div><dt>Problem</dt><dd>${escapeHtml(r.problem)}</dd></div>
-        <div><dt>What I did</dt><dd>${escapeHtml(r.solution)}</dd></div>
-        <div><dt>What I learned</dt><dd>${escapeHtml(r.insight)}</dd></div>
+        <div><dt>${labels.problem}</dt><dd>${escapeHtml(r.problem)}</dd></div>
+        <div><dt>${labels.solution}</dt><dd>${escapeHtml(r.solution)}</dd></div>
+        <div><dt>${labels.insight}</dt><dd>${escapeHtml(r.insight)}</dd></div>
       </dl>
     </article>
   `).join('');
@@ -77,7 +89,10 @@ function render(){
 }
 
 function setActive(selector, button){
-  $$(selector).forEach((b) => b.classList.toggle('active', b === button));
+  $$(selector).forEach((b) => {
+    b.classList.toggle('active', b === button);
+    b.setAttribute('aria-pressed', String(b === button));
+  });
 }
 
 function resetFilters(){
@@ -90,7 +105,7 @@ function resetFilters(){
   render();
 }
 
-fetch('assets/data/work-evidence.json')
+fetch(isGerman ? '/assets/data/work-evidence-de.json' : '/assets/data/work-evidence.json')
   .then((r) => {
     if(!r.ok) throw new Error('Could not load evidence');
     return r.json();
@@ -98,9 +113,12 @@ fetch('assets/data/work-evidence.json')
   .then((data) => {
     state.data = Array.isArray(data) ? data : [];
     render();
+    document.body.classList.add('evidence-ready');
+    $('.evidence-toolbar').hidden = false;
+    $('#reset-filters').hidden = false;
   })
   .catch(() => {
-    $('#evidence-count').textContent = 'Evidence could not be loaded. Please refresh the page.';
+    $('#evidence-count').textContent = labels.loadError;
   });
 
 $$('#area-filters .filter').forEach((btn) => btn.addEventListener('click', () => {
@@ -137,24 +155,34 @@ document.querySelectorAll('[data-jump-filter]').forEach((link) => {
 });
 
 /* reveal */
+if ('IntersectionObserver' in window) {
+document.documentElement.classList.add('js-reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if(entry.isIntersecting) entry.target.classList.add('visible');
   });
 },{threshold:.08});
 $$('.reveal').forEach((el) => observer.observe(el));
+}
 
 /* video modal */
 const modal = $('#video-modal');
 const player = $('#video-modal-player');
 const modalTitle = $('#video-modal-title');
+let videoTrigger;
+const backgroundRegions = $$('body > header, body > main, body > .footer-wrap, body > .skip-link');
+let previousInert = [];
 
 function openVideo(src,title){
+  videoTrigger = document.activeElement;
+  previousInert = backgroundRegions.map((el) => el.inert);
+  backgroundRegions.forEach((el) => { el.inert = true; });
   player.src = src;
   modalTitle.textContent = title || 'Video';
   modal.classList.add('open');
   modal.setAttribute('aria-hidden','false');
   document.body.style.overflow='hidden';
+  $('.video-modal-close').focus();
   player.play().catch(() => {});
 }
 function closeVideo(){
@@ -164,11 +192,19 @@ function closeVideo(){
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden','true');
   document.body.style.overflow='';
+  backgroundRegions.forEach((el, i) => { el.inert = previousInert[i]; });
+  videoTrigger?.focus({preventScroll:true});
 }
 $$('.video-open').forEach((btn) => btn.addEventListener('click', () => openVideo(btn.dataset.video, btn.dataset.title)));
 $$('[data-close-video]').forEach((el) => el.addEventListener('click', closeVideo));
 document.addEventListener('keydown', (e) => {
   if(e.key === 'Escape' && modal.classList.contains('open')) closeVideo();
+  if(e.key === 'Tab' && modal.classList.contains('open')) {
+    const focusable = [$('.video-modal-close'), player];
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
 });
 
 /* NY slider */
@@ -179,6 +215,10 @@ const prev = $('.slider-arrow.prev');
 const next = $('.slider-arrow.next');
 let slideIndex = 0;
 let timer;
+const pause = $('.slider-pause');
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let paused = reducedMotion.matches;
+let hovering = false;
 
 function slideStep(){
   const slide = slides[0];
@@ -197,12 +237,22 @@ next.addEventListener('click', () => { go(1); restartSlider(); });
 window.addEventListener('resize', renderSlider);
 
 function startSlider(){
-  timer = setInterval(() => go(1), 4500);
+  clearInterval(timer);
+  if (!paused && !hovering && !document.hidden && !$('.slider-shell').contains(document.activeElement)) timer = setInterval(() => go(1), 4500);
 }
 function restartSlider(){
   clearInterval(timer);
   startSlider();
 }
-startSlider();
-viewport.addEventListener('mouseenter', () => clearInterval(timer));
-viewport.addEventListener('mouseleave', startSlider);
+function updatePause(){
+  pause.textContent = paused ? labels.resume : labels.pause;
+  pause.setAttribute('aria-pressed', String(paused));
+}
+pause.addEventListener('click', () => { paused = !paused; updatePause(); startSlider(); });
+viewport.addEventListener('mouseenter', () => { hovering = true; clearInterval(timer); });
+viewport.addEventListener('mouseleave', () => { hovering = false; startSlider(); });
+$('.slider-shell').addEventListener('focusin', () => clearInterval(timer));
+$('.slider-shell').addEventListener('focusout', () => setTimeout(startSlider, 0));
+document.addEventListener('visibilitychange', startSlider);
+reducedMotion.addEventListener('change', (e) => { paused=e.matches; updatePause(); startSlider(); });
+updatePause(); startSlider();

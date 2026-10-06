@@ -1,0 +1,4 @@
+---
+layout: null
+---
+{{ site.data.work_evidence_de | jsonify }}

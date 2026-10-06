@@ -1,0 +1,647 @@
+[
+  {
+    "id": "shopify-ga4-source-of-truth",
+    "milestone": "Shopify-Bestellungen mit der GA4-Tracking-Abdeckung verglichen",
+    "problem": "Tracking-Berichte erfassten nicht alle tatsächlichen Bestellungen.",
+    "solution": "Gleicher Zeitraum, 29. Sep – 05. Okt 2026: Shopify verzeichnete 7 Bestellungen / 7.079,21 €; GA4 erfasste 3 Käufe / 3.841,81 €.",
+    "insight": "Shopify ist die operative Datenquelle. GA4 zeigt einen Teil des erfassten Kaufverhaltens. Attributionswerte dürfen nicht zum tatsächlichen Umsatz addiert werden.",
+    "areas": [
+      "Analytics",
+      "E-Commerce",
+      "CRO"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "planning-tools-attribution",
+    "milestone": "Attribution von Planning Tools Search und Shopping verglichen",
+    "problem": "Kampagnenentscheidungen brauchten mehr als Klicks und Impressionen.",
+    "solution": "29. Sep – 05. Okt 2026: Planning Tools Search mit 336 Klicks, 146,30 € Kosten, 1 Ads-Conversion, 962,49 € Wert und ROAS 6,58; Shopping Bestseller mit 90 Klicks, 140,16 € Kosten und 0 Conversions.",
+    "insight": "Planning Tools Search zeigte in diesem Zeitraum die stärkere zugeordnete Leistung. Regional Search bleibt eine frühe Beobachtung mit kleiner Stichprobe.",
+    "areas": [
+      "Paid Search / Google Ads",
+      "Analytics",
+      "Product / Tools"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "ai-referral-purchase",
+    "milestone": "Erfassten Kauf über einen KI-Verweis beobachtet",
+    "problem": "KI-basierte Entdeckung brauchte messbare Belege statt pauschaler Sichtbarkeitsbehauptungen.",
+    "solution": "AI Assistant / chatgpt.com vom 29. Sep – 05. Okt 2026 geprüft: 17 Sitzungen, 13 Tool-Interaktionen, 1 Kauf und 876,08 € Umsatz.",
+    "insight": "Ein erfasster Kauf ist eine hilfreiche Beobachtung, kein allgemeiner GEO-/AI-Search-Erfolgsbeleg. Er gehört zum Commerce-Ergebnis und ist kein zusätzlicher Umsatz.",
+    "areas": [
+      "GEO / AEO / AI Search",
+      "Analytics",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "gsc-relaunch-growth",
+    "milestone": "Organisches Suchwachstum rund um den Design-Relaunch dokumentiert",
+    "problem": "Der neue Shop brauchte datierte Nachweise seiner Entwicklung in der Google-Suche.",
+    "solution": "GSC-Vergleich: 08. Jun – 30. Jul 2026 mit 74 Klicks, 2.729 Impressionen, CTR 2,7 % und Position 39,4; 31. Jul – 24. Sep mit 351 Klicks, 19.694 Impressionen, CTR 1,8 % und Position 18,1.",
+    "insight": "Sichtbarkeit und Klicks stiegen nach dem Relaunch am 31. Juli. Unterschiedliche Zeitraumlängen und parallele Arbeit erlauben keine isolierte Ursachenaussage zum Redesign. GSC ist die primäre Quelle für die Google-Suche.",
+    "areas": [
+      "SEO",
+      "Analytics",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "bigquery-sql-development",
+    "milestone": "BigQuery-/SQL-Reporting für Kampagnenanalysen entwickeln",
+    "problem": "Kampagnenänderungen erfordern konsistente Namen und gruppierte Kennzahlen im Reporting.",
+    "solution": "Ich lerne, Kampagnendaten abzufragen und historische sowie umbenannte Kampagnen für Vergleiche von Impressionen, Klicks, Kosten, Conversions, Wert, CTR, CPC und ROAS zusammenzuführen.",
+    "insight": "Eine Reporting-Kompetenz im Aufbau: Vergleichbare Daten und ausdrückliche Gruppierung kommen vor Schlussfolgerungen. Kein fortgeschrittenes Data Engineering.",
+    "areas": [
+      "Analytics",
+      "Paid Search / Google Ads",
+      "Technical Implementation"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "shopify-launch",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Neuen Shopify-Shop gestartet und direkt weiter optimiert",
+    "problem": "Produkt-, Checkout-, Zahlungs- und Versandprozesse mussten gleichzeitig einsatzbereit sein.",
+    "solution": "Stufenweiser Launch mit anschließenden End-to-End-Testbestellungen, Prozesskorrekturen und laufender Qualitätssicherung.",
+    "insight": "Der Launch beginnt die operative Optimierung.",
+    "areas": [
+      "E-Commerce",
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "tracking-architecture",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Zentrale GTM-Tracking-Architektur definiert",
+    "problem": "Shopify, GA4 und Google Ads konnten überlappende Tags und doppelte Messungen erzeugen.",
+    "solution": "Google Tag Manager als zentrale Steuerung definiert und parallele Messwege reduziert.",
+    "insight": "Verlässliche Entscheidungen brauchen eine klare Steuerung der Conversion-Messung.",
+    "areas": [
+      "Analytics",
+      "CRO",
+      "Technical Implementation",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "search-structure",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Strukturierte Google-Search-Kampagnenarchitektur aufgebaut",
+    "problem": "Keyword-Optionen und Kampagnenintention waren zu breit für eine saubere Auswertung.",
+    "solution": "Keyword-Logik nach Match Type getrennt und engere, intentionsbezogene Kampagnen entwickelt. Struktur und Budgetverteilung eigenständig innerhalb des vorgegebenen Gesamtbudgetrahmens entschieden.",
+    "insight": "Bei kleinen Budgets können Kontrolle und klare Suchintention wichtiger sein als automatisierte Skalierung.",
+    "areas": [
+      "Paid Search / Google Ads",
+      "SEO",
+      "Analytics",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "product-imagery",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Einheitliches Produktbildsystem entwickelt",
+    "problem": "Uneinheitliche Bilder erschwerten den Vergleich von Produkten, Farben und Montagedetails.",
+    "solution": "Wiederholbaren Standard für Abstand, Hintergrund, Schatten und Produktgenauigkeit definiert.",
+    "insight": "Einheitliche Produktbilder verbessern Wiedererkennung und Variantenverständnis bei technischer Genauigkeit.",
+    "areas": [
+      "E-Commerce",
+      "UX / Customer Journey",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "shipping-cart",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Versandklarheit in den Warenkorb integriert",
+    "problem": "Lieferkosten waren vor dem Checkout nicht sicher einschätzbar.",
+    "solution": "Kurze Versandinformationen direkt im Warenkorb ergänzt und mit den tatsächlichen Regeln abgeglichen.",
+    "insight": "Versandtransparenz reduziert Unsicherheit an einem wichtigen Entscheidungspunkt.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "e2e-orders",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Gesamten Bestellablauf mit echten Testbestellungen geprüft",
+    "problem": "Backend-Einstellungen allein zeigten nicht alle kundenseitigen Fehler.",
+    "solution": "B2C- und B2B-Testkäufe auf Desktop und Mobilgeräten sowie mit verschiedenen Zahlarten durchgeführt, einschließlich Rechnung, Storno und Gutschrift.",
+    "insight": "E-Commerce-QA muss den gesamten Bestellablauf abdecken.",
+    "areas": [
+      "UX / Customer Journey",
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "duplicate-purchase",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Doppelte Kaufmessung entfernt",
+    "problem": "Shopify-Apps, Pixel, GA4 und Ads konnten Kaufereignisse parallel senden.",
+    "solution": "Direkte Messwege reduziert und Ereignissteuerung über GTM zentralisiert.",
+    "insight": "ROAS und Conversion-Analyse brauchen ein vertrauenswürdiges Ereignismodell.",
+    "areas": [
+      "Analytics",
+      "CRO",
+      "Paid Search / Google Ads",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "pmax-pause",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "PMax nach hohem Traffic ohne Käufe pausiert",
+    "problem": "Rund 50.000 Impressionen und 1.300 Klicks erzeugten keine verifizierten Käufe bei weiterlaufenden Kosten.",
+    "solution": "Kampagne gestoppt, Traffic-Qualität neu bewertet und kontrolliertere Search-Tests priorisiert.",
+    "insight": "Impressionen und Klicks sind kein Erfolg, wenn das Geschäftsergebnis fehlt.",
+    "areas": [
+      "Analytics",
+      "Paid Search / Google Ads",
+      "CRO",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "external-redesign-test",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Redesign mit externem Vorher-nachher-Test geprüft",
+    "problem": "Vertrautheit mit dem Shop konnte Bedien- und Wahrnehmungsprobleme verdecken.",
+    "solution": "Altes und neues Design mit externen Nutzern verglichen und nach Klarheit, Vertrauen und Kaufzuversicht gefragt.",
+    "insight": "Qualitative Tests zeigen positive Muster und hilfreiche Gegenmeinungen; kein formaler statistischer A/B-Test.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "checkout-usability",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Usability von Startseite bis Checkout getestet",
+    "problem": "Eigenes Shopwissen konnte Navigations- und Entscheidungsprobleme verdecken.",
+    "solution": "Eine externe Person selbstständig durch Kategorien, Produkte, Ratgeber und Checkout navigieren lassen.",
+    "insight": "Eine vollständige externe Journey-Prüfung ergänzt einzelne Komponententests.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "SEO"
+    ]
+  },
+  {
+    "id": "clarity",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Microsoft Clarity zur Analyse ergänzt",
+    "problem": "GA4 zeigte Absprünge, erklärte aber nicht die Gründe für Zögern.",
+    "solution": "Heatmaps und Sitzungsaufzeichnungen zur quantitativen Funnel-Analyse ergänzt.",
+    "insight": "Quantitative und qualitative Verhaltensdaten ergänzen sich.",
+    "areas": [
+      "Analytics",
+      "UX / Customer Journey",
+      "CRO"
+    ]
+  },
+  {
+    "id": "mini-cart",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Mini-Cart um Bestellprüfung und zweistufige Handlungslogik erweitert",
+    "problem": "Kunden brauchten einen klareren Moment zur Bestellprüfung vor dem Checkout.",
+    "solution": "Prüfschritt und klarere nächste Aktionen im Mini-Cart ergänzt.",
+    "insight": "Kleine Änderungen vor dem Checkout können Sicherheit schaffen, ohne unnötige Komplexität.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "trust-above-fold",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Vertrauensinformationen näher an die Entscheidung gebracht",
+    "problem": "Wichtige Vertrauenssignale waren bei der ersten Produktbewertung nicht sichtbar genug.",
+    "solution": "Händlerbund-Element im sichtbaren Einstiegsbereich integriert und Versand- sowie Zahlungskommunikation gestärkt.",
+    "insight": "Vertrauen hilft dort, wo Unsicherheit entsteht.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "configurator-concept",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Projektbezogenen Zaunkonfigurator aus echten Planungsfragen entwickelt",
+    "problem": "Zaunkauf erfordert Lösungen für Länge, Ecken, Montage, Zuschnitt und Zubehör.",
+    "solution": "Konfiguration um das tatsächliche Kundenprojekt statt um ein klassisches Variantenformular strukturiert.",
+    "insight": "Komplexe Produkte werden verständlicher, wenn die Oberfläche die reale Aufgabe abbildet.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Product / Tools",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "geometry-logic",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Berechnungslogik für Mattenraster, Zuschnitt und Richtungswechsel gebaut",
+    "problem": "Grundstücke passen nicht immer zu Standardmatten oder 90-Grad-Winkeln.",
+    "solution": "Regeln für Mattenanzahl, Zuschnitt, Ecken und Richtungswechsel entwickelt.",
+    "insight": "Ein nützlicher Konfigurator berücksichtigt reale Ausnahmen.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "configurator-landing",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Konfigurator als technisch entkoppelte Shopify-Landingpage umgesetzt",
+    "problem": "Standard-Produkttemplates begrenzten die Oberfläche, während Produktdaten und Warenkorb benötigt wurden.",
+    "solution": "Eigene Landingpage mit Shopify-Produktdaten und Warenkorblogik verbunden.",
+    "insight": "Eine getrennte Erlebnisoberfläche ermöglicht mehr UX-Freiheit bei bestehendem Commerce-Backend.",
+    "areas": [
+      "Technical Implementation",
+      "Product / Tools",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "pricecheck-shared-logic",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Preischeck und Zaunkonfigurator auf gemeinsame Produktlogik gestellt",
+    "problem": "Getrennte Tools konnten widersprüchliche Preise, Varianten oder Materialannahmen erzeugen.",
+    "solution": "Beide Tools mit derselben Produkt- und Preislogik verbunden.",
+    "insight": "Zusammenhängende Kundentools brauchen eine gemeinsame Datenquelle.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "material-calculation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Regelbasierte Material- und Montageberechnung entwickelt",
+    "problem": "Kunden brauchten neben Zaunlänge die passenden Pfosten, Befestigungen und Montageoptionen.",
+    "solution": "Projektentscheidungen in eine Materialliste mit kontextabhängigen Montagekomponenten übersetzt.",
+    "insight": "Entscheidungshilfe wird konkret, wenn Projektabsichten zur nutzbaren Materialliste werden.",
+    "areas": [
+      "Product / Tools",
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "price-to-configurator",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Übergang vom Preischeck zur vollständigen Konfiguration gestaltet",
+    "problem": "Preisorientierte Besucher sollten bei vertiefter Planung nicht neu beginnen müssen.",
+    "solution": "Preischeck als direkten Einstieg in die vollständige Zaunkonfiguration gestaltet.",
+    "insight": "Gute Journeys erhalten den bisherigen Fortschritt.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Product / Tools",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "cart-conflict",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Doppelte Warenkorbpositionen zwischen Tools verhindert",
+    "problem": "Preischeck und anschließende vollständige Konfiguration konnten doppelte Mengen erzeugen.",
+    "solution": "Konfliktlogik ergänzt: passende vorhandene Artikel ersetzen oder behalten.",
+    "insight": "Das System sollte bisherige Schritte berücksichtigen und Bestellfehler verhindern.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "privacy-configurator",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Sichtschutzkonfigurator in die Zaunplanung integriert",
+    "problem": "Sichtschutz gehört zum Projekt, braucht aber eigene Material- und Gestaltungsentscheidungen.",
+    "solution": "Eigenen Ablauf mit Farben und Mustern entwickelt und mit der Zaunplanung verbunden.",
+    "insight": "Ein bestehendes Projekt zu erweitern schafft mehr Nutzen als getrennte Journeys.",
+    "areas": [
+      "Product / Tools",
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "homepage-tools",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Planungstools früher auf der Startseite sichtbar gemacht",
+    "problem": "Preischeck, Konfigurator und Sets halfen nur, wenn Besucher sie früh entdeckten.",
+    "solution": "Prominenten Planungsbereich mit klaren Einstiegen vor Einzelprodukten ergänzt.",
+    "insight": "Neue Commerce-Funktionen brauchen bewusste Platzierung in der Informationsarchitektur.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "planning-search-campaign",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Eigene Search-Kampagne für Planungstools gestartet",
+    "problem": "Kunden mit Planungsabsicht brauchten einen direkten Weg von Google zu den Tools.",
+    "solution": "Getrennte Anzeigengruppen für Zaunplanung, Preischeck und Sichtschutzkonfiguration erstellt.",
+    "insight": "Digitale Beratungstools können eigene Suchintentionen bedienen und sollten getrennt gemessen werden.",
+    "areas": [
+      "Paid Search / Google Ads",
+      "SEO",
+      "Analytics",
+      "Product / Tools",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "diy-video",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Montageinhalte zurück in die Kauf-Journey geführt",
+    "problem": "Ein Montagevideo konnte informieren, aber ohne nächsten Schritt enden.",
+    "solution": "DIY-Video für Mobilgeräte angepasst und den Konfigurator als nächste Aktion eingebunden.",
+    "insight": "Lerninhalte unterstützen Commerce, wenn sie zur nächsten Entscheidung führen.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Digital Marketing",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "alarm-ia",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Kundenorientierte Informationsstruktur für ein Außenalarmsystem entwickelt",
+    "problem": "Anwendung, Komponenten und Montage mussten verständlich erklärt werden.",
+    "solution": "Seite um Kundenfragen und Entscheidungspunkte strukturiert, mit technischen Details zur Vertiefung.",
+    "insight": "Technische Produkte brauchen zuerst Klarheit und danach zusätzliche Tiefe.",
+    "areas": [
+      "UX / Customer Journey",
+      "SEO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "network-guide",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Netzwerkkabel-Ratgeber von der Shopkategorie getrennt",
+    "problem": "Ein langer Ratgeber verdrängte Produkte und verwischte die Kaufintention.",
+    "solution": "Eigenen Ratgeber erstellt, Kategorie auf Commerce fokussiert und beide intern verlinkt.",
+    "insight": "Redaktionelle und kommerzielle Seiten können verschiedene Intentionen bedienen und sich ergänzen.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "CRO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "content-commerce-funnel",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Weg von der Informationsseite zum Shop entwickelt",
+    "problem": "Technische Information bot keinen klaren nächsten Schritt zur passenden Lösung.",
+    "solution": "Shop-CTAs und interne Links von der Sicherheitsfrage zum passenden Angebot ergänzt.",
+    "insight": "Beratungsseiten brauchen einen bewussten nächsten Schritt.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "SEO",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "alarm-category",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Alarmkategorie mit SEO und Kaufberatung aufgebaut",
+    "problem": "Die Magento-Kategorie musste TYPO3-Inhalte ohne Duplikate ergänzen.",
+    "solution": "Eigenständige Commerce-Inhalte erstellt und mit der vertiefenden Beratungsseite verlinkt.",
+    "insight": "Content-Hub und Shopkategorie können verschiedene Intentionen in einer Architektur bedienen.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "canonical",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Duplicate Content und Canonical-Probleme untersucht",
+    "problem": "Mehrere Produktpfade verteilten Ranking-Signale auf verschiedene URLs.",
+    "solution": "Primäres SEO-Ziel und klarere Canonical-Hierarchie definiert.",
+    "insight": "Mehrfach erreichbare Kataloge brauchen eine eindeutige URL-Hierarchie.",
+    "areas": [
+      "SEO",
+      "Technical Implementation",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "404",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Anstieg von 404-Fehlern und Redirect-Schleifen diagnostiziert",
+    "problem": "Defekte und kreisförmige Weiterleitungen verschwendeten Crawling und störten Nutzerwege.",
+    "solution": "Weiterleitungsketten untersucht, Bereinigungsanforderungen definiert und Magento-URL-Rewrites sowie Kategoriepfade bei Bedarf mit dem Entwickler validiert.",
+    "insight": "Technische SEO-Korrekturen brauchen Ursachenanalyse und anschließende Prüfung.",
+    "areas": [
+      "SEO",
+      "Technical Implementation",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "manufacturer-framework",
+    "project": "Zaehlerschrank24.de",
+    "system": "TYPO3 + Magento",
+    "milestone": "Wiederverwendbares Hersteller-Content-Framework erstellt",
+    "problem": "Herstellerseiten brauchten Konsistenz und gleichzeitig eigenständige Inhalte.",
+    "solution": "Seitenlogik, Einstiegsinhalte, Sprungnavigation und FAQs standardisiert; Herstellerinhalte individuell gehalten.",
+    "insight": "Standardisierte Struktur kann spezifische Inhalte und Qualität skalieren.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "magento-box",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Wiederverwendbare Content-Box innerhalb der Magento-Grenzen gebaut",
+    "problem": "Das CMS reagierte auf einige CSS-Muster unvorhersehbar.",
+    "solution": "Kompatible HTML-/CSS-Struktur innerhalb der vorhandenen CMS-Grenzen umgesetzt.",
+    "insight": "In eingeschränkten CMS-Umgebungen hilft robuste Einfachheit.",
+    "areas": [
+      "Technical Implementation",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "category-relaunch",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento + TYPO3",
+    "milestone": "SEO-/UX-Relaunch-Roadmap für eine schwache Kategorie entwickelt",
+    "problem": "Geringe Sichtbarkeit, veraltete Inhalte und unklare Kaufberatung.",
+    "solution": "URL, Metadaten, Keyword-Cluster, Herstellervergleich und Entscheidungsweg gemeinsam geplant. SEO-, UX- und Content-Anforderungen mit einem Magento-Entwickler definiert.",
+    "insight": "Schwache Kategorien brauchen oft strukturelle Veränderung statt isolierter Textkorrekturen.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "CRO",
+      "Analytics",
+      "Digital Marketing"
+    ]
+  },
+  {
+    "id": "wago-language",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "WAGO-Kategorie an tatsächliche Suchsprache angepasst",
+    "problem": "Interne Produktbegriffe entsprachen nicht vollständig der Kundensuche.",
+    "solution": "Keyword-Strategie und Begriffstabelle mit tatsächlich verwendeten Suchbegriffen erstellt.",
+    "insight": "Produkttaxonomie muss in Kundensprache übersetzt werden.",
+    "areas": [
+      "SEO",
+      "Analytics",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "abb-variants",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "36 ABB-Leitungsschutzschalter in ein skalierbares Variantenmodell überführt",
+    "problem": "Einzelprodukte brauchten gültige Kombinationen von Stromstärke, Polzahl und Charakteristik.",
+    "solution": "Attributmatrix erstellt und Shopbestand gegen eine gemeinsame Datenquelle geprüft.",
+    "insight": "Saubere Produktdaten und Attribute ermöglichen konfigurierbare Produkte.",
+    "areas": [
+      "E-Commerce",
+      "Product / Tools",
+      "Technical Implementation",
+      "Analytics"
+    ]
+  },
+  {
+    "id": "magento-sidebar",
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento",
+    "milestone": "Magento-Widget-Problem mit stabilem Produktionsweg gelöst",
+    "problem": "Neue Widgets funktionierten im Test, aber trotz korrekter Einstellungen nicht produktiv.",
+    "solution": "CMS-Block direkt geprüft, bewährten globalen Sidebar-Block wiederverwendet und Inhalte dort integriert.",
+    "insight": "Bei instabilen Plattformebenen kann eine geprüfte Struktur der sicherere Produktionsweg sein.",
+    "areas": [
+      "Technical Implementation",
+      "E-Commerce",
+      "UX / Customer Journey",
+      "CRO"
+    ]
+  },
+  {
+    "id": "geo-ai-search-framework",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Priorisiertes GEO-/AI-Search-Readiness-Framework begonnen",
+    "problem": "SEO-Empfehlungen betreffen auch KI-Systeme, sind aber nicht automatisch fehlende Arbeit.",
+    "solution": "Roadmap mit 36 Maßnahmen zu Rendering, H1, Canonicals, Product / Offer / ProductGroup, Versand und Rückgabe, Entitäten, internen Links, Suchintention, Attributen, Core Web Vitals, Zugänglichkeit, direkten Antworten, Autoren, Medien, GA4 / GSC und AI Search erstellt. Jede Maßnahme als umgesetzt, zu prüfen oder fehlend eingeordnet.",
+    "insight": "GEO / AEO wird verlässlicher durch Abhängigkeiten und Bestandsprüfung statt doppeltem Schema oder Content.",
+    "areas": [
+      "SEO",
+      "GEO / AEO / AI Search",
+      "Technical Implementation",
+      "Analytics",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "accessibility-keyboard-qa",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Zugänglichkeit und Tastaturbedienung in QA aufgenommen",
+    "problem": "Tools und Shop mussten über Mausbedienung am Desktop hinaus verständlich und bedienbar sein.",
+    "solution": "Tastaturnavigation, Fokus, Labels, Eingaben, Fehlerkommunikation, mobile Bedienung und Konfiguratorinteraktion in QA ergänzt.",
+    "insight": "Zugänglichkeit gehört in technische QA und Interaktionsdesign. Praktische Umsetzung ohne formale Zertifizierung oder Konformitätsbehauptung.",
+    "areas": [
+      "UX / Customer Journey",
+      "Technical Implementation",
+      "CRO"
+    ]
+  },
+  {
+    "id": "ai-search-content-structure",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Vorhandene Beratung für AI Search und direkte Antworten erweitert",
+    "problem": "Nützliche FAQs und Tools brauchten klare, überprüfbare Antwortstrukturen und Entitätskontext.",
+    "solution": "FAQs, 6/5/6-vs.-8/6/8-Erklärung, interne Links, Tools, Kaufberatung und DIY-Inhalte als Grundlage für direkte Antworten, strukturierten Kontext und weitere GEO-/AEO-Arbeit genutzt.",
+    "insight": "AI Search sollte auf Kundennutzen und klaren Quellen aufbauen, statt eine zusätzliche Keyword-Schicht zu erzeugen.",
+    "areas": [
+      "SEO",
+      "GEO / AEO / AI Search",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  }
+]

@@ -228,7 +228,15 @@
     "accessible_38": "Winnie at the New York waterfront",
     "accessible_39": "Flight path between Frankfurt and New York",
     "accessible_40": "Next New York image",
-    "accessible_41": "Close video"
+    "accessible_41": "Close video",
+    "data_certificate_pdf_label": "Open Data Preparation & Infrastructure course certificate PDF, completed 27 September 2026",
+    "ddz_sistrix_image_label": "Open DDZ SISTRIX snapshot from 24 September 2026: 65 worldwide keywords, 49 in Germany, visibility index 0.0003 and one listed ChatGPT citation",
+    "ddz_sistrix_date": "DDZ · SISTRIX · 24 September 2026",
+    "ddz_sistrix_keywords": "worldwide keywords",
+    "ddz_sistrix_title": "Early search visibility after launch and relaunch",
+    "ddz_sistrix_text": "The dated snapshot lists 65 keywords worldwide and 49 in Germany, a German visibility index of 0.0003, and one citation listed under OpenAI ChatGPT. The keyword-history chart shows rising visibility after the 8 June launch and 31 July design relaunch.",
+    "ddz_sistrix_limits": "Supporting evidence from an early-stage shop. These are different SISTRIX measures; the single ChatGPT citation is an observation, not proof of sustained AI-search performance or an attributed sale. The snapshot does not establish that the redesign alone caused the growth.",
+    "ddz_sistrix_source": "Source: SISTRIX · dein-doppelstabmattenzaun.de · snapshot supplied with capture date 24 September 2026. Google Search Console remains the primary record for Google Search performance."
   },
   "de": {
     "skip_to_content": "Zum Inhalt springen",
@@ -459,6 +467,14 @@
     "accessible_38": "Winnie am Wasser in New York",
     "accessible_39": "Flugroute zwischen Frankfurt und New York",
     "accessible_40": "Nächstes New-York-Bild",
-    "accessible_41": "Video schließen"
+    "accessible_41": "Video schließen",
+    "data_certificate_pdf_label": "Data Preparation & Infrastructure als Kurszertifikat-PDF öffnen, abgeschlossen am 27. September 2026",
+    "ddz_sistrix_image_label": "DDZ-SISTRIX-Snapshot vom 24. September 2026 öffnen: 65 Keywords weltweit, 49 in Deutschland, Sichtbarkeitsindex 0,0003 und eine ausgewiesene ChatGPT-Zitation",
+    "ddz_sistrix_date": "DDZ · SISTRIX · 24. September 2026",
+    "ddz_sistrix_keywords": "Keywords weltweit",
+    "ddz_sistrix_title": "Erste Suchsichtbarkeit nach Launch und Relaunch",
+    "ddz_sistrix_text": "Der datierte Snapshot weist 65 Keywords weltweit und 49 in Deutschland, einen deutschen Sichtbarkeitsindex von 0,0003 sowie eine Zitation unter OpenAI ChatGPT aus. Der Keyword-Verlauf zeigt eine steigende Sichtbarkeit nach dem Launch am 8. Juni und dem Design-Relaunch am 31. Juli.",
+    "ddz_sistrix_limits": "Ergänzender Nachweis für einen jungen Shop. Die SISTRIX-Werte beschreiben unterschiedliche Messgrößen. Die einzelne ChatGPT-Zitation ist eine Beobachtung, kein Beleg für dauerhafte KI-Suchleistung oder einen zugeordneten Kauf. Der Snapshot belegt nicht, dass das Redesign allein das Wachstum verursacht hat.",
+    "ddz_sistrix_source": "Quelle: SISTRIX · dein-doppelstabmattenzaun.de · bereitgestellter Snapshot mit Aufnahmedatum 24. September 2026. Google Search Console bleibt die maßgebliche Quelle für Google-Suchleistung."
   }
 }

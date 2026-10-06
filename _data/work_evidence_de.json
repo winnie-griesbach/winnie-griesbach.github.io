@@ -643,5 +643,186 @@
       "UX / Customer Journey",
       "E-Commerce"
     ]
+  },
+  {
+    "id": "finance-process",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Rechnungsprozesse getestet und nach Sufio-Tests auf Lexware Office gewechselt",
+    "problem": "Für Bestellungen mussten Rechnung, Proforma, Storno und Gutschrift zuverlässig funktionieren. Eine einfache Anbindung allein genügte nicht.",
+    "solution": "Belegprozesse getestet, Lexware Office ausgewählt und die Steuerberaterübergabe vorbereitet. Fehlende Rechnungen später auf einen Vertragsausfall zurückgeführt und den Dienst reaktiviert.",
+    "insight": "Commerce-Verantwortung umfasst auch operative Abhängigkeiten nach dem Checkout. Dies beschreibt Prozessprüfung und Umsetzung, keine rechtliche Konformitätszertifizierung.",
+    "areas": [
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "invoice-mail-dns",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Fehler bei Rechnungszustellung von Rechnungserstellung getrennt",
+    "problem": "Rechnungen wurden erstellt, einzelne E-Mails aber unter anderem von WEB.DE abgelehnt. Die verbundene Shopdomain authentifizierte den externen Maildienst nicht.",
+    "solution": "Authentifizierung und Mailgun-MX auf der Rechnungs-Subdomain vervollständigt und die STRATO-Mailzustellung der Hauptdomain erhalten.",
+    "insight": "Zuerst die fehlerhafte Ebene finden. Eine Reparatur der Rechnungszustellung soll den normalen Geschäfts-Mailverkehr erhalten.",
+    "areas": [
+      "Technical Implementation",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "variant-bundles",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Variantenabhängige Komponenten-Bundles aufgebaut",
+    "problem": "Ein Anschlussset benötigte passende Abdeckleisten, Winkel und Befestigungen. Die Stückzahlen ändern sich mit der Höhe.",
+    "solution": "Komponenten und Mengen je Höhe in Bundle.app eingerichtet und die Darstellung im Warenkorb sowie das Checkout-Verhalten geprüft.",
+    "insight": "Ein komfortables Set hilft nur, wenn seine Stückliste zur tatsächlichen Montage passt.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "shipping-profile-diagnosis",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Uneinheitliche Versandkosten auf Profile und Variantendaten zurückgeführt",
+    "problem": "Testwarenkörbe ergaben unterschiedliche Kosten, wenn Paket und Spedition oder mehrere Profile kombiniert wurden. Lange Artikel brauchten eine passende Steuerung.",
+    "solution": "Produkte, Versandprofile und Variantengewichte abgeglichen, das gemeinsame DDZ-Profil erweitert und Steuergewichte für speditionspflichtige Varianten eingesetzt. Varianten und Teillieferungen bleiben Teil der laufenden QA.",
+    "insight": "Versandverhalten hängt ebenso von Produktdaten und Geschäftsregeln wie von der Warenkorb-UX ab. Beschrieben ist die dokumentierte Konfiguration; nicht jede heutige Kombination wird als abschließend geprüft dargestellt.",
+    "areas": [
+      "Technical Implementation",
+      "E-Commerce",
+      "CRO"
+    ]
+  },
+  {
+    "id": "b2b-context-validation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "B2B-Katalogkontext und Komponenten-Konsistenz geprüft",
+    "problem": "Der hybride B2C-/B2B-Shop benötigte eindeutige Artikel, Stückzahlen und kontextabhängige Preise, ohne eine zweite fest codierte Preisliste in den Tools.",
+    "solution": "Kundentags und Katalogkontext genutzt, Pfosten-SKUs und Befestigungsmengen anhand vorgegebener Komponentenpreise geprüft und die Tools in beiden Kundenkontexten getestet.",
+    "insight": "Umsetzung und Konsistenzprüfung arbeiten mit vorgegebenen Preisen. Daraus folgt weder Preisstrategie-Verantwortung noch Shopify-Plus-Erfahrung.",
+    "areas": [
+      "E-Commerce",
+      "Technical Implementation",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "consent-diagnostic-tests",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Consent als Ursache fehlender Kaufmessung getestet",
+    "problem": "Einige Shopify-Bestellungen erschienen nicht in GA4 oder Ads. Das allein unterschied noch keinen Codefehler von einwilligungsbedingtem Datenverlust.",
+    "solution": "Testkäufe mit Zustimmung und Ablehnung verglichen und verständlichen Kontext zur Cookie-Auswahl ergänzt, ohne die Ablehnung zu blockieren.",
+    "insight": "Die Tests identifizierten Consent als eine Ursache. Sie erklären nicht jede spätere Shopify-/GA4-Lücke und belegen keine gemessene Verbesserung der Zustimmungsquote.",
+    "areas": [
+      "Analytics",
+      "Technical Implementation",
+      "UX / Customer Journey"
+    ]
+  },
+  {
+    "id": "theme-migration-regressions",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Funktionierende Anpassungen bei Theme-Migration und Regressionen geschützt",
+    "problem": "Ein Impulse-Update und spätere übereinanderliegende Patches konnten Branding verlieren oder Desktop-/Mobile-Regressionen auslösen.",
+    "solution": "Das neue Theme separat geprüft, fehlende Elemente rekonstruiert, individuellen Code gekennzeichnet und aktuelle Live-Kopien als Basis für unveröffentlichte Entwicklung und erneute Tests genutzt.",
+    "insight": "Eine gespeicherte Änderung ist noch kein geprüftes Ergebnis. Betroffene Journeys testen und nach Veröffentlichung einen neuen Ausgangsstand definieren.",
+    "areas": [
+      "Technical Implementation",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "discount-stacking",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Unbeabsichtigten doppelten Rabatt erkannt und beseitigt",
+    "problem": "Eine Produktreduzierung und eine automatische Sommeraktion wendeten denselben Rabatt zweimal an.",
+    "solution": "Produkt- und Warenkorbrabatte gemeinsam geprüft und die doppelte automatische Aktion deaktiviert.",
+    "insight": "Aktions-QA muss kombinierte Regeln über Produkt, Warenkorb und Checkout prüfen. Dies ist Regelumsetzung, keine Verantwortung für die Produktpreisstrategie.",
+    "areas": [
+      "E-Commerce",
+      "CRO",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "privacy-calculation-validation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Sichtschutz-Preiseinheiten und Rollenbedarf je Farbe korrigiert",
+    "problem": "Eine Verwechslung von Cent und Euro überhöhte den Testpreis. Die Gesamtmeter allein bestimmten den Rollenbedarf je Farbe nicht.",
+    "solution": "Shopify-Preisumrechnung korrigiert, Rollenbedarf je Farbe aufgerundet und individuell gewählte Muster bei Änderungen der Zaunlänge erhalten.",
+    "insight": "Neben dem Muster müssen Einheiten und kaufbare Mengen stimmen. Bewusste Kundenentscheidungen sollen erhalten bleiben.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "UX / Customer Journey"
+    ]
+  },
+  {
+    "id": "availability-partial-delivery",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Variantenverfügbarkeit und Teillieferung vor dem Checkout sichtbar gemacht",
+    "problem": "Eine berechnete Konfiguration konnte nicht verfügbare Varianten oder Mengen oberhalb des Bestands enthalten. Stille Warenkorbfehler verschleierten die Ursache.",
+    "solution": "Verfügbare Varianten zugeordnet, Warenkorbfehler und Teillieferung sichtbar gemacht und Hinweise nach Mengenänderungen neu bewertet. Lieferdaten nur bei vorhandenen Daten angezeigt.",
+    "insight": "Eine korrekte Berechnung muss auch eine gültige, verständliche Bestellung ermöglichen. Bestandsfälle bleiben Teil der laufenden QA.",
+    "areas": [
+      "Product / Tools",
+      "E-Commerce",
+      "UX / Customer Journey",
+      "CRO"
+    ]
+  },
+  {
+    "id": "merchant-documentation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Merchant-Center-Einrichtung und Prüfungen dokumentiert",
+    "problem": "Feed- und Versandeinrichtung waren komplex und allein aus persönlichem Wissen schwer reproduzierbar.",
+    "solution": "Eine zwölfseitige Anleitung mit Fehlerprüfung und Checkliste erstellt, einschließlich Konsistenz von Produktfeed und Versand.",
+    "insight": "Dokumentierte Arbeitsschritte machen Einrichtung und Fehlersuche wiederholbar. Beschrieben ist die Arbeit; die interne Anleitung wird hier nicht veröffentlicht.",
+    "areas": [
+      "E-Commerce",
+      "SEO",
+      "Paid Search"
+    ]
+  },
+  {
+    "id": "attribution-governance",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Akquise-Zuordnung von interner Navigation und Tool-Nutzung getrennt",
+    "problem": "Interne Kampagnenparameter konnten die ursprüngliche Herkunft überlagern. Tool-Starts als Hauptconversion könnten auf Klicks statt Käufe optimieren.",
+    "solution": "UTM-Konventionen für externe Einstiege und interne Navigation ohne diese Tags genutzt. Käufe bleiben das primäre Ads-Ziel, Tool-Events ergänzende Funnel-Signale. Die vollständige Tool-Abdeckung bleibt in Prüfung.",
+    "insight": "Herkunft erhalten und diagnostische Interaktionen vom Geschäftsergebnis unterscheiden. Tool-Tracking wird nicht als abgeschlossener End-to-End-Audit dargestellt.",
+    "areas": [
+      "Analytics",
+      "Paid Search",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "regional-landingpage-navigation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Zusätzlichen Klick im regionalen Landingpage-Entwurf entfernt · 6. Oktober 2026",
+    "problem": "Der Preischeck-CTA führte zunächst zur Tool-Übersicht und benötigte einen weiteren Klick. Desktop-Nutzer wollten die regionale Landingpage beim Öffnen einer anderen Seite behalten.",
+    "solution": "Im Entwurf den CTA direkt zum Preischeck im Startseiten-Hero geführt. Nur für dieses regionale Template: oberhalb 768 px neue Tabs, mobil Navigation im gleichen Tab.",
+    "insight": "Dokumentierte Umsetzung in einem unveröffentlichten Theme, kein bestätigter Live-Rollout. Navigation soll zur konkreten Nutzungssituation passen und nicht pauschal zum globalen Standard werden.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation"
+    ]
   }
 ]

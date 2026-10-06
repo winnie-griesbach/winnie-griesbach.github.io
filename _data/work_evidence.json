@@ -643,5 +643,186 @@
       "UX / Customer Journey",
       "E-Commerce"
     ]
+  },
+  {
+    "id": "finance-process",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Validated invoicing workflows and moved from Sufio tests to Lexware Office",
+    "problem": "Order handling needed reliable invoice, proforma, cancellation and credit-note processes; integration convenience alone was insufficient.",
+    "solution": "Tested document workflows, selected Lexware Office and prepared the accountant handoff. Later traced missing invoices to a contract lapse and restored the service.",
+    "insight": "Commerce ownership includes operational dependencies after checkout. This describes process testing and implementation, not a legal-compliance certification.",
+    "areas": [
+      "E-Commerce",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "invoice-mail-dns",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Separated invoice-email delivery problems from invoice creation",
+    "problem": "Invoices were created but some messages were rejected, including by WEB.DE. Connecting the storefront domain did not authenticate the external mail service.",
+    "solution": "Completed authentication and Mailgun MX configuration on the invoice subdomain while preserving STRATO mail routing on the main domain.",
+    "insight": "Diagnose the failing layer before changing another service; a fix to invoice delivery should preserve ordinary business email.",
+    "areas": [
+      "Technical Implementation",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "variant-bundles",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Built variant-dependent component bundles",
+    "problem": "An installation set needed matching cover strips, brackets and fixings; quantities change with height.",
+    "solution": "Configured component bundles and quantities per height with Bundle.app, then checked their cart presentation and checkout behavior.",
+    "insight": "A convenient set is only useful when its underlying bill of materials matches the real installation.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "shipping-profile-diagnosis",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Traced inconsistent shipping charges to profiles and variant data",
+    "problem": "Test carts produced differing charges when parcel and freight services or separate profiles combined. Long items needed length-aware handling.",
+    "solution": "Compared products, shipping profiles and variant weights; expanded the shared DDZ profile and used control weights for freight-required variants. Kept variant and split-delivery cases in ongoing QA.",
+    "insight": "Shipping behavior is a product-data and business-rule problem as well as a cart-UX problem. Historical configuration is documented here; current rate correctness is not claimed for every combination.",
+    "areas": [
+      "Technical Implementation",
+      "E-Commerce",
+      "CRO"
+    ]
+  },
+  {
+    "id": "b2b-context-validation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Validated B2B catalog context and component consistency",
+    "problem": "The hybrid B2C/B2B shop needed consistent product identification, component quantities and customer-context prices without maintaining a second hard-coded price list in the tools.",
+    "solution": "Used customer tags and catalog context; checked post SKUs and fixing quantities against the supplied component prices, and tested tool behavior in both customer contexts.",
+    "insight": "Implementation and consistency checking use supplied prices. This does not imply pricing-strategy authority or Shopify Plus experience.",
+    "areas": [
+      "E-Commerce",
+      "Technical Implementation",
+      "Product / Tools"
+    ]
+  },
+  {
+    "id": "consent-diagnostic-tests",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Tested consent as a cause of missing purchase tracking",
+    "problem": "Some Shopify orders did not appear in GA4 or Ads; that alone could not distinguish a code fault from consent-related data loss.",
+    "solution": "Compared test purchases with consent accepted and rejected, and added explanatory context around cookie choices without blocking rejection.",
+    "insight": "The documented tests identified consent as one cause. They do not explain every later Shopify/GA4 gap or demonstrate a measured improvement in acceptance.",
+    "areas": [
+      "Analytics",
+      "Technical Implementation",
+      "UX / Customer Journey"
+    ]
+  },
+  {
+    "id": "theme-migration-regressions",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Protected working customizations during theme migration and regression fixes",
+    "problem": "An Impulse theme update and later layered patches could lose branding or cause desktop/mobile regressions.",
+    "solution": "Checked the new theme separately, reconstructed missing elements, marked custom code and used current live copies as the baseline for unpublished development and retesting.",
+    "insight": "A saved change is not a verified result. Test the affected journey and define a fresh baseline after publishing.",
+    "areas": [
+      "Technical Implementation",
+      "UX / Customer Journey",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "discount-stacking",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Diagnosed and removed an unintended duplicate discount",
+    "problem": "A product reduction and an automatic summer promotion applied the same discount twice.",
+    "solution": "Checked product-level and cart-level promotion behavior together and disabled the duplicate automatic promotion.",
+    "insight": "Promotion QA must cover combined rules across product, cart and checkout. This is implementation of promotion rules, not ownership of product-price strategy.",
+    "areas": [
+      "E-Commerce",
+      "CRO",
+      "Technical Implementation"
+    ]
+  },
+  {
+    "id": "privacy-calculation-validation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Corrected privacy-screen price units and color-specific roll quantities",
+    "problem": "A cents/euros mismatch overstated the test price; total meters alone did not determine the rolls required for each color.",
+    "solution": "Corrected Shopify price conversion, rounded roll requirements per color and preserved individually chosen patterns when the main fence length changed.",
+    "insight": "Validate units and purchasing quantities as well as visual patterns, and preserve deliberate customer choices.",
+    "areas": [
+      "Product / Tools",
+      "Technical Implementation",
+      "UX / Customer Journey"
+    ]
+  },
+  {
+    "id": "availability-partial-delivery",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Made variant availability and partial delivery visible before checkout",
+    "problem": "A calculated configuration could include unavailable variants or quantities above stock; silent cart failures obscured the reason.",
+    "solution": "Matched available variants, surfaced cart errors and partial-delivery information, and reevaluated warnings after quantity changes. Displayed delivery dates only when data existed.",
+    "insight": "A correct calculation must also result in a valid, understandable order. Stock-related cases remain part of ongoing QA.",
+    "areas": [
+      "Product / Tools",
+      "E-Commerce",
+      "UX / Customer Journey",
+      "CRO"
+    ]
+  },
+  {
+    "id": "merchant-documentation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Documented Merchant Center setup and checks",
+    "problem": "Feed and shipping setup was complex and difficult to repeat from individual knowledge alone.",
+    "solution": "Created a twelve-page setup procedure with error checks and a checklist, covering product-feed and shipping consistency.",
+    "insight": "Documenting operational steps makes configuration and troubleshooting reproducible. This record describes the work; the internal procedure is not published here.",
+    "areas": [
+      "E-Commerce",
+      "SEO",
+      "Paid Search"
+    ]
+  },
+  {
+    "id": "attribution-governance",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Separated acquisition attribution from internal navigation and tool engagement",
+    "problem": "Internal campaign tags could obscure the original acquisition source; treating tool starts as the main conversion could optimize for clicks rather than purchases.",
+    "solution": "Used UTM conventions for external entries and untagged internal navigation; retained purchases as the primary Ads goal and tool events as secondary funnel signals. Separate tool-event coverage remains under review.",
+    "insight": "Preserve source context and distinguish diagnostic interactions from the business outcome. Tool tracking is not presented as a completed end-to-end audit.",
+    "areas": [
+      "Analytics",
+      "Paid Search",
+      "E-Commerce"
+    ]
+  },
+  {
+    "id": "regional-landingpage-navigation",
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify",
+    "milestone": "Reduced an extra click in the regional landing-page draft · 6 October 2026",
+    "problem": "The Price Check CTA initially led to a tools overview, requiring another click. Desktop users also wanted to retain the regional landing page when opening another page.",
+    "solution": "In the draft, changed the CTA to the Price Check in the homepage hero; configured new-tab navigation above 768 px and same-tab navigation on mobile, scoped to this regional template.",
+    "insight": "Documented implementation in an unpublished theme, not a verified live rollout. Navigation decisions should follow the specific user context rather than become a global rule.",
+    "areas": [
+      "UX / Customer Journey",
+      "CRO",
+      "Technical Implementation"
+    ]
   }
 ]

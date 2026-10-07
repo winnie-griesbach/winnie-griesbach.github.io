@@ -236,7 +236,11 @@
     "ddz_sistrix_title": "Early search visibility after launch and relaunch",
     "ddz_sistrix_text": "The dated snapshot lists 65 keywords worldwide and 49 in Germany, a German visibility index of 0.0003, and one citation listed under OpenAI ChatGPT. The keyword-history chart shows rising visibility after the 8 June launch and 31 July design relaunch.",
     "ddz_sistrix_limits": "Supporting evidence from an early-stage shop. These are different SISTRIX measures; the single ChatGPT citation is an observation, not proof of sustained AI-search performance or an attributed sale. The snapshot does not establish that the redesign alone caused the growth.",
-    "ddz_sistrix_source": "Source: SISTRIX · dein-doppelstabmattenzaun.de · snapshot supplied with capture date 24 September 2026. Google Search Console remains the primary record for Google Search performance."
+    "ddz_sistrix_source": "Source: SISTRIX · dein-doppelstabmattenzaun.de · snapshot supplied with capture date 24 September 2026. Google Search Console remains the primary record for Google Search performance.",
+    "ddz_constraints_tradeoffs": "Constraints & Trade-offs",
+    "ddz_tradeoffs_title": "Balancing simplicity, trust and measurement",
+    "ddz_tradeoffs_context": "Some optimizations require trade-offs between additional guidance, trust elements, feedback, data collection and a simpler customer experience.",
+    "ddz_tradeoffs_decision": "In one cart optimization, the final decision favored a more reduced interface to make the purchasing process easier and less distracting for users. My role was to understand the impact of that decision on service touchpoints, feedback opportunities and measurement — and to adapt the optimization approach accordingly. I respect stakeholder priorities and implement the agreed approach professionally, recognizing that several solutions can serve different goals."
   },
   "de": {
     "skip_to_content": "Zum Inhalt springen",
@@ -475,6 +479,10 @@
     "ddz_sistrix_title": "Erste Suchsichtbarkeit nach Launch und Relaunch",
     "ddz_sistrix_text": "Der datierte Snapshot weist 65 Keywords weltweit und 49 in Deutschland, einen deutschen Sichtbarkeitsindex von 0,0003 sowie eine Zitation unter OpenAI ChatGPT aus. Der Keyword-Verlauf zeigt eine steigende Sichtbarkeit nach dem Launch am 8. Juni und dem Design-Relaunch am 31. Juli.",
     "ddz_sistrix_limits": "Ergänzender Nachweis für einen jungen Shop. Die SISTRIX-Werte beschreiben unterschiedliche Messgrößen. Die einzelne ChatGPT-Zitation ist eine Beobachtung, kein Beleg für dauerhafte KI-Suchleistung oder einen zugeordneten Kauf. Der Snapshot belegt nicht, dass das Redesign allein das Wachstum verursacht hat.",
-    "ddz_sistrix_source": "Quelle: SISTRIX · dein-doppelstabmattenzaun.de · bereitgestellter Snapshot mit Aufnahmedatum 24. September 2026. Google Search Console bleibt die maßgebliche Quelle für Google-Suchleistung."
+    "ddz_sistrix_source": "Quelle: SISTRIX · dein-doppelstabmattenzaun.de · bereitgestellter Snapshot mit Aufnahmedatum 24. September 2026. Google Search Console bleibt die maßgebliche Quelle für Google-Suchleistung.",
+    "ddz_constraints_tradeoffs": "Rahmenbedingungen & Abwägungen",
+    "ddz_tradeoffs_title": "Einfachheit, Vertrauen und Messbarkeit ausbalancieren",
+    "ddz_tradeoffs_context": "Optimierungen erfordern oft Abwägungen zwischen zusätzlicher Orientierung, vertrauensbildenden Elementen, Feedback, Datenerhebung und einer möglichst einfachen Nutzererfahrung.",
+    "ddz_tradeoffs_decision": "Bei einer Warenkorb-Optimierung fiel die finale Entscheidung zugunsten einer reduzierteren Oberfläche, um den Kaufprozess einfacher und weniger ablenkend zu gestalten. Meine Aufgabe war es, die Auswirkungen auf Service-Touchpoints, Feedback-Möglichkeiten und die Messbarkeit zu verstehen und den weiteren Optimierungsansatz daran auszurichten. Ich respektiere die Ziele der Stakeholder und setze die abgestimmte Entscheidung professionell um. Dabei können mehrere Lösungswege sinnvoll sein und unterschiedliche Ziele unterstützen."
   }
 }

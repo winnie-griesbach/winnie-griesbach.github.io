@@ -12,13 +12,14 @@
   <link rel="alternate" hreflang="x-default" href="{{ '/en/' | absolute_url }}">
   <meta name="theme-color" content="#f4efe7">
   <title>{{ page.title | escape }}</title>
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/media/favicon.png">
-<link rel="shortcut icon" href="/assets/media/favicon.png">
-<link rel="apple-touch-icon" href="/assets/media/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/media/optimized/favicon-32.png">
+<link rel="shortcut icon" href="/assets/media/optimized/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/media/optimized/favicon-180.png">
+  <link rel="preload" as="image" href="/assets/media/optimized/linkedin-hero-banner.webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=f92fe884c47b">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=a4c50be0d687">
 </head>
 <body>
 <a class="skip-link" href="#main">{{ copy.skip_to_content }}</a>
@@ -65,7 +66,7 @@
 
     <aside class="profile-card reveal">
       <div class="profile-photo-wrap">
-        <img  src="/assets/media/winnie-at-work.webp"  alt="{{ copy.accessible_3 | escape }}"  width="600"  height="900"  loading="eager"  fetchpriority="high">
+        <img  src="/assets/media/optimized/winnie-at-work-480.webp" srcset="/assets/media/optimized/winnie-at-work-480.webp 480w, /assets/media/optimized/winnie-at-work-675.webp 675w" sizes="(max-width: 680px) calc(100vw - 28px), (max-width: 1050px) 336px, 260px"  alt="{{ copy.accessible_3 | escape }}"  width="600"  height="900"  loading="eager"  fetchpriority="high" decoding="async">
       </div>
       <div class="profile-info">
         <p class="profile-label">{{ copy.profile_snapshot }}</p>
@@ -162,7 +163,7 @@
         <button class="video-open" type="button" aria-label="{{ copy.accessible_5 | escape }}"
           data-video="/assets/media/pricecheck-demo.mp4"
           data-title="{{ copy.accessible_6 | escape }}">
-          <img src="/assets/media/pricecheck-poster.jpg" alt="{{ copy.accessible_7 | escape }}" width="2416" height="1852" loading="lazy">
+          <img src="/assets/media/optimized/pricecheck-poster-480.webp" srcset="/assets/media/optimized/pricecheck-poster-480.webp 480w, /assets/media/optimized/pricecheck-poster-960.webp 960w, /assets/media/optimized/pricecheck-poster-1600.webp 1600w" sizes="(max-width: 850px) calc(100vw - 80px), 640px" alt="{{ copy.accessible_7 | escape }}" width="2416" height="1852" loading="lazy" decoding="async">
           <span class="play-icon">▶</span>
           <span class="expand-label">{{ copy.click_to_enlarge }}</span>
         </button>
@@ -175,7 +176,7 @@
         <button class="video-open" type="button" aria-label="{{ copy.accessible_8 | escape }}"
           data-video="/assets/media/fence-configurator-demo.mp4"
           data-title="{{ copy.accessible_9 | escape }}">
-          <img src="/assets/media/fence-configurator-poster.jpg" alt="{{ copy.accessible_10 | escape }}" width="960" height="494" loading="lazy">
+          <img src="/assets/media/optimized/fence-configurator-poster-480.webp" srcset="/assets/media/optimized/fence-configurator-poster-480.webp 480w, /assets/media/optimized/fence-configurator-poster-960.webp 960w" sizes="(max-width: 850px) calc(100vw - 80px), 640px" alt="{{ copy.accessible_10 | escape }}" width="960" height="494" loading="lazy" decoding="async">
           <span class="play-icon">▶</span>
           <span class="expand-label">{{ copy.click_to_enlarge }}</span>
         </button>
@@ -188,7 +189,7 @@
         <button class="video-open" type="button" aria-label="{{ copy.accessible_11 | escape }}"
           data-video="/assets/media/privacy-configurator-demo.mp4"
           data-title="{{ copy.accessible_12 | escape }}">
-          <img src="/assets/media/privacy-configurator-poster.jpg" alt="{{ copy.accessible_13 | escape }}" width="2364" height="1840" loading="lazy">
+          <img src="/assets/media/optimized/privacy-configurator-poster-480.webp" srcset="/assets/media/optimized/privacy-configurator-poster-480.webp 480w, /assets/media/optimized/privacy-configurator-poster-960.webp 960w, /assets/media/optimized/privacy-configurator-poster-1600.webp 1600w" sizes="(max-width: 850px) calc(100vw - 80px), 640px" alt="{{ copy.accessible_13 | escape }}" width="2364" height="1840" loading="lazy" decoding="async">
           <span class="play-icon">▶</span>
           <span class="expand-label">{{ copy.click_to_enlarge }}</span>
         </button>
@@ -209,8 +210,8 @@
       <article class="comparison-card reveal">
         <p class="comparison-title">{{ copy.corner_connector }}</p>
         <div class="comparison-pair">
-          <a class="comparison-slot image-slot" href="/assets/media/corner-connector-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/corner-connector-before.png" alt="{{ copy.accessible_14 | escape }}" width="1122" height="1402" loading="lazy"></a>
-          <a class="comparison-slot image-slot" href="/assets/media/corner-connector-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/corner-connector-after.png" alt="{{ copy.accessible_15 | escape }}" width="1086" height="1448" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/corner-connector-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/optimized/corner-connector-before-480.webp" srcset="/assets/media/optimized/corner-connector-before-480.webp 480w, /assets/media/optimized/corner-connector-before-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_14 | escape }}" width="1122" height="1402" loading="lazy" decoding="async"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/corner-connector-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/optimized/corner-connector-after-480.webp" srcset="/assets/media/optimized/corner-connector-after-480.webp 480w, /assets/media/optimized/corner-connector-after-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_15 | escape }}" width="1086" height="1448" loading="lazy" decoding="async"></a>
         </div>
         <p class="comparison-copy">{{ copy.from_information_heavy_artwork_to_a_cleaner_product_fir }}</p>
       </article>
@@ -218,8 +219,8 @@
       <article class="comparison-card reveal">
         <p class="comparison-title">{{ copy.fence_post }}</p>
         <div class="comparison-pair">
-          <a class="comparison-slot image-slot" href="/assets/media/fence-post-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/fence-post-before.png" alt="{{ copy.accessible_16 | escape }}" width="1023" height="1537" loading="lazy"></a>
-          <a class="comparison-slot image-slot" href="/assets/media/fence-post-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/fence-post-after.png" alt="{{ copy.accessible_17 | escape }}" width="1254" height="1254" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/fence-post-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/optimized/fence-post-before-480.webp" srcset="/assets/media/optimized/fence-post-before-480.webp 480w, /assets/media/optimized/fence-post-before-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_16 | escape }}" width="1023" height="1537" loading="lazy" decoding="async"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/fence-post-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/optimized/fence-post-after-480.webp" srcset="/assets/media/optimized/fence-post-after-480.webp 480w, /assets/media/optimized/fence-post-after-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_17 | escape }}" width="1254" height="1254" loading="lazy" decoding="async"></a>
         </div>
         <p class="comparison-copy">{{ copy.from_visually_overloaded_product_communication_to_a_mor }}</p>
       </article>
@@ -227,8 +228,8 @@
       <article class="comparison-card reveal">
         <p class="comparison-title">{{ copy.special_hex_key }}</p>
         <div class="comparison-pair">
-          <a class="comparison-slot image-slot" href="/assets/media/hex-key-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/hex-key-before.png" alt="{{ copy.accessible_18 | escape }}" width="1055" height="1491" loading="lazy"></a>
-          <a class="comparison-slot image-slot" href="/assets/media/hex-key-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/hex-key-after.png" alt="{{ copy.accessible_19 | escape }}" width="1254" height="1254" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/hex-key-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/optimized/hex-key-before-480.webp" srcset="/assets/media/optimized/hex-key-before-480.webp 480w, /assets/media/optimized/hex-key-before-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_18 | escape }}" width="1055" height="1491" loading="lazy" decoding="async"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/hex-key-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/optimized/hex-key-after-480.webp" srcset="/assets/media/optimized/hex-key-after-480.webp 480w, /assets/media/optimized/hex-key-after-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_19 | escape }}" width="1254" height="1254" loading="lazy" decoding="async"></a>
         </div>
         <p class="comparison-copy">{{ copy.from_poster_style_explanation_to_a_simpler_product_pres }}</p>
       </article>
@@ -236,8 +237,8 @@
       <article class="comparison-card reveal">
         <p class="comparison-title">{{ copy.fence_panel_guide_6_5_6_vs_8_6_8 }}</p>
         <div class="comparison-pair">
-          <a class="comparison-slot image-slot" href="/assets/media/fence-guide-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/fence-guide-before.png" alt="{{ copy.accessible_20 | escape }}" width="1024" height="1536" loading="lazy"></a>
-          <a class="comparison-slot image-slot" href="/assets/media/fence-guide-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/fence-guide-after.png" alt="{{ copy.accessible_21 | escape }}" width="1513" height="1039" loading="lazy"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/fence-guide-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/optimized/fence-guide-before-480.webp" srcset="/assets/media/optimized/fence-guide-before-480.webp 480w, /assets/media/optimized/fence-guide-before-960.webp 960w, /assets/media/optimized/fence-guide-before-1024.webp 1024w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_20 | escape }}" width="1024" height="1536" loading="lazy" decoding="async"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/fence-guide-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/optimized/fence-guide-after-480.webp" srcset="/assets/media/optimized/fence-guide-after-480.webp 480w, /assets/media/optimized/fence-guide-after-960.webp 960w, /assets/media/optimized/fence-guide-after-1513.webp 1513w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_21 | escape }}" width="1513" height="1039" loading="lazy" decoding="async"></a>
         </div>
         <p class="comparison-copy">{{ copy.from_a_graphic_heavy_comparison_card_to_a_more_direct_v }}</p>
       </article>
@@ -245,8 +246,8 @@
       <article class="comparison-card comparison-card-home reveal">
         <p class="comparison-title">{{ copy.homepage_redesign }}</p>
         <div class="comparison-pair homepage-pair">
-          <a class="comparison-slot image-slot homepage-slot" href="/assets/media/homepage-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/homepage-before.png" alt="{{ copy.accessible_22 | escape }}" width="796" height="2047" loading="lazy"></a>
-          <a class="comparison-slot image-slot homepage-slot" href="/assets/media/homepage-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/homepage-after.png" alt="{{ copy.accessible_23 | escape }}" width="760" height="2047" loading="lazy"></a>
+          <a class="comparison-slot image-slot homepage-slot" href="/assets/media/homepage-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/optimized/homepage-before-480.webp" srcset="/assets/media/optimized/homepage-before-480.webp 480w, /assets/media/optimized/homepage-before-796.webp 796w" sizes="(max-width: 1050px) calc(50vw - 40px), 620px" alt="{{ copy.accessible_22 | escape }}" width="796" height="2047" loading="lazy" decoding="async"></a>
+          <a class="comparison-slot image-slot homepage-slot" href="/assets/media/homepage-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/optimized/homepage-after-480.webp" srcset="/assets/media/optimized/homepage-after-480.webp 480w, /assets/media/optimized/homepage-after-760.webp 760w" sizes="(max-width: 1050px) calc(50vw - 40px), 620px" alt="{{ copy.accessible_23 | escape }}" width="760" height="2047" loading="lazy" decoding="async"></a>
         </div>
         <p class="comparison-copy">{{ copy.from_a_product_first_homepage_to_a_guided_journey_that_ }}</p>
         <p class="comparison-note">{{ copy.click_either_image_to_open_the_full_page_view }}</p>
@@ -376,7 +377,7 @@
 
     <article class="milestone-card reveal">
       <a class="milestone-image" href="/assets/media/milestone-sistrix-ddz-2026-09-24.png" target="_blank" rel="noopener" aria-label="{{ copy.ddz_sistrix_image_label | escape }}">
-        <img src="/assets/media/milestone-sistrix-ddz-2026-09-24.webp" alt="{{ copy.ddz_sistrix_image_label | escape }}" width="2048" height="1798" loading="lazy">
+        <img src="/assets/media/optimized/milestone-sistrix-ddz-2026-09-24-480.webp" srcset="/assets/media/optimized/milestone-sistrix-ddz-2026-09-24-480.webp 480w, /assets/media/optimized/milestone-sistrix-ddz-2026-09-24-960.webp 960w, /assets/media/optimized/milestone-sistrix-ddz-2026-09-24-1600.webp 1600w" sizes="(max-width: 850px) calc(100vw - 80px), 640px" alt="{{ copy.ddz_sistrix_image_label | escape }}" width="2048" height="1798" loading="lazy" decoding="async">
       </a>
       <div class="milestone-content">
         <p class="milestone-label">{{ copy.ddz_sistrix_date }}</p>
@@ -413,9 +414,9 @@
         rel="noopener"
       >
         <img
-          src="/assets/media/milestone-sistrix-zs24.png"
+          src="/assets/media/optimized/milestone-sistrix-zs24-480.webp" srcset="/assets/media/optimized/milestone-sistrix-zs24-480.webp 480w, /assets/media/optimized/milestone-sistrix-zs24-960.webp 960w, /assets/media/optimized/milestone-sistrix-zs24-1584.webp 1584w" sizes="(max-width: 850px) calc(100vw - 80px), 640px"
           alt="{{ copy.accessible_25 | escape }}"
-         width="1584" height="1164" loading="lazy">
+         width="1584" height="1164" loading="lazy" decoding="async">
       </a>
 
       <div class="milestone-content">
@@ -449,9 +450,9 @@
         rel="noopener"
       >
         <img
-          src="/assets/media/milestone-gsc-200-clicks.jpeg"
+          src="/assets/media/optimized/milestone-gsc-200-clicks-480.webp" srcset="/assets/media/optimized/milestone-gsc-200-clicks-480.webp 480w, /assets/media/optimized/milestone-gsc-200-clicks-960.webp 960w, /assets/media/optimized/milestone-gsc-200-clicks-1033.webp 1033w" sizes="(max-width: 850px) calc(100vw - 80px), 640px"
           alt="{{ copy.accessible_26 | escape }}"
-         width="1033" height="1600" loading="lazy">
+         width="1033" height="1600" loading="lazy" decoding="async">
       </a>
 
       <div class="milestone-content">
@@ -525,10 +526,10 @@
     >
       <div class="analysis-preview-image">
         <img
-          src="/assets/media/chatgpt-ux-preview.webp"
+          src="/assets/media/optimized/chatgpt-ux-preview-480.webp" srcset="/assets/media/optimized/chatgpt-ux-preview-480.webp 480w, /assets/media/optimized/chatgpt-ux-preview-960.webp 960w, /assets/media/optimized/chatgpt-ux-preview-1600.webp 1600w" sizes="(max-width: 850px) calc(100vw - 80px), 640px"
           alt="{{ copy.accessible_28 | escape }}"
           loading="lazy"
-         width="1636" height="1242">
+         width="1636" height="1242" decoding="async">
         <span class="analysis-open-badge">{{ copy.open_pdf }}</span>
       </div>
 
@@ -552,10 +553,10 @@
     >
       <div class="analysis-preview-image">
         <img
-          src="/assets/media/gafave-app-preview.webp"
+          src="/assets/media/optimized/gafave-app-preview-480.webp" srcset="/assets/media/optimized/gafave-app-preview-480.webp 480w, /assets/media/optimized/gafave-app-preview-960.webp 960w, /assets/media/optimized/gafave-app-preview-1600.webp 1600w" sizes="(max-width: 850px) calc(100vw - 80px), 640px"
           alt="{{ copy.accessible_30 | escape }}"
           loading="lazy"
-         width="1608" height="992">
+         width="1608" height="992" decoding="async">
         <span class="analysis-open-badge">{{ copy.open_pdf }}</span>
       </div>
 
@@ -604,7 +605,7 @@
   <section id="about" class="about section-shell section-space">
     <div class="about-copy reveal">
       <div class="about-art">
-        <img src="/assets/media/about-winnie.png" alt="{{ copy.accessible_31 | escape }}" width="1254" height="1254" loading="lazy">
+        <img src="/assets/media/optimized/about-winnie-480.webp" srcset="/assets/media/optimized/about-winnie-480.webp 480w, /assets/media/optimized/about-winnie-960.webp 960w" sizes="(max-width: 850px) min(420px, calc(100vw - 48px)), 420px" alt="{{ copy.accessible_31 | escape }}" width="1254" height="1254" loading="lazy" decoding="async">
       </div>
       <p class="eyebrow">{{ copy.about_me }}</p>
       <h2>{{ copy.i_am_most_useful_where_people_data_and_implementation_m }}</h2>
@@ -635,27 +636,27 @@
       <div class="slider-viewport" id="ny-slider">
         <div class="slider-track">
           <figure class="slide">
-            <img src="/assets/media/ny-pinterest.png" alt="{{ copy.accessible_34 | escape }}" width="1600" height="1365" loading="lazy">
+            <img src="/assets/media/optimized/ny-pinterest-480.webp" srcset="/assets/media/optimized/ny-pinterest-480.webp 480w, /assets/media/optimized/ny-pinterest-960.webp 960w" sizes="(max-width: 1055px) 72vw, 760px" alt="{{ copy.accessible_34 | escape }}" width="1600" height="1365" loading="lazy" decoding="async">
             <figcaption>{{ copy.create_the_life_you_want_to_live }}</figcaption>
           </figure>
           <figure class="slide">
-            <img src="/assets/media/ny-sun-selfie.png" alt="{{ copy.accessible_35 | escape }}" width="899" height="1600" loading="lazy">
+            <img src="/assets/media/optimized/ny-sun-selfie-480.webp" srcset="/assets/media/optimized/ny-sun-selfie-480.webp 480w, /assets/media/optimized/ny-sun-selfie-899.webp 899w" sizes="(max-width: 1055px) 72vw, 760px" alt="{{ copy.accessible_35 | escape }}" width="899" height="1600" loading="lazy" decoding="async">
             <figcaption>{{ copy.the_city_keeps_reminding_me_to_keep_moving }}</figcaption>
           </figure>
           <figure class="slide">
-            <img src="/assets/media/ny-work.jpg" alt="{{ copy.accessible_36 | escape }}" width="899" height="1599" loading="lazy">
+            <img src="/assets/media/optimized/ny-work-480.webp" srcset="/assets/media/optimized/ny-work-480.webp 480w, /assets/media/optimized/ny-work-899.webp 899w" sizes="(max-width: 1055px) 72vw, 760px" alt="{{ copy.accessible_36 | escape }}" width="899" height="1599" loading="lazy" decoding="async">
             <figcaption>{{ copy.work_learning_and_new_york_in_the_same_frame }}</figcaption>
           </figure>
           <figure class="slide">
-            <img src="/assets/media/ny-yellow-wall.png" alt="{{ copy.accessible_37 | escape }}" width="1200" height="1599" loading="lazy">
+            <img src="/assets/media/optimized/ny-yellow-wall-480.webp" srcset="/assets/media/optimized/ny-yellow-wall-480.webp 480w, /assets/media/optimized/ny-yellow-wall-960.webp 960w" sizes="(max-width: 1055px) 72vw, 760px" alt="{{ copy.accessible_37 | escape }}" width="1200" height="1599" loading="lazy" decoding="async">
             <figcaption>{{ copy.color_movement_and_curiosity }}</figcaption>
           </figure>
           <figure class="slide">
-            <img src="/assets/media/ny-waterfront.png" alt="{{ copy.accessible_38 | escape }}" width="1463" height="1600" loading="lazy">
+            <img src="/assets/media/optimized/ny-waterfront-480.webp" srcset="/assets/media/optimized/ny-waterfront-480.webp 480w, /assets/media/optimized/ny-waterfront-960.webp 960w" sizes="(max-width: 1055px) 72vw, 760px" alt="{{ copy.accessible_38 | escape }}" width="1463" height="1600" loading="lazy" decoding="async">
             <figcaption>{{ copy.a_place_that_makes_the_next_step_feel_possible }}</figcaption>
           </figure>
           <figure class="slide">
-            <img src="/assets/media/ny-flight.jpg" alt="{{ copy.accessible_39 | escape }}" width="1600" height="1275" loading="lazy">
+            <img src="/assets/media/optimized/ny-flight-480.webp" srcset="/assets/media/optimized/ny-flight-480.webp 480w, /assets/media/optimized/ny-flight-960.webp 960w" sizes="(max-width: 1055px) 72vw, 760px" alt="{{ copy.accessible_39 | escape }}" width="1600" height="1275" loading="lazy" decoding="async">
             <figcaption>{{ copy.germany_new_york_the_path_i_keep_choosing }}</figcaption>
           </figure>
         </div>

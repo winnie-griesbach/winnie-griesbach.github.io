@@ -36,7 +36,7 @@ section[id]{scroll-margin-top:30px}
 .hero-banner{
   min-height:330px;
   position:relative;
-  background-image:url("../media/linkedin-hero-banner.jpg");
+  background-image:url("../media/optimized/linkedin-hero-banner.webp");
   background-size:cover;
   background-position:center 44%;
   overflow:hidden;
@@ -800,11 +800,15 @@ section[id]{scroll-margin-top:30px}
 .eyebrow,.profile-label,.lens-nav span,.journey-kicker,.comparison-title,.milestone-label,.credential-card>span,.credential-card .credential-link,.credential-card strong{color:var(--gold-text)}
 .eyebrow,.profile-label,.journey-kicker,.milestone-label,.credential-card>span{font-size:12px}
 .case-scope{margin-top:28px}
+.case-scope .case-scope h4{font-size:22px;letter-spacing:-.03em;margin:0 0 8px}
+.case-scope .case-scope>p:not(.journey-kicker){color:var(--muted);margin:0;font-size:14px}
+.case-scope .case-scope>.journey-kicker{margin-bottom:12px}
 .hero h1:lang(de){font-size:clamp(48px,5vw,72px);overflow-wrap:break-word}
 .journey-card,.about>*{min-width:0}
 .journey-kicker{min-width:0;overflow-wrap:anywhere}
 .journey-signal{max-width:100%;overflow-wrap:anywhere}
 .case-scope p+p{margin-top:14px}
+.case-scope .case-scope>p+p{margin-top:14px}
 .metrics-scroll{overflow-x:auto;margin-bottom:20px}
 .metrics-table{width:100%;border-collapse:collapse;font-size:13px}
 .metrics-table caption{text-align:left;color:var(--muted);padding-bottom:10px}

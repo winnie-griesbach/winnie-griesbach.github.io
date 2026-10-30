@@ -842,3 +842,13 @@ body:not(.evidence-ready) .evidence-table{min-width:780px}
 @media(prefers-reduced-motion:reduce){
   .js-reveal .reveal{opacity:1;transform:none;transition:none}
 }
+
+/* Compact DDZ audit evidence, following the existing case typography. */
+.case-audit>h3{font-size:26px;letter-spacing:-.03em;margin:0 0 14px}
+.case-audit>p{font-size:14px;color:var(--muted);margin:0 0 14px}
+.audit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.audit-grid h4{font-size:22px;letter-spacing:-.03em;line-height:1.2;margin:0 0 12px}
+.audit-grid .audit-metrics{font-weight:600;color:var(--forest)}
+.audit-grid p+p{margin-top:14px}
+#case-study>.journey-card:last-child>.case-scope{margin-top:0}
+@media(max-width:850px){.audit-grid{grid-template-columns:1fr}}

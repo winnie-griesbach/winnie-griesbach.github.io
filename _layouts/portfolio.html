@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=a4c50be0d687">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=82850549ccd5">
 </head>
 <body>
 <a class="skip-link" href="#main">{{ copy.skip_to_content }}</a>
@@ -125,9 +125,42 @@
       <p>{{ copy.i_own_the_digital_development_from_the_customer_and_bus }}</p>
       <p>{{ copy.my_scope_includes_price_check_fence_configurator_privac }}</p>
       <p>{{ copy.i_build_and_test_this_work_myself_there_are_no_separate }}</p>
+
+    </article>
+
+    <section class="case-audit case-scope" aria-labelledby="audit-heading">
+      <h3 id="audit-heading">{{ copy.audit_title }}</h3>
+      <p class="audit-method"><strong>{{ copy.audit_method_title }}.</strong> {{ copy.audit_method }}</p>
+      <p class="audit-scope">{{ copy.audit_scope }}</p>
+      <div class="audit-grid">
+        <article class="journey-card reveal">
+          <h4>{{ copy.audit_structured_title }}</h4>
+          <p class="audit-metrics">{{ copy.audit_structured_status }}</p>
+          <p>{{ copy.audit_structured_text }}</p>
+          <p>{{ copy.audit_accessibility }}</p>
+        </article>
+        <article class="journey-card reveal">
+          <h4>{{ copy.audit_performance_title }}</h4>
+          <p>{{ copy.audit_performance_text }}</p>
+          <p class="audit-metrics">{{ copy.audit_performance_metrics }}</p>
+          <p>{{ copy.audit_performance_limits }}</p>
+        </article>
+        <article class="journey-card reveal">
+          <h4>{{ copy.audit_commerce_title }}</h4>
+          <p>{{ copy.audit_commerce_text }}</p>
+          <p>{{ copy.audit_commerce_testing }}</p>
+        </article>
+        <article class="journey-card reveal">
+          <h4>{{ copy.audit_debt_title }}</h4>
+          <p>{{ copy.audit_debt_text }}</p>
+          <p>{{ copy.audit_debt_limits }}</p>
+        </article>
+      </div>
+    </section>
+    <article class="case-scope journey-card reveal">
       <div class="case-scope">
         <p class="journey-kicker">{{ copy.ddz_constraints_tradeoffs }}</p>
-        <h4>{{ copy.ddz_tradeoffs_title }}</h4>
+        <h3>{{ copy.ddz_tradeoffs_title }}</h3>
         <p>{{ copy.ddz_tradeoffs_context }}</p>
         <p>{{ copy.ddz_tradeoffs_decision }}</p>
       </div>
@@ -580,6 +613,12 @@
       <p>{{ copy.i_use_training_as_a_foundation_then_deepen_it_through_h }}</p>
     </div>
     <div class="credential-grid">
+      <article class="credential-card reveal">
+        <span>{{ copy.bi_date }}</span>
+        <h3>Business Intelligence &amp; Visualization</h3>
+        <p class="credential-provider">{{ copy.course_certificate_coursera }}</p>
+        <p>{{ copy.bi_description }}</p>
+      </article>
       <a class="credential-card reveal" href="/assets/credentials/data-preparation-infrastructure-2026-09-27.pdf" target="_blank" rel="noopener" aria-label="{{ copy.data_certificate_pdf_label | escape }}"><span>{{ copy.27_september_2026 }}</span><h3>Data Preparation &amp; Infrastructure</h3><p class="credential-provider">{{ copy.course_certificate_coursera }}</p><p>{{ copy.completed_course_supporting_my_developing_data_preparat }}</p><strong>{{ copy.open_pdf }}</strong></a>
 
       <a class="credential-card reveal"

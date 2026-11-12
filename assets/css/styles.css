@@ -87,7 +87,8 @@ section[id]{scroll-margin-top:30px}
 .lens-nav strong{font-size:15px;line-height:1.45}
 
 .principle{border-bottom:1px solid var(--line)}
-.principle>div{max-width:620px}
+.principle>div{max-width:none}
+.principle p:last-child{max-width:760px}
 .principle h2{font-size:clamp(38px,4vw,56px)}
 .principle p:last-child{color:var(--muted);font-size:17px;margin:14px 0 0}
 
@@ -852,3 +853,7 @@ body:not(.evidence-ready) .evidence-table{min-width:780px}
 .audit-grid p+p{margin-top:14px}
 #case-study>.journey-card:last-child>.case-scope{margin-top:0}
 @media(max-width:850px){.audit-grid{grid-template-columns:1fr}}
+
+/* Three stages of product imagery; stack at small widths for readable previews. */
+.comparison-pair-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:680px){.comparison-pair-three{grid-template-columns:1fr}}

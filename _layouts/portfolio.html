@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=82850549ccd5">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=2e527346fe71">
 </head>
 <body>
 <a class="skip-link" href="#main">{{ copy.skip_to_content }}</a>
@@ -238,7 +238,7 @@
     </div>
   </section>
 
-  <section class="comparison-section section-shell section-space">
+  <section id="product-imagery" class="comparison-section section-shell section-space">
     <div class="section-heading compact reveal">
       <p class="eyebrow">{{ copy.visual_improvement }}</p>
       <h2>{{ copy.clarity_before_decoration }}</h2>
@@ -257,9 +257,10 @@
 
       <article class="comparison-card reveal">
         <p class="comparison-title">{{ copy.fence_post }}</p>
-        <div class="comparison-pair">
-          <a class="comparison-slot image-slot" href="/assets/media/fence-post-before.png" target="_blank" rel="noopener"><span>{{ copy.before }}</span><img src="/assets/media/optimized/fence-post-before-480.webp" srcset="/assets/media/optimized/fence-post-before-480.webp 480w, /assets/media/optimized/fence-post-before-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_16 | escape }}" width="1023" height="1537" loading="lazy" decoding="async"></a>
-          <a class="comparison-slot image-slot" href="/assets/media/fence-post-after.png" target="_blank" rel="noopener"><span>{{ copy.after }}</span><img src="/assets/media/optimized/fence-post-after-480.webp" srcset="/assets/media/optimized/fence-post-after-480.webp 480w, /assets/media/optimized/fence-post-after-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_17 | escape }}" width="1254" height="1254" loading="lazy" decoding="async"></a>
+        <div class="comparison-pair comparison-pair-three">
+          <a class="comparison-slot image-slot" href="/assets/media/fence-post-before.png" target="_blank" rel="noopener"><span>{{ copy.product_visual_original }}</span><img src="/assets/media/optimized/fence-post-before-480.webp" srcset="/assets/media/optimized/fence-post-before-480.webp 480w, /assets/media/optimized/fence-post-before-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_16 | escape }}" width="1023" height="1537" loading="lazy" decoding="async"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/fence-post-after.png" target="_blank" rel="noopener"><span>{{ copy.product_visual_simplified }}</span><img src="/assets/media/optimized/fence-post-after-480.webp" srcset="/assets/media/optimized/fence-post-after-480.webp 480w, /assets/media/optimized/fence-post-after-960.webp 960w" sizes="(max-width: 1050px) calc(50vw - 40px), 300px" alt="{{ copy.accessible_17 | escape }}" width="1254" height="1254" loading="lazy" decoding="async"></a>
+          <a class="comparison-slot image-slot" href="/assets/media/optimized/fence-post-photo-based-1254.webp" target="_blank" rel="noopener"><span>{{ copy.product_visual_photo }}</span><img src="/assets/media/optimized/fence-post-photo-based-480.webp" srcset="/assets/media/optimized/fence-post-photo-based-480.webp 480w, /assets/media/optimized/fence-post-photo-based-960.webp 960w, /assets/media/optimized/fence-post-photo-based-1254.webp 1254w" sizes="(max-width: 680px) calc(100vw - 64px), (max-width: 1050px) 30vw, 200px" alt="{{ copy.product_visual_photo_alt | escape }}" width="1254" height="1254" loading="lazy" decoding="async"></a>
         </div>
         <p class="comparison-copy">{{ copy.from_visually_overloaded_product_communication_to_a_mor }}</p>
       </article>

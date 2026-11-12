@@ -61,13 +61,13 @@
     "make_a_visual_and_customizable_product_easier_to_unders": "make a visual and customizable product easier to understand.",
     "visual_improvement": "Visual improvement",
     "clarity_before_decoration": "Clarity before decoration.",
-    "i_simplified_product_presentation_by_removing_visual_ov": "I simplified product presentation by removing visual overload and making key product differences easier to understand at a glance. The homepage comparison below shows the same principle applied to the wider customer journey.",
+    "i_simplified_product_presentation_by_removing_visual_ov": "I simplified overloaded product visuals and continue to develop the image language with edited product photographs. The aim is to make products and their use easier to grasp. The homepage comparison shows how I applied clearer presentation to the wider customer journey.",
     "corner_connector": "Corner connector",
     "before": "Before",
     "after": "After",
     "from_information_heavy_artwork_to_a_cleaner_product_fir": "From information-heavy artwork to a cleaner product-first presentation that makes the item itself easier to identify.",
     "fence_post": "Fence post",
-    "from_visually_overloaded_product_communication_to_a_mor": "From visually overloaded product communication to a more focused product image with clearer emphasis on form and use.",
+    "from_visually_overloaded_product_communication_to_a_mor": "From an information-heavy graphic to a reduced presentation, then to an edited product photograph. I am developing the image language further so customers can better understand the product in a real setting.",
     "special_hex_key": "Special hex key",
     "from_poster_style_explanation_to_a_simpler_product_pres": "From poster-style explanation to a simpler product presentation that improves clarity and visual hierarchy.",
     "fence_panel_guide_6_5_6_vs_8_6_8": "Fence panel guide · 6/5/6 vs. 8/6/8",
@@ -281,7 +281,11 @@
     "zs24_qa_limits": "I documented import dependencies and the checks needed after migration. Permanent module fixes remain with the developer; redirect mapping and replaying the tested catalog changes after migration are follow-up work. These are tested preparations, not published ranking results.",
     "channel_course_date": "Completed November 9, 2026",
     "channel_course_text": "Completed Coursera course extending my learning in channel and performance analysis.",
-    "channel_course_pdf": "Open Channel & Performance Analysis course certificate PDF, completed November 9, 2026"
+    "channel_course_pdf": "Open Channel & Performance Analysis course certificate PDF, completed November 9, 2026",
+    "product_visual_original": "Original",
+    "product_visual_simplified": "Simplified",
+    "product_visual_photo": "Photo-based",
+    "product_visual_photo_alt": "Photo-based presentation of an anthracite corner post with double-wire fence panels in a garden"
   },
   "de": {
     "skip_to_content": "Zum Inhalt springen",
@@ -345,13 +349,13 @@
     "make_a_visual_and_customizable_product_easier_to_unders": "Ein visuelles, individuell gestaltbares Produkt verständlicher machen.",
     "visual_improvement": "Visuelle Verbesserung",
     "clarity_before_decoration": "Klarheit vor Dekoration.",
-    "i_simplified_product_presentation_by_removing_visual_ov": "Ich habe überladene Produktdarstellungen vereinfacht und wichtige Unterschiede auf einen Blick verständlicher gemacht. Der Startseitenvergleich zeigt dasselbe Prinzip für die gesamte Customer Journey.",
+    "i_simplified_product_presentation_by_removing_visual_ov": "Ich habe überladene Produktdarstellungen vereinfacht und entwickle die Bildsprache mit aufbereiteten Produktfotos weiter. Ziel ist, Produkte und ihre Verwendung greifbarer zu zeigen. Der Startseitenvergleich zeigt, wie ich klarere Darstellung auf die gesamte Customer Journey übertragen habe.",
     "corner_connector": "Eckverbinder",
     "before": "Vorher",
     "after": "Nachher",
     "from_information_heavy_artwork_to_a_cleaner_product_fir": "Von einer informationsreichen Grafik zu einer klareren Darstellung, in der das Produkt leichter erkennbar ist.",
     "fence_post": "Zaunpfosten",
-    "from_visually_overloaded_product_communication_to_a_mor": "Von überladener Produktkommunikation zu einem fokussierten Bild mit klarerem Blick auf Form und Verwendung.",
+    "from_visually_overloaded_product_communication_to_a_mor": "Von einer informationsreichen Grafik über eine reduzierte Darstellung zum aufbereiteten Produktfoto. Ich entwickle die Bildsprache weiter, damit Kunden das Produkt im realen Anwendungskontext besser erfassen können.",
     "special_hex_key": "Spezial-Inbusschlüssel",
     "from_poster_style_explanation_to_a_simpler_product_pres": "Von einer plakatartigen Erklärung zu einer einfacheren Darstellung mit klarerer visueller Hierarchie.",
     "fence_panel_guide_6_5_6_vs_8_6_8": "Zaunmatten-Vergleich · 6/5/6 vs. 8/6/8",
@@ -565,6 +569,10 @@
     "zs24_qa_limits": "Ich habe Import-Abhängigkeiten und notwendige Prüfungen nach der Migration dokumentiert. Die dauerhafte Modulkorrektur liegt beim Entwickler; Weiterleitungsplanung und erneutes Einspielen der erprobten Katalogänderungen nach der Migration sind Folgeaufgaben. Es handelt sich um getestete Vorbereitung, nicht um veröffentlichte Ranking-Ergebnisse.",
     "channel_course_date": "Abgeschlossen am 9. November 2026",
     "channel_course_text": "Abgeschlossener Coursera-Kurs zur Vertiefung meiner Weiterbildung in Kanal- und Performance-Analyse.",
-    "channel_course_pdf": "Channel & Performance Analysis als Kurszertifikat-PDF öffnen, abgeschlossen am 9. November 2026"
+    "channel_course_pdf": "Channel & Performance Analysis als Kurszertifikat-PDF öffnen, abgeschlossen am 9. November 2026",
+    "product_visual_original": "Ursprünglich",
+    "product_visual_simplified": "Reduziert",
+    "product_visual_photo": "Fotobasiert",
+    "product_visual_photo_alt": "Fotobasierte Darstellung eines anthrazitfarbenen Eckpfostens mit Doppelstabmattenzaun im Garten"
   }
 }

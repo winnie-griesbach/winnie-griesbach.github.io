@@ -158,6 +158,12 @@
       </div>
     </section>
     <article class="case-scope journey-card reveal">
+      <p class="journey-kicker">{{ copy.nov_ads_date }}</p>
+      <h3>{{ copy.nov_ads_title }}</h3>
+      <p>{{ copy.nov_ads_text }}</p>
+      <p>{{ copy.nov_ads_limits }}</p>
+    </article>
+    <article class="case-scope journey-card reveal">
       <div class="case-scope">
         <p class="journey-kicker">{{ copy.ddz_constraints_tradeoffs }}</p>
         <h3>{{ copy.ddz_tradeoffs_title }}</h3>
@@ -312,7 +318,7 @@
         <button class="filter" aria-pressed="false" data-filter="UX / Customer Journey">UX</button>
         <button class="filter" aria-pressed="false" data-filter="CRO">CRO</button>
         <button class="filter" aria-pressed="false" data-filter="Analytics">{{ copy.analytics }}</button>
-        <button class="filter" aria-pressed="false" data-filter="Paid Search / Google Ads">
+        <button class="filter" aria-pressed="false" data-filter="Paid Media">
           {{ copy.paid_search }}
         </button>
         <button class="filter" aria-pressed="false" data-filter="Product / Tools">{{ copy.product_tools }}</button>
@@ -407,6 +413,16 @@
   </div>
 
   <div class="milestone-grid">
+    <article class="milestone-card reveal">
+      <div class="milestone-content">
+        <p class="milestone-label">{{ copy.nov_outcome_date }}</p>
+        <h3>{{ copy.nov_outcome_title }}</h3>
+        <p><strong>{{ copy.nov_outcome_metric }}</strong></p>
+        <p>{{ copy.nov_outcome_text }}</p>
+        <p class="milestone-source">{{ copy.nov_outcome_limits }}</p>
+      </div>
+    </article>
+
 
     <article class="milestone-card reveal">
       <a class="milestone-image" href="/assets/media/milestone-sistrix-ddz-2026-09-24.png" target="_blank" rel="noopener" aria-label="{{ copy.ddz_sistrix_image_label | escape }}">
@@ -535,6 +551,26 @@
   </div>
 </section>
 
+<section id="zs24-case" class="section-shell section-space">
+  <div class="section-heading compact reveal">
+    <p class="eyebrow">{{ copy.zs24_kicker }}</p>
+    <h2>{{ copy.zs24_title }}</h2>
+    <p>{{ copy.zs24_intro }}</p>
+  </div>
+  <div class="audit-grid">
+    <article class="journey-card reveal">
+      <h3>{{ copy.zs24_model_title }}</h3>
+      <p>{{ copy.zs24_model_text }}</p>
+      <p>{{ copy.zs24_model_result }}</p>
+    </article>
+    <article class="journey-card reveal">
+      <h3>{{ copy.zs24_qa_title }}</h3>
+      <p>{{ copy.zs24_qa_text }}</p>
+      <p>{{ copy.zs24_qa_limits }}</p>
+    </article>
+  </div>
+</section>
+
 <section id="product-analysis" class="product-analysis section-shell section-space">
 
   <div class="section-heading compact reveal">
@@ -613,6 +649,13 @@
       <p>{{ copy.i_use_training_as_a_foundation_then_deepen_it_through_h }}</p>
     </div>
     <div class="credential-grid">
+      <a class="credential-card reveal" href="/assets/credentials/channel-performance-analysis-2026-11-09.pdf" target="_blank" rel="noopener" aria-label="{{ copy.channel_course_pdf | escape }}">
+        <span>{{ copy.channel_course_date }}</span>
+        <h3>Channel &amp; Performance Analysis</h3>
+        <p class="credential-provider">{{ copy.course_certificate_coursera }}</p>
+        <p>{{ copy.channel_course_text }}</p>
+        <strong>{{ copy.open_pdf }}</strong>
+      </a>
       <article class="credential-card reveal">
         <span>{{ copy.bi_date }}</span>
         <h3>Business Intelligence &amp; Visualization</h3>
@@ -723,6 +766,6 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Winnie Griesbach","url":{{ page.url | absolute_url | jsonify }},"sameAs":["https://www.linkedin.com/in/winnie-griesbach"],"jobTitle":"E-Commerce and SEO Specialist","knowsAbout":["E-Commerce","Customer Journey","UX","SEO","GEO / AEO","Analytics","Google Ads","Shopify Basic","Liquid","HTML","CSS","JSON"],"description":{{ page.description | jsonify }}}
 </script>
-<script src="/assets/js/script.js" defer></script>
+<script src="/assets/js/script.js?v=453c02fd3ac4" defer></script>
 </body>
 </html>

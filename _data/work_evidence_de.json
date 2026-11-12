@@ -1,5 +1,116 @@
 [
   {
+    "id": "openai-ads-test",
+    "milestone": "OpenAI Ads als neuen Akquisekanal eingerichtet",
+    "problem": "Ein neuer Akquisekanal benötigte einen kontrollierten Aufbau und eine klare Messgrenze.",
+    "solution": "Erste Kampagne veröffentlicht und Bestellereignisse für die Messung vorbereitet. Stand 11. November 2026: Bereitstellung; Auslieferung, Ausgaben und zugeordnete Käufe noch unbelegt.",
+    "insight": "Eine veröffentlichte Kampagne ist ein Einrichtungsmeilenstein. Performance braucht tatsächliche Auslieferung und zuordenbare Commerce-Daten.",
+    "areas": [
+      "Paid Media",
+      "Analytics",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "server-side-order-measurement",
+    "milestone": "Serverseitige Bestellereignis-Integration validiert",
+    "problem": "Die Werbemessung benötigte einen serverseitigen Datenfluss für Bestellereignisse.",
+    "solution": "Shopify-Bestellereignisse über Google Cloud Run mit einer Conversion-API verbunden; das Validierungsereignis wurde angenommen.",
+    "insight": "Erfolgreiche API-Validierung belegt noch keine echte Kaufattribution. Reale Bestellereignisse und Ereignisqualität bleiben eigene Prüfungen.",
+    "areas": [
+      "Analytics",
+      "Technical Implementation",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "gira-product-families",
+    "milestone": "Produktfamilien aus einem Export mit 933 Produkten strukturiert",
+    "problem": "Der Katalog enthielt überlappende Produktseiten sowie unvollständige oder widersprüchliche Merkmale.",
+    "solution": "88 mögliche Variantenfamilien identifiziert; im neuen Testkatalog 15 Variantenprodukte und die Zusammenführung von 23 Bundle-Seiten in sechs Bundles erprobt.",
+    "insight": "Produktmodellierung verbindet Kundenauswahl, Datenqualität und indexierbare Seitenstruktur. Dies war ein Testkatalog-Ergebnis, kein Live-Rollout.",
+    "areas": [
+      "SEO",
+      "Product / Tools",
+      "E-Commerce"
+    ],
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento"
+  },
+  {
+    "id": "magento-variant-url-qa",
+    "milestone": "URL-Wechsel bei der Variantenauswahl diagnostiziert",
+    "problem": "Die Variantenauswahl änderte die sichtbare URL entgegen der vorgesehenen Elternprodukt-Struktur.",
+    "solution": "Modulverhalten eingegrenzt, einen rückbaubaren Workaround erprobt und URL, Überschrift, Beschreibung, SKU und Preis geprüft.",
+    "insight": "Frontend-Diagnose und Kaufprozess-Prüfung ergänzen Backend-Einstellungen. Dauerhafte Moduländerungen bleiben Entwickleraufgabe.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "Technical Implementation"
+    ],
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento"
+  },
+  {
+    "id": "magento-migration-replay",
+    "milestone": "Katalogarbeiten für die Übernahme nach der Migration vorbereitet",
+    "problem": "Die Migration ersetzt den Testkatalog; erprobte Änderungen benötigten daher einen wiederholbaren Übergabeweg.",
+    "solution": "Abhängigkeiten von Attribut- und Produktimporten, Medienvoraussetzungen und QA nach der Migration dokumentiert. Weiterleitungsplanung und erneutes Einspielen bleiben Folgeaufgaben.",
+    "insight": "Ein Testkatalog ist eine Generalprobe. Die Migration benötigt eine kontrollierte Reihenfolge und eine erneute Prüfung vor Veröffentlichung.",
+    "areas": [
+      "SEO",
+      "Technical Implementation",
+      "E-Commerce"
+    ],
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento"
+  },
+  {
+    "id": "guided-commerce-order-proof",
+    "milestone": "Abgeschlossene Bestellungen mit Konfigurator-Nutzung identifiziert",
+    "problem": "Für die Planungstools brauchte es einen Nachweis der Nutzung in tatsächlichen abgeschlossenen Bestellungen.",
+    "solution": "Bestellprüfung vom 2. Oktober: drei Zaunkonfigurator- und eine Sichtschutzkonfigurator-Bestellung mit rund 3.219,13 € gemeinsamem Bestellwert.",
+    "insight": "Identifizierte Tool-Nutzung stützt den Case. Zusätzlicher Umsatz, Conversion-Steigerung oder Akquisekanal lassen sich daraus nicht isolieren.",
+    "areas": [
+      "Product / Tools",
+      "CRO",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "local-seo-journey",
+    "milestone": "Regionale Suchintention mit Planung und Abholung verbunden",
+    "problem": "Regionale Kunden benötigten klare Wege zu Lager, Abholung und Projektplanung.",
+    "solution": "Regionale Landingpage mit Lager- und Abholinformationen, FAQ, Routenplanung und Preischeck aufgebaut. Als live seit 12. Oktober 2026 dokumentiert.",
+    "insight": "Local SEO verbindet nützliche Kaufinformationen mit einer zusammenhängenden Journey. Eine eigene Ranking- oder Conversion-Steigerung wird daraus nicht abgeleitet.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "CRO"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "ddz-search-directory-distribution",
+    "milestone": "Suchsichtbarkeit nach Seitentyp ausgewertet",
+    "problem": "Suchsichtbarkeit sollte über die Startseite hinaus eingeordnet werden.",
+    "solution": "SISTRIX-Verzeichnisreport vom 3. November: 17 Top-10-Rankings bei 102 rankenden Keywords im betrachteten Set; Produkte mit elf Top-10-Rankings, Ratgeber mit fünf.",
+    "insight": "Produkte und Ratgeber tragen beide zur Auffindbarkeit bei. Die Werte dieses Report-Sets sind nicht direkt mit früheren weltweiten Keyword-Zahlen vergleichbar.",
+    "areas": [
+      "SEO",
+      "Analytics"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
     "id": "shopify-ga4-source-of-truth",
     "milestone": "Shopify-Bestellungen mit der GA4-Tracking-Abdeckung verglichen",
     "problem": "Tracking-Berichte erfassten nicht alle tatsächlichen Bestellungen.",
@@ -20,7 +131,7 @@
     "solution": "29. Sep – 05. Okt 2026: Planning Tools Search mit 336 Klicks, 146,30 € Kosten, 1 Ads-Conversion, 962,49 € Wert und ROAS 6,58; Shopping Bestseller mit 90 Klicks, 140,16 € Kosten und 0 Conversions.",
     "insight": "Planning Tools Search zeigte in diesem Zeitraum die stärkere zugeordnete Leistung. Regional Search bleibt eine frühe Beobachtung mit kleiner Stichprobe.",
     "areas": [
-      "Paid Search / Google Ads",
+      "Paid Media",
       "Analytics",
       "Product / Tools"
     ],
@@ -63,7 +174,7 @@
     "insight": "Eine Reporting-Kompetenz im Aufbau: Vergleichbare Daten und ausdrückliche Gruppierung kommen vor Schlussfolgerungen. Kein fortgeschrittenes Data Engineering.",
     "areas": [
       "Analytics",
-      "Paid Search / Google Ads",
+      "Paid Media",
       "Technical Implementation"
     ],
     "project": "Dein-Doppelstabmattenzaun.de",
@@ -108,7 +219,7 @@
     "solution": "Keyword-Logik nach Match Type getrennt und engere, intentionsbezogene Kampagnen entwickelt. Struktur und Budgetverteilung eigenständig innerhalb des vorgegebenen Gesamtbudgetrahmens entschieden.",
     "insight": "Bei kleinen Budgets können Kontrolle und klare Suchintention wichtiger sein als automatisierte Skalierung.",
     "areas": [
-      "Paid Search / Google Ads",
+      "Paid Media",
       "SEO",
       "Analytics",
       "Digital Marketing"
@@ -168,7 +279,7 @@
     "areas": [
       "Analytics",
       "CRO",
-      "Paid Search / Google Ads",
+      "Paid Media",
       "Technical Implementation"
     ]
   },
@@ -182,7 +293,7 @@
     "insight": "Impressionen und Klicks sind kein Erfolg, wenn das Geschäftsergebnis fehlt.",
     "areas": [
       "Analytics",
-      "Paid Search / Google Ads",
+      "Paid Media",
       "CRO",
       "Digital Marketing"
     ]
@@ -403,7 +514,7 @@
     "solution": "Getrennte Anzeigengruppen für Zaunplanung, Preischeck und Sichtschutzkonfiguration erstellt.",
     "insight": "Digitale Beratungstools können eigene Suchintentionen bedienen und sollten getrennt gemessen werden.",
     "areas": [
-      "Paid Search / Google Ads",
+      "Paid Media",
       "SEO",
       "Analytics",
       "Product / Tools",

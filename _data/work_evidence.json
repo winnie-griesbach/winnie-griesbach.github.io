@@ -1,5 +1,116 @@
 [
   {
+    "id": "openai-ads-test",
+    "milestone": "Set up an OpenAI Ads channel test",
+    "problem": "A new acquisition channel needed a controlled setup and a clear measurement boundary.",
+    "solution": "Published the first campaign and prepared order-event measurement. Status as of November 11, 2026: provisioning; delivery, spend and attributed purchases unverified.",
+    "insight": "Campaign publication is a setup milestone. Performance requires actual delivery and attributable commerce data.",
+    "areas": [
+      "Paid Media",
+      "Analytics",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "server-side-order-measurement",
+    "milestone": "Validated a server-side order-event integration",
+    "problem": "Advertising measurement needed a server-side order-event path.",
+    "solution": "Connected Shopify order events through Google Cloud Run to a conversion API and received acceptance of the validation event.",
+    "insight": "A successful API validation does not establish real purchase attribution. Live order events and event quality remain separate checks.",
+    "areas": [
+      "Analytics",
+      "Technical Implementation",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "gira-product-families",
+    "milestone": "Structured product families from a 933-product export",
+    "problem": "The catalog contained overlapping product pages and incomplete or conflicting attributes.",
+    "solution": "Identified 88 candidate variant families and tested 15 configurable products plus consolidation of 23 bundle pages into six bundles in the new catalog.",
+    "insight": "Product modeling connects customer choice, data quality and indexable page structure. These were test-catalog results, not a live rollout.",
+    "areas": [
+      "SEO",
+      "Product / Tools",
+      "E-Commerce"
+    ],
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento"
+  },
+  {
+    "id": "magento-variant-url-qa",
+    "milestone": "Diagnosed variant selection changing the parent URL",
+    "problem": "Variant selection changed the visible URL despite the intended parent-product architecture.",
+    "solution": "Isolated module behavior, tested a reversible workaround and checked URL, heading, description, SKU and price behavior.",
+    "insight": "Frontend diagnosis and purchasing checks complement backend configuration. Permanent module changes remain developer work.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "Technical Implementation"
+    ],
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento"
+  },
+  {
+    "id": "magento-migration-replay",
+    "milestone": "Prepared catalog work for replay after migration",
+    "problem": "The migration would replace the test catalog, so tested changes needed a repeatable handover.",
+    "solution": "Documented attribute and product import dependencies, media prerequisites and post-migration QA. Redirect mapping and replay remain follow-up work.",
+    "insight": "A tested catalog is a rehearsal. Migration requires a controlled sequence and a fresh check before publication.",
+    "areas": [
+      "SEO",
+      "Technical Implementation",
+      "E-Commerce"
+    ],
+    "project": "Zaehlerschrank24.de",
+    "system": "Magento"
+  },
+  {
+    "id": "guided-commerce-order-proof",
+    "milestone": "Identified completed orders using the configurators",
+    "problem": "The planning tools needed evidence of use in actual completed orders.",
+    "solution": "The October 2 order review identified three Fence Configurator orders and one Privacy Screen Configurator order, approximately €3,219.13 combined.",
+    "insight": "Identified tool usage supports the case. It does not isolate incremental revenue, conversion uplift or the acquisition channel.",
+    "areas": [
+      "Product / Tools",
+      "CRO",
+      "E-Commerce"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "local-seo-journey",
+    "milestone": "Connected regional search intent with planning and collection",
+    "problem": "Local customers needed clear routes to stock, collection and project planning.",
+    "solution": "Built a regional landing page connecting local stock and collection information, FAQs, route planning and Price Check. Recorded as live on October 12, 2026.",
+    "insight": "Local SEO works through useful purchasing information and a connected journey. No separate ranking or conversion uplift is claimed.",
+    "areas": [
+      "SEO",
+      "UX / Customer Journey",
+      "CRO"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
+    "id": "ddz-search-directory-distribution",
+    "milestone": "Reviewed search visibility by page type",
+    "problem": "Search visibility needed to be understood beyond the homepage.",
+    "solution": "November 3 SISTRIX directory report: 17 top-10 rankings among 102 ranking keywords in the report set; products contributed 11 top-10 rankings and guides five.",
+    "insight": "Products and guides both contribute to discovery. These report-set counts are not directly comparable with earlier worldwide keyword totals.",
+    "areas": [
+      "SEO",
+      "Analytics"
+    ],
+    "project": "Dein-Doppelstabmattenzaun.de",
+    "system": "Shopify"
+  },
+  {
     "id": "shopify-ga4-source-of-truth",
     "milestone": "Compared Shopify orders with GA4 tracking coverage",
     "problem": "Tracking reports did not capture the complete operational order volume.",
@@ -20,7 +131,7 @@
     "solution": "For 29 Sep – 05 Oct 2026, compared Planning Tools Search (336 clicks, €146.30 cost, 1 Ads conversion, €962.49 value, ROAS 6.58) with Shopping Bestseller (90 clicks, €140.16 cost, 0 conversions).",
     "insight": "Planning Tools Search showed stronger attributed performance in this window. Regional Search remains an early, small-sample observation.",
     "areas": [
-      "Paid Search / Google Ads",
+      "Paid Media",
       "Analytics",
       "Product / Tools"
     ],
@@ -63,7 +174,7 @@
     "insight": "A developing reporting skill: comparable data and explicit grouping come before conclusions. This is not advanced data engineering.",
     "areas": [
       "Analytics",
-      "Paid Search / Google Ads",
+      "Paid Media",
       "Technical Implementation"
     ],
     "project": "Dein-Doppelstabmattenzaun.de",
@@ -108,7 +219,7 @@
     "solution": "Separated keyword logic by match type and later moved toward tighter, intent-led Search campaigns. Independently decided structure and allocation within an assigned overall budget ceiling.",
     "insight": "For a small budget, control and search-intent clarity can matter more than automated scale.",
     "areas": [
-      "Paid Search / Google Ads",
+      "Paid Media",
       "SEO",
       "Analytics",
       "Digital Marketing"
@@ -168,7 +279,7 @@
     "areas": [
       "Analytics",
       "CRO",
-      "Paid Search / Google Ads",
+      "Paid Media",
       "Technical Implementation"
     ]
   },
@@ -182,7 +293,7 @@
     "insight": "Impressions and clicks are not success metrics when the business outcome is missing.",
     "areas": [
       "Analytics",
-      "Paid Search / Google Ads",
+      "Paid Media",
       "CRO",
       "Digital Marketing"
     ]
@@ -403,7 +514,7 @@
     "solution": "Created separate ad groups for fence planning, Price Check and privacy-screen configuration.",
     "insight": "Digital advisory tools can become their own search intents and should be measured separately.",
     "areas": [
-      "Paid Search / Google Ads",
+      "Paid Media",
       "SEO",
       "Analytics",
       "Product / Tools",

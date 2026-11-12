@@ -105,7 +105,7 @@ function resetFilters(){
   render();
 }
 
-fetch(isGerman ? '/assets/data/work-evidence-de.json' : '/assets/data/work-evidence.json')
+fetch(isGerman ? '/assets/data/work-evidence-de.json' : '/assets/data/work-evidence.json', { cache: 'no-cache' })
   .then((r) => {
     if(!r.ok) throw new Error('Could not load evidence');
     return r.json();

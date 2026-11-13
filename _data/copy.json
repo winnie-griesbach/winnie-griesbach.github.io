@@ -285,7 +285,10 @@
     "product_visual_original": "Original",
     "product_visual_simplified": "Simplified",
     "product_visual_photo": "Photo-based",
-    "product_visual_photo_alt": "Photo-based presentation of an anthracite corner post with double-wire fence panels in a garden"
+    "product_visual_photo_alt": "Photo-based presentation of an anthracite corner post with double-wire fence panels in a garden",
+    "audience_course_date": "Completed November 13, 2026",
+    "audience_course_text": "Completed Coursera course supporting my ongoing learning in audience and attribution analytics.",
+    "audience_course_pdf": "Open Audience & Attribution Analytics course certificate PDF, completed November 13, 2026"
   },
   "de": {
     "skip_to_content": "Zum Inhalt springen",
@@ -573,6 +576,9 @@
     "product_visual_original": "Ursprünglich",
     "product_visual_simplified": "Reduziert",
     "product_visual_photo": "Fotobasiert",
-    "product_visual_photo_alt": "Fotobasierte Darstellung eines anthrazitfarbenen Eckpfostens mit Doppelstabmattenzaun im Garten"
+    "product_visual_photo_alt": "Fotobasierte Darstellung eines anthrazitfarbenen Eckpfostens mit Doppelstabmattenzaun im Garten",
+    "audience_course_date": "Abgeschlossen am 13. November 2026",
+    "audience_course_text": "Abgeschlossener Coursera-Kurs zur Vertiefung meiner Weiterbildung in Zielgruppen- und Attributionsanalyse.",
+    "audience_course_pdf": "Audience & Attribution Analytics als Kurszertifikat-PDF öffnen, abgeschlossen am 13. November 2026"
   }
 }
